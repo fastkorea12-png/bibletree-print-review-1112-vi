@@ -1,0 +1,2796 @@
+[
+ {
+  "id": "t01",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "하나님",
+  "vi": "Đức Chúa Trời",
+  "alts": [
+   {
+    "vi": "Đức Chúa Trời",
+    "count": 1935,
+    "ages": "저427·고466·청소년516·청년526",
+    "sep_oct": "초등284·청소년368·청년284"
+   },
+   {
+    "vi": "Chúa (단독)",
+    "count": 718,
+    "ages": "저164·고179·청소년197·청년178",
+    "sep_oct": "초등51·청소년406·청년162"
+   },
+   {
+    "vi": "Ngài",
+    "count": 982,
+    "ages": "저216·고293·청소년264·청년209",
+    "sep_oct": "초등219·청소년105·청년88"
+   }
+  ],
+  "status": "확정",
+  "note": "용어집·지침과 일치하고 1,935회로 일관됨. 반복될 때 Ngài·Chúa로 받는 것은 자연스러움(Thượng Đế는 0회).",
+  "example_vi": "Lạy Đức Chúa Trời, con ngợi khen Chúa vì đã nghe tiếng kêu cầu của Đa-vít và cứu ông khỏi chỗ chết.",
+  "example_ref": "11/1 고학년",
+  "ko_count": 2550
+ },
+ {
+  "id": "t02",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "하나님 아버지 / 아버지(하나님)",
+  "vi": "Đức Chúa Cha",
+  "alts": [
+   {
+    "vi": "Đức Chúa Cha",
+    "count": 7,
+    "ages": "저4·고1·청년2",
+    "sep_oct": "초등10·청소년4·청년3"
+   },
+   {
+    "vi": "Cha (단독)",
+    "count": 1,
+    "ages": "고1",
+    "sep_oct": "초등2·청소년8·청년8"
+   },
+   {
+    "vi": "Đức Chúa Trời",
+    "count": 7,
+    "ages": "저3·청년4",
+    "sep_oct": "초등284·청소년368·청년284"
+   }
+  ],
+  "status": "확정",
+  "note": "용어집(아버지 하나님 = Đức Chúa Cha)과 일치. 원문 9곳 중 7곳이 Đức Chúa Cha로 옮겨짐.",
+  "example_vi": "Đức Chúa Jêsus nói lúc ấy là do Đức Chúa Cha định.",
+  "example_ref": "12/15 저학년",
+  "ko_count": 8
+ },
+ {
+  "id": "t03",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "예수님",
+  "vi": "Đức Chúa Jêsus",
+  "alts": [
+   {
+    "vi": "Đức Chúa Jêsus",
+    "count": 783,
+    "ages": "저251·고192·청소년195·청년145",
+    "sep_oct": "초등305·청소년132·청년81"
+   },
+   {
+    "vi": "Chúa Jêsus (Đức 생략)",
+    "count": 31,
+    "ages": "저14·고6·청소년9·청년2",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Jêsus (단독)",
+    "count": 45,
+    "ages": "저11·고12·청소년14·청년8",
+    "sep_oct": "청소년1·청년1"
+   },
+   {
+    "vi": "Ngài",
+    "count": 599,
+    "ages": "저140·고177·청소년171·청년111",
+    "sep_oct": "초등219·청소년105·청년88"
+   },
+   {
+    "vi": "Hài Nhi",
+    "count": 9,
+    "ages": "저2·고3·청소년4",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집은 “Chúa Jêsus로 줄이지 않음”인데 Đức을 뺀 Chúa Jêsus 31회, 단독 Jêsus 45회가 섞여 있음. 단, “이름을 Jêsus라 하라”처럼 이름 자체를 말할 때는 단독 Jêsus를 써도 됨.",
+  "example_vi": "Khi ăn tối, Đức Chúa Jêsus cầm bánh, cầu nguyện tạ ơn rồi bẻ ra đưa cho họ.",
+  "example_ref": "11/6 저학년",
+  "ko_count": 994
+ },
+ {
+  "id": "t04",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "예수 그리스도",
+  "vi": "Đức Chúa Jêsus Christ",
+  "alts": [
+   {
+    "vi": "Đức Chúa Jêsus Christ",
+    "count": 10,
+    "ages": "고1·청소년3·청년6",
+    "sep_oct": "초등65·청소년12·청년9"
+   },
+   {
+    "vi": "Đức Chúa Jêsus (Christ 생략)",
+    "count": 4,
+    "ages": "고3·청소년1",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "원문이 ‘예수 그리스도’인데 Christ를 뺀 곳이 4회 있음. 원문 구분대로 Christ를 붙임.",
+  "example_vi": "“Lòng yêu dấu của Đức Chúa Jêsus Christ”",
+  "example_ref": "11/3 청년",
+  "ko_count": 12
+ },
+ {
+  "id": "t05",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "그리스도 (단독)",
+  "vi": "Đấng Christ",
+  "alts": [
+   {
+    "vi": "Đấng Christ",
+    "count": 127,
+    "ages": "저1·고13·청소년36·청년77",
+    "sep_oct": "초등7·청소년60·청년68"
+   },
+   {
+    "vi": "Christ (단독)",
+    "count": 7,
+    "ages": "고3·청소년2·청년2",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Đấng Cứu thế",
+    "count": 4,
+    "ages": "고1·청소년2·청년1",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경·지침과 같은 Đấng Christ가 127회로 일관됨. 단독 Christ 7회는 “trong Christ” 같은 결합형이면 그대로 둬도 됨.",
+  "example_vi": "Để sự bình an của Đấng Christ quyết định",
+  "example_ref": "11/13 청소년",
+  "ko_count": 156
+ },
+ {
+  "id": "t06",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "주님 / 주",
+  "vi": "Chúa",
+  "alts": [
+   {
+    "vi": "Chúa",
+    "count": 340,
+    "ages": "저15·고56·청소년68·청년201",
+    "sep_oct": "초등51·청소년406·청년162"
+   },
+   {
+    "vi": "Đức Chúa Trời",
+    "count": 193,
+    "ages": "저18·고30·청소년57·청년88",
+    "sep_oct": "초등284·청소년368·청년284"
+   },
+   {
+    "vi": "Đức Chúa Jêsus",
+    "count": 87,
+    "ages": "저17·고10·청소년25·청년35",
+    "sep_oct": "초등305·청소년132·청년81"
+   },
+   {
+    "vi": "Ngài",
+    "count": 223,
+    "ages": "저13·고44·청소년64·청년102",
+    "sep_oct": "초등219·청소년105·청년88"
+   }
+  ],
+  "status": "확정",
+  "note": "지침(주님 = Chúa)과 일치. 문맥에 따라 Đức Chúa Trời·Đức Chúa Jêsus로 풀어 쓴 곳도 자연스러움.",
+  "example_vi": "Mượn khuôn câu 6, hãy hoàn thành câu: “Tôi đã xuống đến ○○, nhưng Chúa đã ○○.”",
+  "example_ref": "11/4 청소년",
+  "ko_count": 353
+ },
+ {
+  "id": "t07",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "성령(님)",
+  "vi": "Đức Thánh Linh",
+  "alts": [
+   {
+    "vi": "Đức Thánh Linh",
+    "count": 78,
+    "ages": "저8·고19·청소년24·청년27",
+    "sep_oct": "초등151·청소년125·청년149"
+   },
+   {
+    "vi": "Thánh Linh (단독)",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "초등29·청소년11·청년15"
+   },
+   {
+    "vi": "Thần (Linh)",
+    "count": 10,
+    "ages": "저1·고3·청소년2·청년4",
+    "sep_oct": "초등15·청소년34·청년27"
+   }
+  ],
+  "status": "확정",
+  "note": "용어집과 일치하고 78/79회로 일관됨. Thần은 1934 성경 인용 속 표현(Thần của Đức Chúa Trời)일 때만 씀.",
+  "example_vi": "Kinh Thánh nói Đức Thánh Linh cũng buồn rầu.",
+  "example_ref": "12/5 청소년",
+  "ko_count": 80
+ },
+ {
+  "id": "t08",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "여호와",
+  "vi": "Đức Giê-hô-va",
+  "alts": [
+   {
+    "vi": "Đức Giê-hô-va",
+    "count": 159,
+    "ages": "저21·고45·청소년42·청년51",
+    "sep_oct": "초등7·청소년14·청년14"
+   },
+   {
+    "vi": "Giê-hô-va (단독)",
+    "count": 5,
+    "ages": "청소년3·청년2",
+    "sep_oct": "청소년1"
+   },
+   {
+    "vi": "Đức Chúa Trời",
+    "count": 174,
+    "ages": "저26·고44·청소년62·청년42",
+    "sep_oct": "초등284·청소년368·청년284"
+   },
+   {
+    "vi": "Chúa",
+    "count": 45,
+    "ages": "저2·고7·청소년17·청년19",
+    "sep_oct": "초등51·청소년406·청년162"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "1934 표기 Đức Giê-hô-va가 159회로 대부분. Đức을 뺀 단독 Giê-hô-va 5회만 맞추면 됨.",
+  "example_vi": "Hãy nói lại câu “Sự cứu đến từ Đức Giê-hô-va!” bằng lời của em thành một câu cầu nguyện.",
+  "example_ref": "11/4 고학년",
+  "ko_count": 170
+ },
+ {
+  "id": "t09",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "구주(救主)",
+  "vi": "Cứu Chúa",
+  "alts": [
+   {
+    "vi": "Cứu Chúa",
+    "count": 8,
+    "ages": "저1·고3·청소년1·청년3",
+    "sep_oct": "초등3·청소년1"
+   },
+   {
+    "vi": "Đấng Cứu thế",
+    "count": 19,
+    "ages": "저2·고6·청소년5·청년6",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Đấng Cứu Rỗi",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등1·청년1"
+   },
+   {
+    "vi": "Đấng cứu (기타)",
+    "count": 2,
+    "ages": "청년2",
+    "sep_oct": "초등1"
+   }
+  ],
+  "status": "검토",
+  "note": "용어집 확정어는 Cứu Chúa(8회). 하지만 12/9 눅 2:11 본문(1934)이 “Đấng Cứu thế”여서 해설·질문·따라 쓰기 19회가 이를 따름. 본문과 맞춘 예외를 둘지 정해야 함.",
+  "example_vi": "Chủ thể là “Đức Chúa Trời, là Cứu Chúa chúng ta”; thời điểm là khi lòng nhân từ và tình thương yêu của Ngài được bày ra.",
+  "example_ref": "12/4 청년",
+  "ko_count": 28
+ },
+ {
+  "id": "t10",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "임마누엘",
+  "vi": "Em-ma-nu-ên",
+  "alts": [
+   {
+    "vi": "Em-ma-nu-ên",
+    "count": 38,
+    "ages": "저11·고8·청소년10·청년9",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 표기로 38회 모두 일치.",
+  "example_vi": "Ngài đã sai Đức Chúa Jêsus, Đấng Em-ma-nu-ên; xin giúp con tin rằng hôm nay Ngài cũng ở cùng con.",
+  "example_ref": "12/23 청소년",
+  "ko_count": 39
+ },
+ {
+  "id": "t11",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "아기 예수",
+  "vi": "Hài Nhi Jêsus",
+  "alts": [
+   {
+    "vi": "Hài Nhi Jêsus",
+    "count": 9,
+    "ages": "저2·고3·청소년4",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Chúa Hài Đồng (Jêsus)",
+    "count": 9,
+    "ages": "저6·고2·청소년1",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "con trẻ",
+    "count": 6,
+    "ages": "고2·청소년3·청년1",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "em bé Jêsus",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등3"
+   },
+   {
+    "vi": "Đức Chúa Jêsus",
+    "count": 12,
+    "ages": "저6·고2·청소년4",
+    "sep_oct": "초등305·청소년132·청년81"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "Hài Nhi Jêsus 9회, Chúa Hài Đồng 9회, con trẻ 6회가 섞이고, 그냥 Đức Chúa Jêsus로 쓴 곳도 12회 있음. ‘아기 예수’는 Hài Nhi Jêsus로 통일하고, 성경 인용의 con trẻ는 그대로 둠.",
+  "example_vi": "Hài Nhi Jêsus đến như lời hứa của Đức Chúa Trời, Đấng nhắc người thấp hèn lên.",
+  "example_ref": "12/22 고학년",
+  "ko_count": 22
+ },
+ {
+  "id": "t12",
+  "group": "하나님·예수님·성령 호칭",
+  "ko": "하나님 지칭 대명사(그분)",
+  "vi": "Ngài",
+  "alts": [
+   {
+    "vi": "Ngài",
+    "count": 945,
+    "ages": "저177·고287·청소년250·청년231",
+    "sep_oct": "초등219·청소년105·청년88"
+   },
+   {
+    "vi": "Người",
+    "count": 2,
+    "ages": "저1·청년1",
+    "sep_oct": "청소년2·청년7"
+   }
+  ],
+  "status": "확정",
+  "note": "대문자 Ngài가 945회로 일관됨. 소문자 ngài는 0회. Người(2회)는 Ngài로 바꿈.",
+  "example_vi": "- B Đức Chúa Trời làm trọn việc Ngài đã khởi",
+  "example_ref": "11/3 고학년",
+  "ko_count": null
+ },
+ {
+  "id": "t13",
+  "group": "신앙 용어",
+  "ko": "감사(전체)",
+  "vi": "tạ ơn (하나님께) · cảm ơn (저학년·일상) · biết ơn (마음·사람 사이)",
+  "alts": [
+   {
+    "vi": "tạ ơn",
+    "count": 111,
+    "ages": "저12·고29·청소년26·청년44",
+    "sep_oct": "청소년61·청년61"
+   },
+   {
+    "vi": "cảm tạ",
+    "count": 303,
+    "ages": "저32·고100·청소년83·청년88",
+    "sep_oct": "초등6·청소년6·청년8"
+   },
+   {
+    "vi": "cảm ơn",
+    "count": 294,
+    "ages": "저155·고86·청소년47·청년6",
+    "sep_oct": "초등65·청소년62·청년1"
+   },
+   {
+    "vi": "biết ơn",
+    "count": 204,
+    "ages": "저16·고20·청소년66·청년102",
+    "sep_oct": "초등11·청소년3"
+   }
+  ],
+  "status": "검토",
+  "note": "가장 큰 혼용: cảm tạ 303 / cảm ơn 294 / biết ơn 204 / tạ ơn 111. 책 제목·표지·지침은 tạ ơn을 쓰는데 원고는 cảm tạ가 가장 많음. 하나님께 드리는 감사를 tạ ơn으로 모을지, cảm tạ도 허용할지 정해야 함.",
+  "example_vi": "Vì vậy người đang than thở cũng không bị đẩy ra khỏi cộng đồng tạ ơn ở câu 4. 3.",
+  "example_ref": "11/1 청년",
+  "ko_count": 937
+ },
+ {
+  "id": "t14",
+  "group": "신앙 용어",
+  "ko": "감사(기도문 안)",
+  "vi": "저·고 cảm ơn Chúa / 청소년·청년 tạ ơn Chúa",
+  "alts": [
+   {
+    "vi": "tạ ơn",
+    "count": 20,
+    "ages": "고4·청소년4·청년12",
+    "sep_oct": "청소년61·청년61"
+   },
+   {
+    "vi": "cảm tạ",
+    "count": 61,
+    "ages": "저3·고18·청소년22·청년18",
+    "sep_oct": "초등2"
+   },
+   {
+    "vi": "cảm ơn",
+    "count": 150,
+    "ages": "저69·고48·청소년28·청년5",
+    "sep_oct": "초등59"
+   },
+   {
+    "vi": "biết ơn",
+    "count": 25,
+    "ages": "저3·고2·청소년5·청년15",
+    "sep_oct": "초등2"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "기도문 안에서 고학년은 cảm ơn 48·cảm tạ 18, 청소년은 cảm ơn 28·cảm tạ 22·tạ ơn 4, 청년은 cảm tạ 18·biết ơn 15·tạ ơn 12로 섞여 있음. 연령대별로 하나씩 정함.",
+  "example_vi": "Khi lo lắng, xin giúp con đừng ôm một mình, nhưng nhớ lại ân điển đã nhận và cầu nguyện với lòng tạ ơn.",
+  "example_ref": "11/12 고학년",
+  "ko_count": 248
+ },
+ {
+  "id": "t15",
+  "group": "신앙 용어",
+  "ko": "감사 기도 / 감사 찬양",
+  "vi": "cầu nguyện tạ ơn / lời tạ ơn",
+  "alts": [
+   {
+    "vi": "cầu nguyện tạ ơn",
+    "count": 13,
+    "ages": "저2·고8·청소년1·청년2",
+    "sep_oct": "청소년61·청년61"
+   },
+   {
+    "vi": "cầu nguyện cảm tạ",
+    "count": 15,
+    "ages": "저1·고11·청년3",
+    "sep_oct": "초등2·청년2"
+   },
+   {
+    "vi": "cầu nguyện cảm ơn",
+    "count": 5,
+    "ages": "저4·고1",
+    "sep_oct": "초등2·청소년1·청년1"
+   },
+   {
+    "vi": "bài hát cảm tạ/tạ ơn",
+    "count": 4,
+    "ages": "저1·고1·청소년1·청년1",
+    "sep_oct": "초등1·청년1"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "‘감사 기도’가 cầu nguyện tạ ơn 13, cảm tạ 15, cảm ơn 5로 갈림. 9–10월판 청소년·청년 고정 문구도 ‘lời tạ ơn’.",
+  "example_vi": "Đọc câu 42, rồi chọn lý do Đức Chúa Jêsus cầu nguyện tạ ơn thành tiếng.",
+  "example_ref": "11/8 고학년",
+  "ko_count": 35
+ },
+ {
+  "id": "t16",
+  "group": "신앙 용어",
+  "ko": "은혜",
+  "vi": "ân điển",
+  "alts": [
+   {
+    "vi": "ân điển",
+    "count": 102,
+    "ages": "저2·고21·청소년25·청년54",
+    "sep_oct": "초등25·청소년55·청년53"
+   },
+   {
+    "vi": "ơn / làm ơn",
+    "count": 19,
+    "ages": "저1·고2·청소년5·청년11",
+    "sep_oct": "청소년1"
+   },
+   {
+    "vi": "ân huệ",
+    "count": 11,
+    "ages": "고3·청소년2·청년6",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "thương xót",
+    "count": 25,
+    "ages": "저1·고7·청소년7·청년10",
+    "sep_oct": "초등2·청소년4·청년6"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집 ân điển(102회)이 대부분이지만 ân huệ 11회가 섞여 있음. 저학년은 쉬운 말 ‘ơn Chúa’를 써도 됨. 자비(thương xót)와는 다른 말임.",
+  "example_vi": "Lạy Chúa của ân điển, con ngợi khen Chúa vì đã thấy những người đứng đằng xa kêu cầu và làm cho họ được sạch.",
+  "example_ref": "11/7 청년",
+  "ko_count": 213
+ },
+ {
+  "id": "t17",
+  "group": "신앙 용어",
+  "ko": "구원",
+  "vi": "sự cứu rỗi (명사) · cứu (동사)",
+  "alts": [
+   {
+    "vi": "sự cứu rỗi / cứu rỗi",
+    "count": 57,
+    "ages": "저5·고6·청소년11·청년35",
+    "sep_oct": "초등24·청소년28·청년23"
+   },
+   {
+    "vi": "sự cứu (rỗi 생략)",
+    "count": 39,
+    "ages": "저4·고10·청소년10·청년15",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "cứu (동사)",
+    "count": 114,
+    "ages": "저32·고31·청소년23·청년28",
+    "sep_oct": "초등30·청소년26·청년23"
+   },
+   {
+    "vi": "giải cứu",
+    "count": 8,
+    "ages": "고1·청소년2·청년5",
+    "sep_oct": "초등1·청소년3·청년2"
+   },
+   {
+    "vi": "cứu giúp",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "청소년2·청년2"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집은 sự cứu rỗi. 그런데 rỗi를 뺀 명사 ‘sự cứu’가 39회 나옴. 명사는 sự cứu rỗi로, ‘구원하다’는 cứu로 씀.",
+  "example_vi": "Chúa là sự cứu rỗi, sức mạnh và bài ca của con.",
+  "example_ref": "11/22 고학년",
+  "ko_count": 200
+ },
+ {
+  "id": "t18",
+  "group": "신앙 용어",
+  "ko": "회개",
+  "vi": "ăn năn",
+  "alts": [
+   {
+    "vi": "ăn năn",
+    "count": 30,
+    "ages": "저4·고9·청소년7·청년10",
+    "sep_oct": "청소년8·청년8"
+   },
+   {
+    "vi": "quay lại/trở lại (풀어씀)",
+    "count": 12,
+    "ages": "저5·고3·청소년4",
+    "sep_oct": "초등4·청소년21·청년19"
+   }
+  ],
+  "status": "확정",
+  "note": "용어집과 일치(30회). 저학년에서 ‘돌아오다’로 풀어 쓴 곳은 원문이 그렇게 풀었으면 그대로 둠.",
+  "example_vi": "- ① “Các ngươi hãy ăn năn, vì nước thiên đàng đã đến gần”",
+  "example_ref": "12/11 청소년",
+  "ko_count": 36
+ },
+ {
+  "id": "t19",
+  "group": "신앙 용어",
+  "ko": "죄",
+  "vi": "tội lỗi (명사) · tội (결합형)",
+  "alts": [
+   {
+    "vi": "tội lỗi",
+    "count": 17,
+    "ages": "저2·고2·청소년5·청년8",
+    "sep_oct": "초등29·청소년35·청년26"
+   },
+   {
+    "vi": "tội (단독)",
+    "count": 69,
+    "ages": "저8·고21·청소년17·청년23",
+    "sep_oct": "초등34·청소년33·청년30"
+   }
+  ],
+  "status": "검토",
+  "note": "용어집은 tội lỗi인데 원고는 단독 tội가 69회, tội lỗi가 17회. phạm tội·tha tội·tội nhân 같은 결합형은 tội가 자연스러움. 단독 명사를 tội lỗi로 맞출지 정해야 함.",
+  "example_vi": "**lòng nhân từ**: lòng thương và yêu cả người đã làm sai / **cứu**: kéo ra khỏi tội lỗi và khốn khó",
+  "example_ref": "12/4 저학년",
+  "ko_count": 92
+ },
+ {
+  "id": "t20",
+  "group": "신앙 용어",
+  "ko": "예배",
+  "vi": "thờ phượng",
+  "alts": [
+   {
+    "vi": "thờ phượng",
+    "count": 90,
+    "ages": "저24·고20·청소년20·청년26",
+    "sep_oct": "초등3·청소년12·청년11"
+   },
+   {
+    "vi": "buổi nhóm / nhóm lại",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "초등1·청소년4·청년4"
+   }
+  ],
+  "status": "확정",
+  "note": "지침과 일치하고 90회로 일관됨.",
+  "example_vi": "- □ Trước giờ thờ phượng, nhớ lại một điều đáng cảm ơn",
+  "example_ref": "11/11 고학년",
+  "ko_count": 91
+ },
+ {
+  "id": "t21",
+  "group": "신앙 용어",
+  "ko": "찬양",
+  "vi": "ngợi khen",
+  "alts": [
+   {
+    "vi": "ngợi khen",
+    "count": 178,
+    "ages": "저47·고44·청소년52·청년35",
+    "sep_oct": "초등6·청소년4·청년2"
+   },
+   {
+    "vi": "ca ngợi",
+    "count": 4,
+    "ages": "청소년3·청년1",
+    "sep_oct": "초등12·청소년7·청년7"
+   },
+   {
+    "vi": "tôn vinh",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "초등3·청소년1·청년3"
+   },
+   {
+    "vi": "hát (풀어씀)",
+    "count": 65,
+    "ages": "저17·고14·청소년25·청년9",
+    "sep_oct": "초등6·청소년7·청년4"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 용어 ngợi khen으로 178회 일관됨. 9–10월판은 ca ngợi가 조금 더 많았음(26:12). 새 책은 ngợi khen을 유지.",
+  "example_vi": "Lạy Đức Chúa Trời, con ngợi khen Chúa vì đã cứu Giô-na từ đáy sâu nơi ông không thể tự lên được.",
+  "example_ref": "11/4 청소년",
+  "ko_count": 177
+ },
+ {
+  "id": "t22",
+  "group": "신앙 용어",
+  "ko": "기도(하다)",
+  "vi": "cầu nguyện",
+  "alts": [
+   {
+    "vi": "cầu nguyện",
+    "count": 305,
+    "ages": "저69·고92·청소년69·청년75",
+    "sep_oct": "초등84·청소년39·청년31"
+   },
+   {
+    "vi": "lời cầu xin",
+    "count": 13,
+    "ages": "저4·고2·청소년4·청년3",
+    "sep_oct": "초등6·청소년17·청년23"
+   }
+  ],
+  "status": "확정",
+  "note": "305회로 일관됨.",
+  "example_vi": "Khi nhìn bạn bằng ánh mắt đó, em có thể cảm tạ và cầu nguyện cho bạn.",
+  "example_ref": "11/3 고학년",
+  "ko_count": 374
+ },
+ {
+  "id": "t23",
+  "group": "신앙 용어",
+  "ko": "복음",
+  "vi": "Tin Lành",
+  "alts": [
+   {
+    "vi": "Tin Lành",
+    "count": 63,
+    "ages": "저3·고16·청소년18·청년26",
+    "sep_oct": "초등36·청소년56·청년46"
+   },
+   {
+    "vi": "tin lành (소문자)",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "청년1"
+   },
+   {
+    "vi": "phúc âm",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등5·청소년5"
+   },
+   {
+    "vi": "tin mừng",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "청소년3"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집·지침의 Tin Lành이 64회. 청년의 phúc âm 2회만 바꾸면 됨.",
+  "example_vi": "Khi viết thư này, Phao-lô đang bị giam vì Tin Lành (1:8).",
+  "example_ref": "11/20 고학년",
+  "ko_count": 61
+ },
+ {
+  "id": "t24",
+  "group": "신앙 용어",
+  "ko": "교회",
+  "vi": "Hội Thánh",
+  "alts": [
+   {
+    "vi": "Hội Thánh",
+    "count": 97,
+    "ages": "저19·고27·청소년26·청년25",
+    "sep_oct": "초등37·청소년40·청년30"
+   },
+   {
+    "vi": "nhà thờ",
+    "count": 5,
+    "ages": "저1·청소년3·청년1",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "용어집과 일치(97회). nhà thờ 5회는 ‘교회에 간다’(건물·주일 출석)는 뜻이라 허용.",
+  "example_vi": "ở câu 5 nghĩa là Hội Thánh Phi-líp đã cùng Phao-lô làm việc cho Tin Lành từ đầu.",
+  "example_ref": "11/3 청소년",
+  "ko_count": 107
+ },
+ {
+  "id": "t25",
+  "group": "신앙 용어",
+  "ko": "믿음",
+  "vi": "đức tin",
+  "alts": [
+   {
+    "vi": "đức tin",
+    "count": 130,
+    "ages": "저14·고33·청소년44·청년39",
+    "sep_oct": "초등31·청소년45·청년53"
+   },
+   {
+    "vi": "lòng tin",
+    "count": 8,
+    "ages": "저1·고1·청소년3·청년3",
+    "sep_oct": "초등3·청년1"
+   },
+   {
+    "vi": "niềm tin",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "청소년1·청년2"
+   },
+   {
+    "vi": "tin cậy",
+    "count": 5,
+    "ages": "저1·고1·청년3",
+    "sep_oct": "초등35·청소년22·청년15"
+   }
+  ],
+  "status": "확정",
+  "note": "130회로 일관됨. lòng tin은 저학년의 쉬운 풀이로 허용.",
+  "example_vi": "Đó là cách bày tỏ đức tin, bắt đầu từ việc biết Đức Chúa Trời không thay đổi là ai.",
+  "example_ref": "11/9 청소년",
+  "ko_count": 136
+ },
+ {
+  "id": "t26",
+  "group": "신앙 용어",
+  "ko": "소망",
+  "vi": "sự trông cậy",
+  "alts": [
+   {
+    "vi": "sự trông cậy / trông cậy",
+    "count": 29,
+    "ages": "저3·고8·청소년7·청년11",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "hy vọng",
+    "count": 13,
+    "ages": "청소년4·청년9",
+    "sep_oct": "초등2·청소년9·청년9"
+   },
+   {
+    "vi": "trông mong",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "청소년1"
+   },
+   {
+    "vi": "niềm mong đợi",
+    "count": 1,
+    "ages": "청소년1",
+    "sep_oct": "초등1·청소년3·청년2"
+   }
+  ],
+  "status": "검토",
+  "note": "1934식 sự trông cậy 29회, hy vọng 13회(청소년·청년). 9–10월판은 hy vọng만 썼음. 신앙 용어로 쓰는 ‘소망’을 하나로 정해야 함.",
+  "example_vi": "- ② Có buồn, nhưng buồn với sự trông cậy được sống lại và ở cùng Chúa.",
+  "example_ref": "12/18 고학년",
+  "ko_count": 51
+ },
+ {
+  "id": "t27",
+  "group": "신앙 용어",
+  "ko": "사랑",
+  "vi": "tình yêu thương (명사) · yêu (동사)",
+  "alts": [
+   {
+    "vi": "yêu thương",
+    "count": 36,
+    "ages": "저15·고11·청소년5·청년5",
+    "sep_oct": "초등28·청소년46·청년29"
+   },
+   {
+    "vi": "tình yêu",
+    "count": 91,
+    "ages": "저24·고18·청소년28·청년21",
+    "sep_oct": "초등66·청소년36·청년31"
+   },
+   {
+    "vi": "yêu (단독 동사)",
+    "count": 131,
+    "ages": "저32·고28·청소년38·청년33",
+    "sep_oct": "초등91·청소년42·청년39"
+   },
+   {
+    "vi": "yêu mến",
+    "count": 5,
+    "ages": "저2·청소년1·청년2",
+    "sep_oct": "초등4·청소년5·청년3"
+   }
+  ],
+  "status": "확정",
+  "note": "명사 tình yêu·yêu thương과 동사 yêu로 자연스럽게 나뉘어 있음. 따로 통일할 필요 없음.",
+  "example_vi": "Phao-lô gọi họ là những người Đức Chúa Trời đã chọn, làm cho thánh và yêu thương.",
+  "example_ref": "11/13 청년",
+  "ko_count": 182
+ },
+ {
+  "id": "t28",
+  "group": "신앙 용어",
+  "ko": "순종",
+  "vi": "vâng lời",
+  "alts": [
+   {
+    "vi": "vâng lời",
+    "count": 15,
+    "ages": "고5·청소년5·청년5",
+    "sep_oct": "초등6·청소년11·청년20"
+   },
+   {
+    "vi": "vâng phục",
+    "count": 10,
+    "ages": "고2·청소년3·청년5",
+    "sep_oct": "초등2·청소년2·청년6"
+   },
+   {
+    "vi": "vâng theo",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등4·청소년5·청년2"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "vâng lời 15회, vâng phục 10회. 어린이까지 쓰기 쉬운 vâng lời로 맞춤(성경 인용은 그대로).",
+  "example_vi": "Như Giô-sép, khi nghe lời Ngài, xin giúp con vui vẻ vâng lời.",
+  "example_ref": "12/25 고학년",
+  "ko_count": 28
+ },
+ {
+  "id": "t29",
+  "group": "신앙 용어",
+  "ko": "제사",
+  "vi": "tế lễ",
+  "alts": [
+   {
+    "vi": "tế lễ",
+    "count": 38,
+    "ages": "저6·고12·청소년13·청년7",
+    "sep_oct": "초등3·청소년7·청년7"
+   },
+   {
+    "vi": "của lễ",
+    "count": 33,
+    "ages": "저4·고6·청소년8·청년15",
+    "sep_oct": "청소년3·청년3"
+   },
+   {
+    "vi": "lễ vật",
+    "count": 6,
+    "ages": "저1·고2·청소년3",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "dâng (풀어씀)",
+    "count": 30,
+    "ages": "저4·고6·청소년8·청년12",
+    "sep_oct": "초등9·청소년20·청년20"
+   }
+  ],
+  "status": "검토",
+  "note": "tế lễ 38회, của lễ 33회. 1934는 ‘드리는 제사’는 tế lễ, ‘바치는 제물’은 của lễ로 구분함. 이 구분을 규칙으로 할지 정해야 함.",
+  "example_vi": "A-bên ở câu 4 đã dâng một tế lễ tốt hơn, và Đức Chúa Trời nhậm lễ vật ấy.",
+  "example_ref": "11/10 고학년",
+  "ko_count": 55
+ },
+ {
+  "id": "t30",
+  "group": "신앙 용어",
+  "ko": "예물 / 제물",
+  "vi": "của lễ",
+  "alts": [
+   {
+    "vi": "lễ vật",
+    "count": 18,
+    "ages": "저5·고7·청소년6",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "của lễ",
+    "count": 55,
+    "ages": "저9·고13·청소년15·청년18",
+    "sep_oct": "청소년3·청년3"
+   },
+   {
+    "vi": "tế lễ",
+    "count": 12,
+    "ages": "고5·청소년3·청년4",
+    "sep_oct": "초등3·청소년7·청년7"
+   },
+   {
+    "vi": "món quà",
+    "count": 4,
+    "ages": "저3·고1",
+    "sep_oct": "초등16·청소년11·청년11"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "của lễ 55회, lễ vật 18회(저·고·청소년). 1934의 của lễ로 맞추되, 저학년 어휘 풀이에서 lễ vật을 표제어로 쓴 곳은 본문 철자를 따름.",
+  "example_vi": "A-bên dâng tế lễ tốt hơn và Đức Chúa Trời nhậm lễ vật ấy, nhưng ông đã chết.",
+  "example_ref": "11/10 청소년",
+  "ko_count": 59
+ },
+ {
+  "id": "t31",
+  "group": "신앙 용어",
+  "ko": "언약",
+  "vi": "giao ước",
+  "alts": [
+   {
+    "vi": "giao ước",
+    "count": 58,
+    "ages": "저4·고5·청소년12·청년37",
+    "sep_oct": "청소년6·청년6"
+   },
+   {
+    "vi": "lời hứa",
+    "count": 16,
+    "ages": "고3·청소년5·청년8",
+    "sep_oct": "초등8·청소년33·청년11"
+   }
+  ],
+  "status": "확정",
+  "note": "58회 모두 giao ước로 일관됨.",
+  "example_vi": "**trong ngày đó**: ngày hòm giao ước được rước về Giê-ru-sa-lem.",
+  "example_ref": "11/15 청년",
+  "ko_count": 57
+ },
+ {
+  "id": "t32",
+  "group": "신앙 용어",
+  "ko": "약속",
+  "vi": "lời hứa",
+  "alts": [
+   {
+    "vi": "lời hứa",
+    "count": 228,
+    "ages": "저27·고58·청소년64·청년79",
+    "sep_oct": "초등8·청소년33·청년11"
+   },
+   {
+    "vi": "hứa (동사)",
+    "count": 108,
+    "ages": "저22·고24·청소년27·청년35",
+    "sep_oct": "초등14·청소년10·청년10"
+   },
+   {
+    "vi": "giao ước",
+    "count": 20,
+    "ages": "고3·청소년7·청년10",
+    "sep_oct": "청소년6·청년6"
+   }
+  ],
+  "status": "확정",
+  "note": "lời hứa 228회, 동사는 hứa. 일관됨.",
+  "example_vi": "Hãy nối lời khuyên với lời hứa hoặc lý do đi theo sau.",
+  "example_ref": "11/12 청년",
+  "ko_count": 328
+ },
+ {
+  "id": "t33",
+  "group": "신앙 용어",
+  "ko": "성전",
+  "vi": "đền thờ",
+  "alts": [
+   {
+    "vi": "đền thờ",
+    "count": 65,
+    "ages": "저13·고19·청소년11·청년22",
+    "sep_oct": "초등6·청소년13·청년9"
+   },
+   {
+    "vi": "nhà Đức Chúa Trời",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등1·청소년2·청년2"
+   }
+  ],
+  "status": "확정",
+  "note": "65회 모두 일관됨.",
+  "example_vi": "Khi nền đền thờ được đặt, dân sự đã làm gì?",
+  "example_ref": "11/26 저학년",
+  "ko_count": 67
+ },
+ {
+  "id": "t34",
+  "group": "신앙 용어",
+  "ko": "선지자",
+  "vi": "đấng tiên tri",
+  "alts": [
+   {
+    "vi": "đấng tiên tri",
+    "count": 9,
+    "ages": "고4·청소년2·청년3",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "tiên tri (단독)",
+    "count": 10,
+    "ages": "저1·고1·청소년3·청년5",
+    "sep_oct": "초등6·청소년11·청년13"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "1934의 đấng tiên tri 9회, 단독 tiên tri 10회가 섞임. 사람을 가리킬 때는 đấng tiên tri로 맞춤.",
+  "example_vi": "- ① Tôi tớ Chúa là các đấng tiên tri",
+  "example_ref": "11/29 고학년",
+  "ko_count": 18
+ },
+ {
+  "id": "t35",
+  "group": "신앙 용어",
+  "ko": "제자",
+  "vi": "môn đồ",
+  "alts": [
+   {
+    "vi": "môn đồ",
+    "count": 103,
+    "ages": "저19·고25·청소년28·청년31",
+    "sep_oct": "초등19·청소년21·청년23"
+   }
+  ],
+  "status": "확정",
+  "note": "103회로 일관됨.",
+  "example_vi": "Hai môn đồ trên đường đến Em-ma-út cũng gặp điều tương tự.",
+  "example_ref": "11/6 청소년",
+  "ko_count": 111
+ },
+ {
+  "id": "t36",
+  "group": "신앙 용어",
+  "ko": "주일",
+  "vi": "Chúa nhật",
+  "alts": [
+   {
+    "vi": "Chúa nhật",
+    "count": 15,
+    "ages": "저2·고8·청소년2·청년3",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "ngày Chúa nhật",
+    "count": 1,
+    "ages": "고1",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "지침·조판 요일표와 일치. Chủ nhật는 0회.",
+  "example_vi": "Lời nói hay việc làm em viết ở câu hỏi 3, hãy thật sự làm ở Hội Thánh hoặc ở nhà vào Chúa nhật ngày mai.",
+  "example_ref": "11/14 고학년",
+  "ko_count": 16
+ },
+ {
+  "id": "t37",
+  "group": "신앙 용어",
+  "ko": "성탄절 / 성탄",
+  "vi": "Lễ Giáng Sinh",
+  "alts": [
+   {
+    "vi": "Lễ Giáng Sinh",
+    "count": 14,
+    "ages": "저8·고4·청소년1·청년1",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Giáng Sinh (단독)",
+    "count": 54,
+    "ages": "저6·고11·청소년15·청년22",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "giáng sinh (소문자·동사)",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "‘성탄절’은 Lễ Giáng Sinh, ‘성탄’·‘성탄 주간’은 Giáng Sinh으로 자연스럽게 나뉨. 소문자 giáng sinh 1회는 동사(오심)일 때만 허용.",
+  "example_vi": "Hãy làm việc em đã chọn ở câu hỏi 3 trước Lễ Giáng Sinh.",
+  "example_ref": "12/22 고학년",
+  "ko_count": 67
+ },
+ {
+  "id": "t38",
+  "group": "신앙 용어",
+  "ko": "십자가",
+  "vi": "thập tự giá",
+  "alts": [
+   {
+    "vi": "thập tự giá",
+    "count": 9,
+    "ages": "저2·고1·청소년3·청년3",
+    "sep_oct": "초등51·청소년52·청년28"
+   },
+   {
+    "vi": "thập tự (단독)",
+    "count": 8,
+    "ages": "저2·고3·청소년3",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집 thập tự giá 9회, giá를 뺀 thập tự 8회가 섞여 있음.",
+  "example_vi": "Họ buồn vì Đức Chúa Jêsus đã chết trên thập tự giá, và chưa biết Ngài đã sống lại.",
+  "example_ref": "11/6 고학년",
+  "ko_count": 17
+ },
+ {
+  "id": "t39",
+  "group": "신앙 용어",
+  "ko": "부활",
+  "vi": "sự sống lại",
+  "alts": [
+   {
+    "vi": "sống lại",
+    "count": 50,
+    "ages": "저2·고5·청소년19·청년24",
+    "sep_oct": "초등41·청소년36·청년19"
+   },
+   {
+    "vi": "phục sinh",
+    "count": 3,
+    "ages": "청년3",
+    "sep_oct": "초등5·청소년13·청년12"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집 sống lại가 50회. 청년의 phục sinh 3회만 바꾸면 됨.",
+  "example_vi": "Đức Chúa Jêsus sống lại đi cùng họ, nhưng họ không nhận ra.",
+  "example_ref": "11/6 청년",
+  "ko_count": 40
+ },
+ {
+  "id": "t40",
+  "group": "신앙 용어",
+  "ko": "(하나님) 말씀",
+  "vi": "Lời Chúa / Lời Đức Chúa Trời (대문자 L)",
+  "alts": [
+   {
+    "vi": "Lời Chúa",
+    "count": 11,
+    "ages": "저6·고3·청소년2",
+    "sep_oct": "초등20·청소년182·청년125"
+   },
+   {
+    "vi": "lời Chúa (소문자)",
+    "count": 23,
+    "ages": "저2·고4·청소년8·청년9",
+    "sep_oct": "청소년122"
+   },
+   {
+    "vi": "Lời Đức Chúa Trời",
+    "count": 1,
+    "ages": "청소년1",
+    "sep_oct": "초등13·청소년8·청년6"
+   },
+   {
+    "vi": "lời Đức Chúa Trời (소문자)",
+    "count": 24,
+    "ages": "저6·고6·청소년3·청년9",
+    "sep_oct": "초등2"
+   },
+   {
+    "vi": "lời phán",
+    "count": 75,
+    "ages": "저15·고15·청소년23·청년22",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "대소문자가 섞여 있음: Lời Chúa 11 / lời Chúa 23, Lời Đức Chúa Trời 1 / lời ĐCT 24. 조판 고정 문구(Lời Chúa hôm nay)와 같이 대문자로 맞춤. ‘~라고 말씀하셨다’는 phán으로 씀.",
+  "example_vi": "Hãy nói với em rằng người cùng em đọc Lời Chúa hôm nay cũng là người giúp em biết Đức Chúa Trời. 3.",
+  "example_ref": "11/20 저학년",
+  "ko_count": 253
+ },
+ {
+  "id": "t41",
+  "group": "신앙 용어",
+  "ko": "성경",
+  "vi": "Kinh Thánh",
+  "alts": [
+   {
+    "vi": "Kinh Thánh",
+    "count": 212,
+    "ages": "저13·고9·청소년114·청년76",
+    "sep_oct": "초등31·청소년8·청년14"
+   },
+   {
+    "vi": "Lời Chúa",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등20·청소년182·청년125"
+   }
+  ],
+  "status": "확정",
+  "note": "212회로 일관됨.",
+  "example_vi": "Tuần này hãy kể cho gia đình nghe một câu chuyện trong Kinh Thánh.",
+  "example_ref": "11/6 고학년",
+  "ko_count": 213
+ },
+ {
+  "id": "t42",
+  "group": "신앙 용어",
+  "ko": "복",
+  "vi": "phước",
+  "alts": [
+   {
+    "vi": "phước",
+    "count": 16,
+    "ages": "고5·청소년6·청년5",
+    "sep_oct": "초등5·청소년10·청년7"
+   },
+   {
+    "vi": "phúc",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등5·청소년6·청년1"
+   }
+  ],
+  "status": "확정",
+  "note": "phước 16회로 일관됨. 9–10월판에 있던 phúc은 0회.",
+  "example_vi": "Kinh Thánh nói phước của Đức Chúa Trời không chỉ cho Y-sơ-ra-ên mà đến cho các nước.",
+  "example_ref": "12/21 청소년",
+  "ko_count": 23
+ },
+ {
+  "id": "t43",
+  "group": "신앙 용어",
+  "ko": "천국 / 하나님 나라",
+  "vi": "천국 nước thiên đàng · 하나님 나라 nước Đức Chúa Trời",
+  "alts": [
+   {
+    "vi": "nước thiên đàng",
+    "count": 16,
+    "ages": "저2·고3·청소년6·청년5",
+    "sep_oct": "청소년2·청년2"
+   },
+   {
+    "vi": "thiên đàng (단독)",
+    "count": 4,
+    "ages": "고1·청소년3",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "nước Đức Chúa Trời",
+    "count": 6,
+    "ages": "고1·청소년2·청년3",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Vương quốc",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등4"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "nước thiên đàng 16회, 단독 thiên đàng 4회, nước Đức Chúa Trời 6회. 원문의 구분대로 나누어 씀.",
+  "example_vi": "- ( ) Đức Chúa Jêsus bắt đầu giảng: “Các ngươi hãy ăn năn, vì nước thiên đàng đã đến gần.”",
+  "example_ref": "12/11 고학년",
+  "ko_count": 28
+ },
+ {
+  "id": "t44",
+  "group": "신앙 용어",
+  "ko": "영광",
+  "vi": "vinh hiển",
+  "alts": [
+   {
+    "vi": "vinh hiển",
+    "count": 29,
+    "ages": "고9·청소년10·청년10",
+    "sep_oct": "초등12·청소년16·청년13"
+   },
+   {
+    "vi": "vinh quang",
+    "count": 2,
+    "ages": "청소년1·청년1",
+    "sep_oct": "청소년3"
+   },
+   {
+    "vi": "sáng danh",
+    "count": 2,
+    "ages": "저1·고1",
+    "sep_oct": "청소년5·청년5"
+   },
+   {
+    "vi": "tôn vinh",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등3·청소년1·청년3"
+   },
+   {
+    "vi": "ngợi khen / khen ngợi (영광을 돌리다)",
+    "count": 36,
+    "ages": "저5·고11·청소년9·청년11",
+    "sep_oct": "초등6·청소년4·청년3"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집 vinh hiển 29회. vinh quang 2회는 바꿈. ‘영광을 돌리다’를 ngợi khen으로 옮긴 것은 1934 눅 17:18과 같아서 허용.",
+  "example_vi": "Lúc ấy thiên binh hát: vinh hiển cho Đức Chúa Trời, bình an dưới đất, ân trạch cho loài người (câu 14).",
+  "example_ref": "12/9 청소년",
+  "ko_count": 59
+ },
+ {
+  "id": "t45",
+  "group": "신앙 용어",
+  "ko": "재림 / 다시 오심",
+  "vi": "trở lại (어린이) · sự tái lâm (청년)",
+  "alts": [
+   {
+    "vi": "trở lại",
+    "count": 71,
+    "ages": "저21·고19·청소년16·청년15",
+    "sep_oct": "초등4·청소년3·청년11"
+   },
+   {
+    "vi": "tái lâm",
+    "count": 9,
+    "ages": "청소년1·청년8",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "đến lần nữa / lại đến",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "청소년1"
+   }
+  ],
+  "status": "확정",
+  "note": "어린이는 ‘다시 오심’을 trở lại로 쉽게, 청년은 tái lâm으로 씀. 연령별로 일부러 나눈 것이라 적절함.",
+  "example_vi": "Người chờ đợi Chúa trở lại là người hôm nay bước đi trên con đường ấy.",
+  "example_ref": "12/14 청년",
+  "ko_count": 77
+ },
+ {
+  "id": "t46",
+  "group": "신앙 용어",
+  "ko": "신실(하심)",
+  "vi": "thành tín",
+  "alts": [
+   {
+    "vi": "thành tín",
+    "count": 37,
+    "ages": "고3·청소년11·청년23",
+    "sep_oct": "초등3·청소년6·청년5"
+   },
+   {
+    "vi": "trung tín",
+    "count": 11,
+    "ages": "청소년4·청년7",
+    "sep_oct": "청소년2·청년4"
+   },
+   {
+    "vi": "giữ lời",
+    "count": 4,
+    "ages": "고1·청소년3",
+    "sep_oct": "초등5·청소년1·청년1"
+   }
+  ],
+  "status": "검토",
+  "note": "thành tín 37회, trung tín 11회. 1934는 하나님은 thành tín, 사람(충성된 종)은 trung tín으로 씀. 하나님께는 thành tín으로 할지 정해야 함.",
+  "example_vi": "Ở câu 19, đền thờ trên trời mở ra và hòm giao ước cho thấy Đức Chúa Trời thành tín với giao ước của Ngài.",
+  "example_ref": "11/29 청년",
+  "ko_count": 39
+ },
+ {
+  "id": "t47",
+  "group": "신앙 용어",
+  "ko": "성도",
+  "vi": "tín hữu",
+  "alts": [
+   {
+    "vi": "tín hữu",
+    "count": 20,
+    "ages": "고6·청소년8·청년6",
+    "sep_oct": "초등7·청소년12·청년9"
+   },
+   {
+    "vi": "thánh đồ",
+    "count": 7,
+    "ages": "청소년4·청년3",
+    "sep_oct": "초등1·청소년1·청년1"
+   },
+   {
+    "vi": "người tin",
+    "count": 2,
+    "ages": "고1·청년1",
+    "sep_oct": "초등17·청소년5·청년4"
+   }
+  ],
+  "status": "검토",
+  "note": "tín hữu 20회, 1934식 thánh đồ 7회(청소년·청년). 9–10월판은 tín hữu를 더 많이 썼음. 해설은 tín hữu, 성경 인용은 thánh đồ로 할지 정해야 함.",
+  "example_vi": "Bài Kinh Thánh là lời hứa cho các tín hữu tin Đức Chúa Jêsus mà qua đời.",
+  "example_ref": "12/18 고학년",
+  "ko_count": 35
+ },
+ {
+  "id": "t48",
+  "group": "신앙 용어",
+  "ko": "세례",
+  "vi": "phép báp-têm",
+  "alts": [
+   {
+    "vi": "phép báp-têm (하이픈)",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등4·청소년8·청년2"
+   },
+   {
+    "vi": "phép báp tem (하이픈 없음)",
+    "count": 10,
+    "ages": "저2·고2·청소년4·청년2",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "rửa tội",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등1"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "원고 10회가 모두 ‘báp tem’(하이픈·성조 없음)이고, 9–10월판은 ‘báp-têm’임. 표준 철자로 고침.",
+  "example_vi": "Rồi Ngài nói “Vậy” và giao sứ mạng: hãy đi dạy dỗ muôn dân, nhân danh Đức Cha, Đức Con và Đức Thánh Linh làm phép báp tem cho họ, và dạy họ giữ mọi điều Ngài đã truyền…",
+  "example_ref": "12/27 고학년",
+  "ko_count": 10
+ },
+ {
+  "id": "t49",
+  "group": "신앙 용어",
+  "ko": "분별(하다)",
+  "vi": "phân biện",
+  "alts": [
+   {
+    "vi": "phân biện",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등1·청소년12·청년12"
+   },
+   {
+    "vi": "phân biệt",
+    "count": 10,
+    "ages": "청소년2·청년8",
+    "sep_oct": "초등5·청소년3·청년5"
+   },
+   {
+    "vi": "nhận biết / nhận ra",
+    "count": 2,
+    "ages": "청년2",
+    "sep_oct": "초등5·청소년67·청년64"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "사용자가 확정한 용어(2026-08-25, 영적 분별 = phân biện)와 어긋남: 원고 10회가 모두 phân biệt. 9–10월판 청소년·청년은 phân biện을 씀. 일반적인 ‘구분’ 뜻의 phân biệt는 그대로 둠.",
+  "example_vi": "Khi công việc, sự ổn định và danh tiếng muốn chiếm chỗ của Chúa, xin ban cho con sự phân biệt và can đảm để bỏ đi.",
+  "example_ref": "12/1 청년",
+  "ko_count": 10
+ },
+ {
+  "id": "t50",
+  "group": "신앙 용어",
+  "ko": "섬기다",
+  "vi": "하나님께 phục sự/hầu việc · 사람에게 phục vụ",
+  "alts": [
+   {
+    "vi": "hầu việc",
+    "count": 33,
+    "ages": "저3·고8·청소년11·청년11",
+    "sep_oct": "초등1·청소년1"
+   },
+   {
+    "vi": "phục vụ",
+    "count": 26,
+    "ages": "저6·고5·청소년7·청년8",
+    "sep_oct": "초등24·청소년17·청년22"
+   },
+   {
+    "vi": "thờ (phượng)",
+    "count": 22,
+    "ages": "저1·고3·청소년10·청년8",
+    "sep_oct": "초등14·청소년29·청년26"
+   },
+   {
+    "vi": "phục sự",
+    "count": 32,
+    "ages": "저10·고9·청소년7·청년6",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "검토",
+  "note": "hầu việc 33, phục sự 32, phục vụ 26, thờ 22가 섞여 있음. 하나님을 섬기는 것과 사람을 섬기는 것을 나누는 규칙이 필요함(수 24장 1934는 phục sự).",
+  "example_vi": "- ( ) Dân sự nói: “chúng tôi cũng sẽ phục sự Đức Giê-hô-va”.",
+  "example_ref": "12/1 고학년",
+  "ko_count": 91
+ },
+ {
+  "id": "t51",
+  "group": "신앙 용어",
+  "ko": "은사",
+  "vi": "ân tứ",
+  "alts": [
+   {
+    "vi": "ân tứ",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등13·청소년33·청년34"
+   },
+   {
+    "vi": "ơn (của Đức Chúa Trời)",
+    "count": 13,
+    "ages": "고3·청소년5·청년5",
+    "sep_oct": "청소년1·청년4"
+   },
+   {
+    "vi": "món quà",
+    "count": 3,
+    "ages": "고1·청소년1·청년1",
+    "sep_oct": "초등16·청소년11·청년11"
+   },
+   {
+    "vi": "tài năng",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등11·청소년24·청년6"
+   }
+  ],
+  "status": "검토",
+  "note": "9–10월판은 ân tứ(80회)를 썼는데 이번 원고는 13회 모두 ‘ơn (của Đức Chúa Trời)’. 딤후 1:6 1934 본문 표현을 따른 것이라, 해설에서도 ân tứ로 쓸지 정해야 함.",
+  "example_vi": "Phao-lô bảo hãy nhen lại ơn của Đức Chúa Trời đã ban.",
+  "example_ref": "11/20 청소년",
+  "ko_count": 14
+ },
+ {
+  "id": "t52",
+  "group": "말투·인칭",
+  "ko": "저학년 독자 호칭 (본문·질문)",
+  "vi": "em",
+  "alts": [
+   {
+    "vi": "em",
+    "count": 644,
+    "ages": "저644",
+    "sep_oct": "초등245·청소년479"
+   },
+   {
+    "vi": "chúng ta",
+    "count": 133,
+    "ages": "저133",
+    "sep_oct": "초등171·청소년136·청년135"
+   },
+   {
+    "vi": "các em",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등12·청소년21"
+   },
+   {
+    "vi": "các bạn",
+    "count": 2,
+    "ages": "저2",
+    "sep_oct": "초등2·청소년2"
+   }
+  ],
+  "status": "확정",
+  "note": "지침대로 em이 644회. 여러분 = các em은 원문에 ‘여러분’이 1회뿐이라 해당 없음.",
+  "example_vi": "Câu hỏi 2: đánh dấu vào điều em muốn làm.",
+  "example_ref": "11/3 저학년",
+  "ko_count": null
+ },
+ {
+  "id": "t53",
+  "group": "말투·인칭",
+  "ko": "고학년 독자 호칭 (본문·질문)",
+  "vi": "em",
+  "alts": [
+   {
+    "vi": "em",
+    "count": 356,
+    "ages": "고356",
+    "sep_oct": "초등245·청소년479"
+   },
+   {
+    "vi": "chúng ta",
+    "count": 94,
+    "ages": "고94",
+    "sep_oct": "초등171·청소년136·청년135"
+   },
+   {
+    "vi": "các em",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등12·청소년21"
+   },
+   {
+    "vi": "các bạn",
+    "count": 1,
+    "ages": "고1",
+    "sep_oct": "초등2·청소년2"
+   }
+  ],
+  "status": "확정",
+  "note": "지침대로 em이 356회.",
+  "example_vi": "Câu hỏi 3: dùng câu em viết để bắt đầu cầu nguyện thành tiếng trong bữa tối nay.",
+  "example_ref": "11/8 고학년",
+  "ko_count": null
+ },
+ {
+  "id": "t54",
+  "group": "말투·인칭",
+  "ko": "청소년 독자 호칭 (본문·질문)",
+  "vi": "bạn · chúng ta",
+  "alts": [
+   {
+    "vi": "bạn (2인칭)",
+    "count": 190,
+    "ages": "청소년190",
+    "sep_oct": "초등53·청소년17·청년9"
+   },
+   {
+    "vi": "chúng ta",
+    "count": 85,
+    "ages": "청소년85",
+    "sep_oct": "초등171·청소년136·청년135"
+   },
+   {
+    "vi": "em",
+    "count": 2,
+    "ages": "청소년2",
+    "sep_oct": "초등245·청소년479"
+   },
+   {
+    "vi": "mình",
+    "count": 294,
+    "ages": "청소년294",
+    "sep_oct": "초등143·청소년306·청년527"
+   }
+  ],
+  "status": "확정",
+  "note": "지침대로 bạn·chúng ta를 씀. em 2회는 동생·후배라는 뜻이라 문제없음.",
+  "example_vi": "Khi bạn nói “Đừng lo, mọi chuyện sẽ ổn thôi”, ta thấy được an ủi, nhưng cũng tự hỏi câu đó có căn cứ không.",
+  "example_ref": "11/8 청소년",
+  "ko_count": null
+ },
+ {
+  "id": "t55",
+  "group": "말투·인칭",
+  "ko": "청년 독자 호칭 (본문·질문)",
+  "vi": "chúng ta",
+  "alts": [
+   {
+    "vi": "chúng ta",
+    "count": 92,
+    "ages": "청년92",
+    "sep_oct": "초등171·청소년136·청년135"
+   },
+   {
+    "vi": "bạn (2인칭)",
+    "count": 75,
+    "ages": "청년75",
+    "sep_oct": "초등53·청소년13·청년4"
+   },
+   {
+    "vi": "ta (단독)",
+    "count": 75,
+    "ages": "청년75",
+    "sep_oct": "초등16·청소년25·청년32"
+   }
+  ],
+  "status": "검토",
+  "note": "지침은 차분한 문어체 chúng ta인데, 질문·답변 가이드에 2인칭 bạn이 75회 나옴(chúng ta는 92회). 청년판 질문에서 bạn을 허용할지 정해야 함.",
+  "example_vi": "Đức Chúa Trời của sự bình an ở cùng chúng ta trong đời sống hằng ngày, khi chúng ta chọn nghĩ gì và làm gì.",
+  "example_ref": "11/12 청년",
+  "ko_count": null
+ },
+ {
+  "id": "t56",
+  "group": "말투·인칭",
+  "ko": "기도문 첫머리 (하나님/예수님,)",
+  "vi": "Kính lạy …",
+  "alts": [
+   {
+    "vi": "Kính lạy …",
+    "count": 114,
+    "ages": "저57·고29·청소년28",
+    "sep_oct": "초등49"
+   },
+   {
+    "vi": "Lạy … (Kính 없음)",
+    "count": 130,
+    "ages": "저4·고32·청소년33·청년61",
+    "sep_oct": "초등12"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집 결정 3: 정식 마무리 기도는 Kính lạy로 통일. 그런데 저학년 57:4, 고학년 29:32, 청소년 28:33이고 청년은 61회 모두 Lạy만 씀.",
+  "example_vi": "Kính lạy Đức Chúa Trời, cảm ơn Ngài vì khi lo lắng con có thể nói với Ngài.",
+  "example_ref": "11/12 저학년",
+  "ko_count": null
+ },
+ {
+  "id": "t57",
+  "group": "말투·인칭",
+  "ko": "기도문 예수님 호칭",
+  "vi": "Kính lạy Đức Chúa Jêsus",
+  "alts": [
+   {
+    "vi": "(Kính) lạy Đức Chúa Jêsus",
+    "count": 10,
+    "ages": "저4·고3·청소년3",
+    "sep_oct": "초등14"
+   },
+   {
+    "vi": "(Kính) lạy Chúa Jêsus (Đức 생략)",
+    "count": 9,
+    "ages": "저3·고3·청소년3",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Kính lạy Đức Chúa Trời (대상 변경)",
+    "count": 8,
+    "ages": "저8",
+    "sep_oct": "초등42"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "Đức을 뺀 ‘lạy Chúa Jêsus’가 9회. 저학년 8곳은 원문의 ‘예수님,’을 ‘Kính lạy Đức Chúa Trời’로 바꿈. 용어집 결정 3은 기도 대상을 원문대로 하라고 함.",
+  "example_vi": "Lạy Đức Chúa Jêsus, cảm ơn Ngài đã cho con lời hứa Ngài sẽ trở lại và lời của Ngài chẳng bao giờ qua đi.",
+  "example_ref": "12/16 청소년",
+  "ko_count": 27
+ },
+ {
+  "id": "t58",
+  "group": "말투·인칭",
+  "ko": "기도문 맺음 (… 아멘)",
+  "vi": "저학년 Con cầu nguyện nhân danh Đức Chúa Jêsus Christ. A-men. · 다른 연령은 원문대로 A-men.",
+  "alts": [
+   {
+    "vi": "Con cầu nguyện nhân danh Đức Chúa Jêsus. A-men.",
+    "count": 62,
+    "ages": "저61·고1",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "… nhân danh Đức Chúa Jêsus Christ. A-men.",
+    "count": 1,
+    "ages": "청년1",
+    "sep_oct": "초등61"
+   },
+   {
+    "vi": "A-men. (이름 없이)",
+    "count": 180,
+    "ages": "고60·청소년61·청년59",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "용어집 결정 4·9(사용자 확정)와 9–10월판 초등(61회)은 모두 ‘… Jêsus Christ. A-men’. 저학년 61회만 번역지침 4항 예시대로 Christ 없이 씀. Christ를 붙이고 지침 예시도 고침. 다른 연령은 원문대로 ‘아멘’만 씀.",
+  "example_vi": "…in cho con nhân danh Ngài mà làm và biết ơn. Con cầu nguyện nhân danh Đức Chúa Jêsus. A-men.",
+  "example_ref": "11/13 고학년",
+  "ko_count": null
+ },
+ {
+  "id": "t59",
+  "group": "말투·인칭",
+  "ko": "기도하는 사람 1인칭",
+  "vi": "con · chúng con",
+  "alts": [
+   {
+    "vi": "con",
+    "count": 1242,
+    "ages": "저294·고286·청소년316·청년346",
+    "sep_oct": "초등290"
+   },
+   {
+    "vi": "chúng con",
+    "count": 32,
+    "ages": "저7·고5·청소년4·청년16",
+    "sep_oct": "초등8"
+   },
+   {
+    "vi": "chúng ta (기도 안)",
+    "count": 2,
+    "ages": "청년2",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "tôi",
+    "count": 2,
+    "ages": "청년2",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "지침대로 기도 1인칭은 con. 청년 기도 안의 chúng ta 2회와 tôi 2회는 chúng con·con으로 바꿈.",
+  "example_vi": "Kính lạy Đức Chúa Trời, con ngợi khen Chúa vì đã cứu Giô-na từ biển sâu.",
+  "example_ref": "11/4 저학년",
+  "ko_count": null
+ },
+ {
+  "id": "t60",
+  "group": "말투·인칭",
+  "ko": "기도 중 하나님 2인칭",
+  "vi": "Chúa · Ngài",
+  "alts": [
+   {
+    "vi": "Chúa",
+    "count": 396,
+    "ages": "저78·고82·청소년75·청년161",
+    "sep_oct": "초등6·청소년61·청년61"
+   },
+   {
+    "vi": "Ngài",
+    "count": 470,
+    "ages": "저122·고144·청소년131·청년73",
+    "sep_oct": "초등106"
+   }
+  ],
+  "status": "확정",
+  "note": "기도 중 2인칭으로 Chúa와 Ngài를 함께 쓰는 것은 자연스러움.",
+  "example_vi": "Xin cho con không chỉ xem bạn bè là đối thủ, mà là bạn đồng công cùng dự phần vào công việc của Chúa.",
+  "example_ref": "11/3 청소년",
+  "ko_count": null
+ },
+ {
+  "id": "t61",
+  "group": "말투·인칭",
+  "ko": "본문 속 짧은 기도 호칭 (\"예수님,\" \"하나님,\")",
+  "vi": "Lạy Chúa, / Lạy Đức Chúa Jêsus,",
+  "alts": [
+   {
+    "vi": "Lạy Chúa / Lạy Đức Chúa …",
+    "count": 52,
+    "ages": "저19·고22·청소년9·청년2",
+    "sep_oct": "초등59·청소년1"
+   },
+   {
+    "vi": "Kính lạy …",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등49"
+   },
+   {
+    "vi": "… ơi",
+    "count": 0,
+    "ages": "",
+    "sep_oct": "초등3·청소년1·청년2"
+   },
+   {
+    "vi": "호칭 없이 Chúa만",
+    "count": 13,
+    "ages": "저4·고3·청소년3·청년3",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "검토",
+  "note": "용어집 결정 3: 본문 속 즉석 짧은 기도는 ‘Đức Chúa Jêsus ơi,’처럼 ơi를 씀. 그런데 원고는 Lạy …가 52회, ơi는 0회. 용어집 결정을 고칠지 정해야 함.",
+  "example_vi": "Câu hỏi 3: chọn và đánh dấu một điều; tuần này mỗi khi nhận điều đó, hãy cầu nguyện ngắn: “Lạy Chúa, con cảm ơn Ngài.”",
+  "example_ref": "11/7 고학년",
+  "ko_count": 65
+ },
+ {
+  "id": "t62",
+  "group": "말투·인칭",
+  "ko": "친구",
+  "vi": "bạn · bạn bè",
+  "alts": [
+   {
+    "vi": "bạn",
+    "count": 272,
+    "ages": "저62·고83·청소년118·청년9",
+    "sep_oct": "초등60·청소년31·청년10"
+   },
+   {
+    "vi": "bạn bè",
+    "count": 76,
+    "ages": "저25·고19·청소년32",
+    "sep_oct": "초등5·청소년14·청년5"
+   },
+   {
+    "vi": "người bạn",
+    "count": 42,
+    "ages": "저8·고5·청소년22·청년7",
+    "sep_oct": "초등3·청소년12·청년1"
+   }
+  ],
+  "status": "확정",
+  "note": "일관됨. 청소년에서는 2인칭 bạn과 헷갈릴 수 있으니 ‘친구’는 người bạn·bạn bè로 쓰기를 권장.",
+  "example_vi": "Khi bạn bè làm con buồn, xin cho con sức để bắt đầu tha thứ thay vì trả đũa hay im lặng.",
+  "example_ref": "11/13 청소년",
+  "ko_count": 287
+ },
+ {
+  "id": "t63",
+  "group": "말투·인칭",
+  "ko": "부모님 / 엄마 / 아빠",
+  "vi": "cha mẹ · mẹ",
+  "alts": [
+   {
+    "vi": "cha mẹ",
+    "count": 6,
+    "ages": "저1·고2·청소년1·청년2",
+    "sep_oct": "초등4"
+   },
+   {
+    "vi": "ba mẹ",
+    "count": 4,
+    "ages": "저3·청소년1",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "mẹ (단독)",
+    "count": 13,
+    "ages": "저6·고3·청소년4",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "부모님이 cha mẹ 6회, 남부 구어 ba mẹ 4회(주로 저학년)로 섞여 있음. 표준어 cha mẹ로 맞추고, 엄마는 mẹ로 씀.",
+  "example_vi": "Tên của chúng ta chứa đựng mong ước của cha mẹ.",
+  "example_ref": "12/25 저학년",
+  "ko_count": 24
+ },
+ {
+  "id": "t64",
+  "group": "성경 인명·지명",
+  "ko": "바울",
+  "vi": "Phao-lô",
+  "alts": [
+   {
+    "vi": "Phao-lô",
+    "count": 279,
+    "ages": "저49·고64·청소년78·청년88",
+    "sep_oct": "초등30·청소년37·청년34"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "- C Ở trong lòng Phao-lô và dự phần ân điển",
+  "example_ref": "11/3 고학년",
+  "ko_count": 289
+ },
+ {
+  "id": "t65",
+  "group": "성경 인명·지명",
+  "ko": "이스라엘",
+  "vi": "Y-sơ-ra-ên",
+  "alts": [
+   {
+    "vi": "Y-sơ-ra-ên",
+    "count": 150,
+    "ages": "저31·고45·청소년39·청년35",
+    "sep_oct": "초등7·청소년6·청년8"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "- ② “thì ta sẽ được tôn thánh giữa dân Y-sơ-ra-ên”",
+  "example_ref": "11/16 청년",
+  "ko_count": 156
+ },
+ {
+  "id": "t66",
+  "group": "성경 인명·지명",
+  "ko": "다윗",
+  "vi": "Đa-vít",
+  "alts": [
+   {
+    "vi": "Đa-vít",
+    "count": 114,
+    "ages": "저27·고28·청소년33·청년26",
+    "sep_oct": "초등5·청소년5·청년4"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Lạy Đức Chúa Trời, con ngợi khen Chúa vì đã nghe tiếng kêu cầu của Đa-vít và cứu ông khỏi chỗ chết.",
+  "example_ref": "11/1 고학년",
+  "ko_count": 117
+ },
+ {
+  "id": "t67",
+  "group": "성경 인명·지명",
+  "ko": "마리아",
+  "vi": "Ma-ri",
+  "alts": [
+   {
+    "vi": "Ma-ri",
+    "count": 74,
+    "ages": "저15·고23·청소년17·청년19",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Ma-ri cũng hát về Đức Chúa Trời là Đấng thế nào.",
+  "example_ref": "12/22 저학년",
+  "ko_count": 72
+ },
+ {
+  "id": "t68",
+  "group": "성경 인명·지명",
+  "ko": "이사야",
+  "vi": "Ê-sai",
+  "alts": [
+   {
+    "vi": "Ê-sai",
+    "count": 91,
+    "ages": "저9·고18·청소년21·청년43",
+    "sep_oct": "초등7·청소년8·청년5"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Từ Ê-sai 63:7 bắt đầu một lời cầu nguyện dài của dân Đức Chúa Trời.",
+  "example_ref": "12/5 고학년",
+  "ko_count": 77
+ },
+ {
+  "id": "t69",
+  "group": "성경 인명·지명",
+  "ko": "예루살렘",
+  "vi": "Giê-ru-sa-lem",
+  "alts": [
+   {
+    "vi": "Giê-ru-sa-lem",
+    "count": 69,
+    "ages": "저14·고24·청소년18·청년13",
+    "sep_oct": "청소년4·청년3"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Trên đường lên thành Giê-ru-sa-lem, Đức Chúa Jêsus đi qua vùng giữa xứ Sa-ma-ri và Ga-li-lê rồi vào một làng kia.",
+  "example_ref": "11/7 고학년",
+  "ko_count": 70
+ },
+ {
+  "id": "t70",
+  "group": "성경 인명·지명",
+  "ko": "애굽",
+  "vi": "Ê-díp-tô",
+  "alts": [
+   {
+    "vi": "Ê-díp-tô",
+    "count": 72,
+    "ages": "저11·고16·청소년18·청년27",
+    "sep_oct": "초등2·청소년3"
+   },
+   {
+    "vi": "Ai Cập",
+    "count": 5,
+    "ages": "저2·고2·청소년1",
+    "sep_oct": "초등1·청소년1"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "1934 표기 Ê-díp-tô 72회. 현대어 Ai Cập 5회(저·고·청소년)만 바꾸면 됨.",
+  "example_vi": "Đức Giê-hô-va là Đấng làm cho dân Y-sơ-ra-ên nên thánh, và đã đem họ ra khỏi Ê-díp-tô để làm Đức Chúa Trời của họ.",
+  "example_ref": "11/16 청년",
+  "ko_count": 67
+ },
+ {
+  "id": "t71",
+  "group": "성경 인명·지명",
+  "ko": "요한 (세례 요한·사도 요한)",
+  "vi": "Giăng",
+  "alts": [
+   {
+    "vi": "Giăng",
+    "count": 17,
+    "ages": "저4·고5·청소년3·청년5",
+    "sep_oct": "초등11·청소년14·청년5"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Nghe tin Giăng Báp-tít bị bắt bỏ tù, Đức Chúa Jêsus đi qua xứ Ga-li-lê (câu 12).",
+  "example_ref": "12/11 고학년",
+  "ko_count": 16
+ },
+ {
+  "id": "t72",
+  "group": "성경 인명·지명",
+  "ko": "여호수아",
+  "vi": "Giô-suê",
+  "alts": [
+   {
+    "vi": "Giô-suê",
+    "count": 61,
+    "ages": "저12·고17·청소년12·청년20",
+    "sep_oct": "초등5·청소년11·청년5"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Câu 6, “chớ xây qua bên hữu hoặc bên tả”, giống với lời Đức Chúa Trời phán cùng Giô-suê trong Giô-suê 1:7.",
+  "example_ref": "11/23 청년",
+  "ko_count": 60
+ },
+ {
+  "id": "t73",
+  "group": "성경 인명·지명",
+  "ko": "요나",
+  "vi": "Giô-na",
+  "alts": [
+   {
+    "vi": "Giô-na",
+    "count": 53,
+    "ages": "저15·고16·청소년10·청년12",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "- ( ) Con cá mửa Giô-na ra trên đất khô.",
+  "example_ref": "11/4 고학년",
+  "ko_count": 58
+ },
+ {
+  "id": "t74",
+  "group": "성경 인명·지명",
+  "ko": "다니엘",
+  "vi": "Đa-ni-ên",
+  "alts": [
+   {
+    "vi": "Đa-ni-ên",
+    "count": 60,
+    "ages": "저11·고13·청소년15·청년21",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Đa-ni-ên cảm tạ Đức Chúa Trời vào lúc nào?",
+  "example_ref": "11/5 고학년",
+  "ko_count": 57
+ },
+ {
+  "id": "t75",
+  "group": "성경 인명·지명",
+  "ko": "모세",
+  "vi": "Môi-se",
+  "alts": [
+   {
+    "vi": "Môi-se",
+    "count": 52,
+    "ages": "저6·고14·청소년18·청년14",
+    "sep_oct": "초등3·청소년8·청년5"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Lời cảnh báo của Môi-se là: ngày càng suôn sẻ thì càng cần thói quen ấy.",
+  "example_ref": "11/30 청소년",
+  "ko_count": 53
+ },
+ {
+  "id": "t76",
+  "group": "성경 인명·지명",
+  "ko": "요셉",
+  "vi": "Giô-sép",
+  "alts": [
+   {
+    "vi": "Giô-sép",
+    "count": 44,
+    "ages": "저5·고11·청소년13·청년15",
+    "sep_oct": "청소년1·청년2"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Ma-thi-ơ đoạn 1 kể Đức Chúa Jêsus ra đời thế nào qua đôi mắt của Giô-sép.",
+  "example_ref": "12/25 고학년",
+  "ko_count": 45
+ },
+ {
+  "id": "t77",
+  "group": "성경 인명·지명",
+  "ko": "한나 / 안나",
+  "vi": "An-ne",
+  "alts": [
+   {
+    "vi": "An-ne",
+    "count": 51,
+    "ages": "저13·고10·청소년15·청년13",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934에서는 한나(삼상)와 안나(눅 2)가 모두 An-ne임. 같은 주에 둘이 함께 나오면 설명을 덧붙일지 확인.",
+  "example_vi": "Đọc câu 3, rồi chọn lời của bạn nào gần với bài hát của An-ne hơn.",
+  "example_ref": "11/2 고학년",
+  "ko_count": 50
+ },
+ {
+  "id": "t78",
+  "group": "성경 인명·지명",
+  "ko": "시므온",
+  "vi": "Si-mê-ôn",
+  "alts": [
+   {
+    "vi": "Si-mê-ôn",
+    "count": 46,
+    "ages": "저9·고11·청소년14·청년12",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934 성경 표기와 일치하고 일관됨.",
+  "example_vi": "Trong những ngày còn lại trước Giáng Sinh, em hãy chọn một việc làm mỗi ngày để chờ đón Đức Chúa Jêsus như Si-mê-ôn.",
+  "example_ref": "12/10 고학년",
+  "ko_count": 48
+ },
+ {
+  "id": "t79",
+  "group": "성경 인명·지명",
+  "ko": "에녹",
+  "vi": "Hê-nóc",
+  "alts": [
+   {
+    "vi": "Hê-nóc",
+    "count": 17,
+    "ages": "저3·고3·청소년5·청년6",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "1934(창 5장·히 11:5) 표기 Hê-nóc로 17회 일관됨. 번역지침 4항의 ‘Ê-nóc’을 고쳐야 함.",
+  "example_vi": "Con muốn đến gần Chúa bởi đức tin như A-bên và Hê-nóc.",
+  "example_ref": "11/10 고학년",
+  "ko_count": 17
+ },
+ {
+  "id": "t80",
+  "group": "책 고정 문구",
+  "ko": "책 제목 ‘감사와 기다림’",
+  "vi": "Tạ ơn và Chờ đợi",
+  "alts": [
+   {
+    "vi": "Tạ ơn và Chờ đợi",
+    "count": 5,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "표지·책등·머리글에서 일관됨. 감사를 tạ ơn으로 쓰는 근거이기도 함.",
+  "example_vi": "Tạ ơn và Chờ đợi",
+  "example_ref": "표지·머리글(cover_vi.typ·build_vi.py)",
+  "ko_count": null
+ },
+ {
+  "id": "t81",
+  "group": "책 고정 문구",
+  "ko": "연령명 저학년",
+  "vi": "Nhi đồng",
+  "alts": [
+   {
+    "vi": "Nhi đồng",
+    "count": 4,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "표지·뒤표지·앞부분·PDF 파일 이름(NhiDong)이 모두 같음.",
+  "example_vi": "Nhi đồng",
+  "example_ref": "표지·뒤표지·앞부분",
+  "ko_count": null
+ },
+ {
+  "id": "t82",
+  "group": "책 고정 문구",
+  "ko": "연령명 고학년",
+  "vi": "Thiếu nhi",
+  "alts": [
+   {
+    "vi": "Thiếu nhi",
+    "count": 4,
+    "ages": "조판 고정",
+    "sep_oct": "1"
+   }
+  ],
+  "status": "검토",
+  "note": "베트남 교회에서 Thiếu nhi는 어린이부 전체를 가리킬 때가 많음. 초등 4–6학년 책으로 알맞은지 현지 검토자 확인 필요.",
+  "example_vi": "Thiếu nhi",
+  "example_ref": "표지·뒤표지·앞부분",
+  "ko_count": null
+ },
+ {
+  "id": "t83",
+  "group": "책 고정 문구",
+  "ko": "연령명 청소년",
+  "vi": "Thanh thiếu niên",
+  "alts": [
+   {
+    "vi": "Thanh thiếu niên",
+    "count": 4,
+    "ages": "조판 고정",
+    "sep_oct": "8"
+   }
+  ],
+  "status": "확정",
+  "note": "9–10월판 청소년 앞부분과 같음.",
+  "example_vi": "Thanh thiếu niên",
+  "example_ref": "표지·뒤표지·앞부분",
+  "ko_count": null
+ },
+ {
+  "id": "t84",
+  "group": "책 고정 문구",
+  "ko": "연령명 청년",
+  "vi": "Thanh niên",
+  "alts": [
+   {
+    "vi": "Thanh niên",
+    "count": 4,
+    "ages": "조판 고정",
+    "sep_oct": "6"
+   }
+  ],
+  "status": "확정",
+  "note": "9–10월판 청년 앞부분과 같음.",
+  "example_vi": "Thanh niên",
+  "example_ref": "표지·뒤표지·앞부분",
+  "ko_count": null
+ },
+ {
+  "id": "t85",
+  "group": "책 고정 문구",
+  "ko": "주별 주제",
+  "vi": "Chủ đề tuần này",
+  "alts": [
+   {
+    "vi": "Chủ đề tuần này",
+    "count": 2,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "네 연령 공통 머리말로 일관됨.",
+  "example_vi": "Chủ đề tuần này",
+  "example_ref": "날짜 머리(kids_vi·teen_young_vi)",
+  "ko_count": null
+ },
+ {
+  "id": "t86",
+  "group": "책 고정 문구",
+  "ko": "오늘의 말씀",
+  "vi": "Lời Chúa hôm nay",
+  "alts": [
+   {
+    "vi": "Lời Chúa hôm nay",
+    "count": 5,
+    "ages": "조판 고정",
+    "sep_oct": "6"
+   }
+  ],
+  "status": "확정",
+  "note": "9–10월판 고정 문구와 같음.",
+  "example_vi": "Lời Chúa hôm nay",
+  "example_ref": "청소년·청년 본문 칸",
+  "ko_count": null
+ },
+ {
+  "id": "t87",
+  "group": "책 고정 문구",
+  "ko": "어휘 (낱말 풀이)",
+  "vi": "Giải thích từ ngữ",
+  "alts": [
+   {
+    "vi": "Giải thích từ ngữ",
+    "count": 5,
+    "ages": "조판 고정",
+    "sep_oct": "4"
+   },
+   {
+    "vi": "Đối chiếu",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "2"
+   }
+  ],
+  "status": "확정",
+  "note": "9–10월판 초등과 같음. 9–10월 청소년 테마에 있던 Đối chiếu는 쓰지 않음.",
+  "example_vi": "Giải thích từ ngữ",
+  "example_ref": "본문 옆 칸",
+  "ko_count": null
+ },
+ {
+  "id": "t88",
+  "group": "책 고정 문구",
+  "ko": "본문 해설 (저·고)",
+  "vi": "Câu chuyện Lời Chúa",
+  "alts": [
+   {
+    "vi": "Câu chuyện Lời Chúa",
+    "count": 2,
+    "ages": "조판 고정",
+    "sep_oct": "3"
+   }
+  ],
+  "status": "확정",
+  "note": "9–10월판 초등과 같음.",
+  "example_vi": "Câu chuyện Lời Chúa",
+  "example_ref": "kids_vi.typ 탭",
+  "ko_count": null
+ },
+ {
+  "id": "t89",
+  "group": "책 고정 문구",
+  "ko": "본문 해설 (청소년·청년)",
+  "vi": "Giải thích phân đoạn",
+  "alts": [
+   {
+    "vi": "Giải thích phân đoạn",
+    "count": 2,
+    "ages": "조판 고정",
+    "sep_oct": "5"
+   }
+  ],
+  "status": "확정",
+  "note": "9–10월판 청소년·청년과 같음.",
+  "example_vi": "Giải thích phân đoạn",
+  "example_ref": "teen_young_vi.typ",
+  "ko_count": null
+ },
+ {
+  "id": "t90",
+  "group": "책 고정 문구",
+  "ko": "질문 묶음 탭 (저·고)",
+  "vi": "Đọc và khám phá",
+  "alts": [
+   {
+    "vi": "Đọc và khám phá",
+    "count": 2,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Suy ngẫm & Hoạt động",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "1"
+   }
+  ],
+  "status": "검토",
+  "note": "9–10월판 초등은 ‘Suy ngẫm & Hoạt động’을 썼음. 새 이름을 그대로 쓸지 정해야 함.",
+  "example_vi": "Đọc và khám phá",
+  "example_ref": "kids_vi.typ 탭",
+  "ko_count": null
+ },
+ {
+  "id": "t91",
+  "group": "책 고정 문구",
+  "ko": "기도·실천 탭 (저·고)",
+  "vi": "Cầu nguyện và thực hành",
+  "alts": [
+   {
+    "vi": "Cầu nguyện và thực hành",
+    "count": 2,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Áp dụng hôm nay",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "2"
+   }
+  ],
+  "status": "확정",
+  "note": "새 판형에 맞춘 이름. 앞부분 사용 안내와 같음.",
+  "example_vi": "Cầu nguyện và thực hành",
+  "example_ref": "kids_vi.typ 탭",
+  "ko_count": null
+ },
+ {
+  "id": "t92",
+  "group": "책 고정 문구",
+  "ko": "질문 1 (관찰)",
+  "vi": "Đọc kỹ Lời Chúa (Quan sát)",
+  "alts": [
+   {
+    "vi": "Đọc kỹ Lời Chúa (Quan sát)",
+    "count": 1,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Quan sát",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "7"
+   }
+  ],
+  "status": "검토",
+  "note": "9–10월판은 짧은 Quan sát. 정답 표시(Đáp án Quan sát)·앞부분 안내와 맞물려 있음. 긴 제목을 쓸지 정해야 함.",
+  "example_vi": "Đọc kỹ Lời Chúa (Quan sát)",
+  "example_ref": "teen_young_vi.typ q-titles",
+  "ko_count": null
+ },
+ {
+  "id": "t93",
+  "group": "책 고정 문구",
+  "ko": "질문 2 (해석)",
+  "vi": "Hiểu Lời Chúa (Giải nghĩa)",
+  "alts": [
+   {
+    "vi": "Hiểu Lời Chúa (Giải nghĩa)",
+    "count": 1,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Suy ngẫm",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "14"
+   }
+  ],
+  "status": "검토",
+  "note": "9–10월판은 Suy ngẫm(묵상). 새 책은 Giải nghĩa(해석)라 이름이 달라짐.",
+  "example_vi": "Hiểu Lời Chúa (Giải nghĩa)",
+  "example_ref": "teen_young_vi.typ q-titles",
+  "ko_count": null
+ },
+ {
+  "id": "t94",
+  "group": "책 고정 문구",
+  "ko": "질문 3 (적용)",
+  "vi": "Khắc ghi và sống theo Lời Chúa",
+  "alts": [
+   {
+    "vi": "Khắc ghi và sống theo Lời Chúa",
+    "count": 1,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Áp dụng",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "6"
+   }
+  ],
+  "status": "검토",
+  "note": "9–10월판은 Áp dụng. 앞부분 안내는 ‘Sống theo’라고 줄여 씀. 이름을 하나로 맞춰야 함.",
+  "example_vi": "Khắc ghi và sống theo Lời Chúa",
+  "example_ref": "teen_young_vi.typ q-titles",
+  "ko_count": null
+ },
+ {
+  "id": "t95",
+  "group": "책 고정 문구",
+  "ko": "기도 (청소년·청년)",
+  "vi": "Cầu nguyện bằng Lời Chúa",
+  "alts": [
+   {
+    "vi": "Cầu nguyện bằng Lời Chúa",
+    "count": 3,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Cầu nguyện",
+    "count": 0,
+    "ages": "9–10월판 조판",
+    "sep_oct": "5"
+   }
+  ],
+  "status": "확정",
+  "note": "앞부분 안내와 같음. 9–10월판의 Cầu nguyện을 넓힌 이름.",
+  "example_vi": "Cầu nguyện bằng Lời Chúa",
+  "example_ref": "teen_young_vi.typ",
+  "ko_count": null
+ },
+ {
+  "id": "t96",
+  "group": "책 고정 문구",
+  "ko": "정답 / 답변 가이드",
+  "vi": "Đáp án",
+  "alts": [
+   {
+    "vi": "Đáp án",
+    "count": 6,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "‘Đáp án Quan sát’과 함께 일관되게 씀.",
+  "example_vi": "Đáp án",
+  "example_ref": "다음 쪽 아래·책 끝",
+  "ko_count": null
+ },
+ {
+  "id": "t97",
+  "group": "책 고정 문구",
+  "ko": "요일 ‘일’(주일)",
+  "vi": "Chúa nhật",
+  "alts": [
+   {
+    "vi": "Chúa nhật",
+    "count": 5,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "확정",
+  "note": "본문의 주일 = Chúa nhật과 같음.",
+  "example_vi": "Chúa nhật",
+  "example_ref": "print_common_vi.typ 요일표",
+  "ko_count": null
+ },
+ {
+  "id": "t98",
+  "group": "책 고정 문구",
+  "ko": "기도 노트 ‘응답’ 칸",
+  "vi": "Chúa nhậm lời",
+  "alts": [
+   {
+    "vi": "Chúa nhậm lời",
+    "count": 1,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Đáp lời",
+    "count": 1,
+    "ages": "조판 고정",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "검토",
+  "note": "어린이판은 ‘Chúa nhậm lời’, 청소년·청년판은 ‘Đáp lời’로 다름. 하나로 맞출지 정해야 함.",
+  "example_vi": "Chúa nhậm lời",
+  "example_ref": "bookmatter_vi.typ 기도 노트",
+  "ko_count": null
+ },
+ {
+  "id": "t99",
+  "group": "책 고정 문구",
+  "ko": "활동·실천에서 질문 가리키기 (질문 2는 …)",
+  "vi": "Câu hỏi N:",
+  "alts": [
+   {
+    "vi": "Câu hỏi N:",
+    "count": 146,
+    "ages": "저80·고66",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "Câu N: (hỏi 생략)",
+    "count": 44,
+    "ages": "저20·고24",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "저학년 80:20, 고학년 66:24로 섞여 있음. ‘Câu N’은 성경 절(câu 4)과 헷갈리고, 조판 규칙도 둘 다 받아들이므로 Câu hỏi N으로 맞춤.",
+  "example_vi": "Câu hỏi 2: chọn một câu gần với lòng em.",
+  "example_ref": "11/6 저학년",
+  "ko_count": null
+ },
+ {
+  "id": "t100",
+  "group": "책 고정 문구",
+  "ko": "따라 쓰기 지시 (따라 써요)",
+  "vi": "Hãy chép lại …",
+  "alts": [
+   {
+    "vi": "chép lại",
+    "count": 132,
+    "ages": "저132",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "viết theo",
+    "count": 20,
+    "ages": "저20",
+    "sep_oct": "0"
+   },
+   {
+    "vi": "viết lại",
+    "count": 10,
+    "ages": "저10",
+    "sep_oct": "0"
+   }
+  ],
+  "status": "통일 필요",
+  "note": "저학년의 ‘따라 써요’가 chép lại 132회, viết theo 20회, viết lại 10회로 나뉨. 질문 문구는 ‘Hãy chép lại câu dưới đây.’로 맞춤.",
+  "example_vi": "Câu hỏi 3: nhìn câu mẫu và chép lại.",
+  "example_ref": "11/4 저학년",
+  "ko_count": null
+ }
+]
