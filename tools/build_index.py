@@ -5,7 +5,7 @@ R = sys.argv[1]
 SHEET_URL = 'https://script.google.com/macros/s/AKfycbzRtcsJL7GkVG7dK6JGqEIUq_-eM5AD8zHFJL3atupBD0kxJjvFxaB_Ljl08AYvNL_S/exec'
 t = open(f'{R}/tools/template.html').read()
 data = json.dumps(json.load(open(f'{R}/data.json')), ensure_ascii=False)
-head = '<!doctype html>\n<html lang="ko">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n<meta name="robots" content="noindex">\n'
+head = '<!doctype html>\n<html lang="vi">\n<head>\n<meta charset="utf-8">\n<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">\n<meta name="robots" content="noindex">\n'
 body = t.replace('/*DATA*/', data, 1).replace('/*SHEET_URL*/', SHEET_URL)
 body = body.replace('</style>\n\n', '</style>\n<style>body{margin:0}img{max-width:100%}[hidden]{display:none!important}</style>\n</head>\n<body>\n\n\n', 1)
 gen = head + body + '\n</body>\n</html>\n'

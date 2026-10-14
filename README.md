@@ -1,6 +1,6 @@
 # 바이블트리 2026 11–12월 베트남어판 인쇄 검수
 
-저학년 Nhi đồng · 고학년 Thiếu nhi (A4), 청소년 Thanh thiếu niên · 청년 Thanh niên (A5) 네 권의 표지·128면 펼침 열람과 용어 검수표입니다. 화면 말은 한국어판 검수 사이트와 같게 한국어입니다.
+저학년 Nhi đồng · 고학년 Thiếu nhi (A4), 청소년 Thanh thiếu niên · 청년 Thanh niên (A5) 네 권의 표지·128면 펼침 열람과 용어 검수표입니다. 화면 말은 **베트남어가 기본**이고, 위 띠의 ‘Tiếng Việt | 한국어’로 바꿀 수 있습니다(기억: localStorage `bt-lang`, 주소로 `?lang=ko` / `?lang=vi`). 화면 글은 모두 `tools/template.html`의 `I18N` 사전(`{vi, ko}`)에 있고 `t(키)`로 그립니다. 데이터(한국어 제목·용어표 메모)는 번역하지 않습니다.
 
 - 페이지: https://fastkorea12-png.github.io/bibletree-print-review-1112-vi/
 - 한국어판: https://fastkorea12-png.github.io/bibletree-print-review-1112/

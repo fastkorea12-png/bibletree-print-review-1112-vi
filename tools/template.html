@@ -1,4 +1,5 @@
-<title>바이블트리 11–12월 베트남어판 인쇄 검수</title>
+<title>Bible Tree 11–12/2026 · Duyệt bản in tiếng Việt</title>
+<meta name="description" content="Trang duyệt bản in Bible Tree tháng 11–12/2026 bản tiếng Việt: xem bìa và 128 trang theo từng trang đôi, ghi nhận xét, góp ý bảng thuật ngữ.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;600;700&family=Black+Han+Sans&family=IBM+Plex+Sans+KR:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -42,8 +43,19 @@ body[data-book="vhigh"]  { --age: #2a7fc9; }
 body[data-book="vteen"]  { --age: #1e9a82; }
 body[data-book="vyoung"] { --age: #2c4a7a; }
 .vi { font-family: "Be Vietnam Pro", var(--body); }
+/* 베트남어 화면: 성조 부호가 있는 글꼴로 */
+:root[lang="vi"] { --display: "Be Vietnam Pro", "IBM Plex Sans KR", sans-serif; --body: "Be Vietnam Pro", "IBM Plex Sans KR", "Apple SD Gothic Neo", sans-serif; }
+:root[lang="vi"] h2, :root[lang="vi"] .gate h1, :root[lang="vi"] .cmp-top .meta b { font-weight: 700; letter-spacing: -0.01em; }
+:root[lang="vi"] .brand b, :root[lang="vi"] .gate .logo { font-weight: 800; letter-spacing: 0.02em; }
+.lang { display: inline-flex; border: 1px solid var(--line); border-radius: 999px; overflow: hidden; background: var(--surface); flex: none; }
+.lang button { border: 0; background: none; padding: 3px 10px; cursor: pointer; font-size: 12.5px; color: var(--muted); white-space: nowrap; }
+.lang button + button { border-left: 1px solid var(--line); }
+.lang button[aria-pressed="true"] { background: var(--ink); color: var(--bg); font-weight: 700; }
+.ko-gloss { display: block; font-size: 12px; font-weight: 400; color: var(--muted); font-family: var(--body); }
+table.terms td.memo details summary { cursor: pointer; font-size: 12.5px; }
+table.terms td.memo details p { margin-top: 4px; font-size: 12.5px; }
 .ko-sub { display: block; font-size: 12.5px; color: var(--muted); font-weight: 400; }
-.ko-sub::before { content: "한 "; font-size: 10.5px; font-weight: 700; padding: 0 4px; margin-right: 4px; border-radius: 3px; border: 1px solid var(--line); }
+.ko-sub::before { content: attr(data-tag) " "; font-size: 10.5px; font-weight: 700; padding: 0 4px; margin-right: 4px; border-radius: 3px; border: 1px solid var(--line); }
 
 * { box-sizing: border-box; }
 body { background: var(--bg); color: var(--ink); font: 15px/1.65 var(--body); }
@@ -292,7 +304,7 @@ td.txt { white-space: pre-wrap; overflow-wrap: anywhere; min-width: 220px; }
 .tsum span { font-size: 12px; color: var(--muted); }
 .tsum b { font-family: var(--mono); font-weight: 500; font-size: 20px; }
 table.terms { table-layout: auto; }
-table.terms th.grp { background: var(--sunk); color: var(--ink); font-size: 13.5px; font-weight: 700; padding: 8px 12px; }
+table.terms th.grp { background: var(--sunk); color: var(--ink); font-size: 13.5px; font-weight: 700; padding: 8px 12px; white-space: normal; }
 table.terms td.ko { font-weight: 700; min-width: 90px; }
 table.terms td.rec { font-weight: 700; min-width: 120px; }
 table.terms td.ex { min-width: 220px; font-size: 13.5px; }
@@ -349,50 +361,51 @@ table.terms tr.tact td { padding-top: 0; }
 
 <div class="gate" id="gate" role="dialog" aria-modal="true" aria-labelledby="g-h" hidden>
   <form id="g-form" novalidate>
-    <span class="logo">BIBLE TREE 2026 <i>11</i><i>12</i></span>
-    <h1 id="g-h">베트남어판 인쇄 검수</h1>
-    <p>검수 기록에 남길 이름을 적어 주세요. 이 기기에 기억해 두어 다음부터는 바로 들어가요.</p>
-    <label>이름<input id="g-name" type="text" maxlength="40" autocomplete="name" placeholder="예: 김바울 목사"></label>
+    <div class="row"><span class="logo">BIBLE TREE 2026 <i>11</i><i>12</i></span><div class="lang" role="group" data-ia="aria-label:langAria"></div></div>
+    <h1 id="g-h" data-i="gateH"></h1>
+    <p data-i="gateP"></p>
+    <label><span data-i="gateLabel"></span><input id="g-name" type="text" maxlength="40" autocomplete="name" data-ia="placeholder:gatePh"></label>
     <span class="err" id="g-err" role="alert"></span>
-    <div class="row"><button type="button" class="linkbtn" id="g-cancel" hidden>취소</button><button class="btn primary" type="submit" style="flex:1">검수 시작</button></div>
+    <div class="row"><button type="button" class="linkbtn" id="g-cancel" data-i="cancel" hidden></button><button class="btn primary" type="submit" style="flex:1" data-i="gateStart"></button></div>
   </form>
 </div>
 <p class="toast" id="toast" role="status" hidden></p>
 <div class="cmp" id="cmp" role="dialog" aria-modal="true" aria-labelledby="cmp-h" tabindex="-1" hidden>
   <div class="cmp-top"><div class="wrap">
-    <div class="meta"><b id="cmp-h"></b><span>네 권의 같은 날 펼침 · 그림을 누르면 그 책 열람으로 가요<span class="kbd-hint"> · <span class="kbd">Enter</span> 네 권 확인하고 다음 날</span></span></div>
-    <button class="btn ok" id="cmp-all" type="button">✓ 4권 모두 확인</button>
-    <button class="btn" id="cmp-prev" type="button" aria-label="이전 날">‹ 이전</button>
-    <button class="btn" id="cmp-next" type="button" aria-label="다음 날">다음 ›</button>
-    <button class="btn primary" id="cmp-close" type="button">닫기</button>
+    <div class="meta"><b id="cmp-h"></b><span data-ih="cmpHint"></span></div>
+    <button class="btn ok" id="cmp-all" type="button"></button>
+    <button class="btn" id="cmp-prev" type="button" data-i="prev" data-ia="aria-label:prevDay"></button>
+    <button class="btn" id="cmp-next" type="button" data-i="next" data-ia="aria-label:nextDay"></button>
+    <button class="btn primary" id="cmp-close" type="button" data-i="close"></button>
   </div></div>
   <div class="wrap cmp-grid" id="cmp-grid"></div>
 </div>
 
 <div class="bar">
   <div class="wrap">
-    <div class="brand"><b>BIBLE TREE 2026 <i>11</i><i>12</i></b><span>베트남어판 인쇄 검수</span></div>
-    <nav class="tabs" aria-label="보기"><a href="#overview" id="tab-print" aria-current="page">인쇄 검수</a><a href="#terms" id="tab-terms">용어 검수표</a></nav>
-    <div class="books" id="books" role="group" aria-label="책 고르기"></div>
-    <div class="me" id="me" hidden><span>검수자 <b id="me-name"></b></span><button type="button" class="linkbtn" id="me-change">이름 바꾸기</button></div>
-    <nav class="nav" id="secnav" aria-label="섹션">
-      <a href="#cover">표지</a><a href="#contents">내용</a><a href="#read">열람</a><a href="#review">검수 메모</a>
+    <div class="brand"><b>BIBLE TREE 2026 <i>11</i><i>12</i></b><span data-i="brandSub"></span></div>
+    <div class="lang" role="group" data-ia="aria-label:langAria"></div>
+    <nav class="tabs" data-ia="aria-label:tabsAria"><a href="#overview" id="tab-print" aria-current="page" data-i="tabPrint"></a><a href="#terms" id="tab-terms" data-i="tabTerms"></a></nav>
+    <div class="books" id="books" role="group" data-ia="aria-label:booksAria"></div>
+    <div class="me" id="me" hidden><span><span data-i="reviewer"></span> <b id="me-name"></b></span><button type="button" class="linkbtn" id="me-change" data-i="changeName"></button></div>
+    <nav class="nav" id="secnav" data-ia="aria-label:secAria">
+      <a href="#cover" data-i="navCover"></a><a href="#contents" data-i="navContents"></a><a href="#read" data-i="navRead"></a><a href="#review" data-i="navReview"></a>
     </nav>
   </div>
 </div>
 
 <main class="wrap" id="m-print">
   <section id="overview" aria-labelledby="ov-h">
-    <div class="head"><span class="eyebrow">네 권 한눈에 · Tiếng Việt</span><h2 id="ov-h">베트남어판 조판본 · 10월 14일</h2><p>한국어판과 같은 판형·128면·펼침 구조 · 도련 사방 2mm · 책등 6.17mm · CMYK</p></div>
+    <div class="head"><span class="eyebrow" data-i="ovEye"></span><h2 id="ov-h" data-i="ovH"></h2><p data-i="ovP"></p></div>
     <div class="ov" id="ov"></div>
   </section>
 
   <section id="cover" aria-labelledby="cv-h">
-    <div class="head"><span class="eyebrow" id="cv-eye">표지</span><h2 id="cv-h">표지 디자인</h2><p>뒤표지 · 책등 · 앞표지 펼침 (재단선 기준, 도련 제외) · 부제 “Tạ ơn và Chờ đợi”(감사와 기다림)</p></div>
+    <div class="head"><span class="eyebrow" id="cv-eye"></span><h2 id="cv-h" data-i="cvH"></h2><p data-i="cvP"></p></div>
     <div class="cover">
       <figure>
         <div class="img" id="cv-img"><img id="cv-pic" alt="" width="1845" height="1286"><div class="spine" id="cv-spine"></div></div>
-        <figcaption><span>← 뒤표지</span><span>책등 6.17mm (점선)</span><span>앞표지 →</span></figcaption>
+        <figcaption><span data-i="capBack"></span><span data-i="capSpine"></span><span data-i="capFront"></span></figcaption>
       </figure>
       <div class="notes-list" id="cv-notes"></div>
     </div>
@@ -400,59 +413,59 @@ table.terms tr.tact td { padding-top: 0; }
   </section>
 
   <section id="contents" aria-labelledby="ct-h">
-    <div class="head"><span class="eyebrow">내용</span><h2 id="ct-h">128면은 이렇게 짜여 있어요</h2><p id="ct-sub"></p></div>
-    <div class="pagebar" aria-hidden="true"><div class="fm" style="flex:0 0 7%">앞 3면</div><div class="days">61일 × 2면 = 122면 (11/1 – 12/31)</div><div class="fm" style="flex:0 0 7%">뒤 3면</div></div>
+    <div class="head"><span class="eyebrow" data-i="ctEye"></span><h2 id="ct-h" data-i="ctH"></h2><p id="ct-sub"></p></div>
+    <div class="pagebar" aria-hidden="true"><div class="fm" style="flex:0 0 7%" data-i="pbFront"></div><div class="days" data-i="pbDays"></div><div class="fm" style="flex:0 0 7%" data-i="pbBack"></div></div>
     <div class="pagebar-legend num"><span>1</span><span>4</span><span>125</span><span>128</span></div>
     <div class="anatomy" id="ct-anatomy"></div>
     <div class="extras" id="ct-extras"></div>
   </section>
 
   <section id="read" aria-labelledby="rd-h">
-    <div class="head"><span class="eyebrow">열람</span><h2 id="rd-h">펼침면 보기</h2><p>왼쪽 짝수 면 + 오른쪽 홀수 면. 하루치가 한 펼침에 들어갑니다.</p></div>
+    <div class="head"><span class="eyebrow" data-i="rdEye"></span><h2 id="rd-h" data-i="rdH"></h2><p data-i="rdP"></p></div>
     <div class="viewer">
       <div class="stage">
         <div class="stage-top">
           <div class="meta"><b id="v-title"></b><span id="v-sub"></span></div>
-          <button class="btn" id="v-prev" aria-label="이전 펼침">‹ 이전</button>
-          <select id="v-jump" aria-label="날짜로 가기"></select>
-          <button class="btn" id="v-next" aria-label="다음 펼침">다음 ›</button>
-          <button class="btn" id="v-cmp" type="button" aria-haspopup="dialog">4권 같이 보기</button>
-          <button class="btn" id="v-ko" type="button" aria-pressed="false" title="같은 책·같은 펼침의 한국어판을 바로 아래에 보여 줘요">한국어판 나란히</button>
+          <button class="btn" id="v-prev" data-i="prev" data-ia="aria-label:prevSpread"></button>
+          <select id="v-jump" data-ia="aria-label:jumpAria"></select>
+          <button class="btn" id="v-next" data-i="next" data-ia="aria-label:nextSpread"></button>
+          <button class="btn" id="v-cmp" type="button" aria-haspopup="dialog" data-i="cmpBtn"></button>
+          <button class="btn" id="v-ko" type="button" aria-pressed="false" data-i="koBtn" data-ia="title:koBtnTitle"></button>
         </div>
-        <div class="scroller" id="v-scroll"><img id="v-img" alt="" width="1522" height="1076"><div class="kopair" id="v-kopair" hidden><div class="lab"><span><b>한국어판</b> · 같은 펼침</span><a id="v-kolink" href="#" target="_blank" rel="noopener">한국어판 검수 페이지 ↗</a></div><img id="v-koimg" alt="" width="1522" height="1076" loading="lazy"><p class="miss" id="v-komiss" hidden>한국어판 그림을 불러오지 못했어요.</p></div></div>
-        <div class="qbar"><div class="confirm" id="p-confirm"></div><span class="qhelp">그림을 누르면 2배로 커져요<span class="kbd-hint"> · <span class="kbd">←</span> <span class="kbd">→</span> 넘기기</span></span></div>
+        <div class="scroller" id="v-scroll"><img id="v-img" alt="" width="1522" height="1076"><div class="kopair" id="v-kopair" hidden><div class="lab"><span data-ih="koLab"></span><a id="v-kolink" href="#" target="_blank" rel="noopener" data-i="koLink"></a></div><img id="v-koimg" alt="" width="1522" height="1076" loading="lazy"><p class="miss" id="v-komiss" data-i="koMiss" hidden></p></div></div>
+        <div class="qbar"><div class="confirm" id="p-confirm"></div><span class="qhelp" data-ih="qhelp"></span></div>
       </div>
       <aside class="panel" aria-labelledby="p-h">
-        <header><h3 id="p-h">이 펼침 검수 · 수정 필요 / 메모</h3><span id="p-pages"></span></header>
+        <header><h3 id="p-h" data-i="pH"></h3><span id="p-pages"></span></header>
         <div class="thread" id="p-thread"></div>
         <form class="add" id="p-form">
-          <div class="seg" role="radiogroup" aria-label="상태">
-            <label class="st-fix"><input type="radio" name="st" id="st-fix" value="fix" checked>수정 필요</label>
-            <label class="st-memo"><input type="radio" name="st" id="st-memo" value="memo">메모</label>
+          <div class="seg" role="radiogroup" data-ia="aria-label:stAria">
+            <label class="st-fix"><input type="radio" name="st" id="st-fix" value="fix" checked><span data-i="st.fix"></span></label>
+            <label class="st-memo"><input type="radio" name="st" id="st-memo" value="memo"><span data-i="st.memo"></span></label>
           </div>
-          <textarea id="p-text" placeholder="예: 2면 질문 2 보기 ③ 줄바꿈 어색함" aria-label="메모 내용"></textarea>
-          <div class="row"><span class="hint" id="p-hint">무엇을 고칠지 적어 주세요</span><button class="btn primary" id="p-send" type="submit">남기기</button></div>
+          <textarea id="p-text" data-ia="placeholder:textPh;aria-label:textAria"></textarea>
+          <div class="row"><span class="hint" id="p-hint"></span><button class="btn primary" id="p-send" type="submit" data-i="send"></button></div>
         </form>
       </aside>
     </div>
-    <div class="filters" id="t-filters" role="group" aria-label="썸네일 거르기">
-      <button class="chip" data-f="all" aria-pressed="true">전체 65</button>
-      <button class="chip" data-f="fix" aria-pressed="false">수정 필요</button>
-      <button class="chip" data-f="todo" aria-pressed="false">아직 안 본 곳</button>
-      <button class="chip" data-f="ok" aria-pressed="false">확인 완료</button>
-      <button class="chip" data-f="done" aria-pressed="false">반영함</button>
+    <div class="filters" id="t-filters" role="group" data-ia="aria-label:tfAria">
+      <button class="chip" data-f="all" aria-pressed="true"></button>
+      <button class="chip" data-f="fix" aria-pressed="false" data-i="st.fix"></button>
+      <button class="chip" data-f="todo" aria-pressed="false" data-i="fTodo"></button>
+      <button class="chip" data-f="ok" aria-pressed="false" data-i="st.ok"></button>
+      <button class="chip" data-f="done" aria-pressed="false" data-i="fDone"></button>
     </div>
     <div class="thumbs" id="thumbs"></div>
   </section>
 
   <section id="review" aria-labelledby="rv-h">
-    <div class="head"><span class="eyebrow">검수 메모</span><h2 id="rv-h">모든 메모</h2><p>네 권 전체(용어 의견은 ‘용어 검수표’ 탭에). 날짜를 누르면 그 펼침으로 갑니다.</p></div>
-    <div class="filters" id="r-filters" role="group" aria-label="메모 거르기">
-      <button class="chip" data-r="all" aria-pressed="true">전체</button>
-      <button class="chip" data-r="fix" aria-pressed="false">수정 필요</button>
-      <button class="chip" data-r="memo" aria-pressed="false">메모</button>
-      <button class="chip" data-r="ok" aria-pressed="false">확인 완료</button>
-      <button class="chip" data-r="book" aria-pressed="false">지금 고른 책만</button>
+    <div class="head"><span class="eyebrow" data-i="rvEye"></span><h2 id="rv-h" data-i="rvH"></h2><p data-i="rvP"></p></div>
+    <div class="filters" id="r-filters" role="group" data-ia="aria-label:rfAria">
+      <button class="chip" data-r="all" aria-pressed="true" data-i="all"></button>
+      <button class="chip" data-r="fix" aria-pressed="false" data-i="st.fix"></button>
+      <button class="chip" data-r="memo" aria-pressed="false" data-i="st.memo"></button>
+      <button class="chip" data-r="ok" aria-pressed="false" data-i="st.ok"></button>
+      <button class="chip" data-r="book" aria-pressed="false" data-i="rBook"></button>
     </div>
     <div id="r-out"></div>
   </section>
@@ -460,13 +473,13 @@ table.terms tr.tact td { padding-top: 0; }
 
 <main class="wrap" id="m-terms" hidden>
   <section id="terms" aria-labelledby="tm-h">
-    <div class="head"><span class="eyebrow">용어 검수표 · Thuật ngữ</span><h2 id="tm-h">베트남어 용어, 이렇게 통일할까요?</h2><p>네 권에 나온 주요 용어의 추천 표현과 다른 표현. 좋으면 ‘✓ 좋아요’, 다른 표현이 낫다면 고르거나 적어 주세요.</p></div>
+    <div class="head"><span class="eyebrow" data-i="tmEye"></span><h2 id="tm-h" data-i="tmH"></h2><p data-i="tmP"></p></div>
     <div class="tsum" id="tm-sum"></div>
-    <div class="filters" id="tm-filters" role="group" aria-label="용어 거르기">
-      <button class="chip" data-t="all" aria-pressed="true">전체</button>
-      <button class="chip" data-t="review" aria-pressed="false">검토</button>
-      <button class="chip" data-t="unify" aria-pressed="false">통일 필요</button>
-      <button class="chip" data-t="opinion" aria-pressed="false">의견 있음</button>
+    <div class="filters" id="tm-filters" role="group" data-ia="aria-label:tmfAria">
+      <button class="chip" data-t="all" aria-pressed="true"></button>
+      <button class="chip" data-t="review" aria-pressed="false"></button>
+      <button class="chip" data-t="unify" aria-pressed="false"></button>
+      <button class="chip" data-t="opinion" aria-pressed="false"></button>
     </div>
     <div id="tm-out"></div>
   </section>
@@ -484,66 +497,416 @@ const BOOK_INFO = {
 // 한국어판 검수 사이트(같은 책·같은 펼침 번호의 그림을 그대로 불러옴, 복사하지 않음)
 const KO_SITE = 'https://fastkorea12-png.github.io/bibletree-print-review-1112/';
 const koImg = (code, i) => `${KO_SITE}img/${BOOK_INFO[code].ko}/s${String(i).padStart(2, '0')}.jpg`;
-const COVER_NOTES = {
-  kids: [
-    ['앞표지 그림', '한국어판과 같은 그림: 열매가 가득 달린 가을 나무 아래에서 바구니에 열매를 담는 아이들과 저녁 하늘의 별. 저학년(Nhi đồng)·고학년(Thiếu nhi)이 같은 그림을 씁니다.'],
-    ['글자', 'BIBLE TREE / 2026 / 1112 체계 그대로. 블랙한산스 대신 Be Vietnam Pro Black(베트남어 성조 부호 지원). 부제 “Tạ ơn và Chờ đợi”(감사와 기다림)와 연령 띠.'],
-    ['뒤표지', '문구 “Cảm ơn Chúa, / và chờ đợi Ngài”(고마워요, 그리고 기다려요). QR 아래 “Cùng suy ngẫm trên web Bible Tree”. QR은 아직 한국어판 주소 그대로.', '확인 필요'],
-    ['책등', '한국어판과 같은 배치. 기관명 “HEM - 건강한교육사역”은 한국어 그대로 둠.', '확인 필요'],
-  ],
-  teen: [
-    ['앞표지 그림', '한국어판과 같은 그림: 짙은 바탕 위 종이 오림 가지, 단풍잎, 붉은 열매와 작은 별.'],
-    ['글자', 'BIBLE TREE / 2026 / 1112, Be Vietnam Pro Black. 부제 “Tạ ơn và Chờ đợi”, 청록 연령 띠 Thanh thiếu niên.'],
-    ['뒤표지', '문구 “Đôi tay từng đếm trái ngọt / nay chờ đón ngôi sao”(열매를 세던 손으로 별을 기다립니다). QR은 한국어판 주소 그대로.', '확인 필요'],
-    ['책등', '한국어판과 같은 배치. 기관명 “HEM - 건강한교육사역”은 한국어 그대로 둠.', '확인 필요'],
-  ],
-  young: [
-    ['앞표지 그림', '한국어판과 같은 그림: 남색 바탕, 마른 가지 끝의 감 하나와 별.'],
-    ['글자', 'BIBLE TREE / 2026 / 1112, Be Vietnam Pro Black. 연령 띠 Thanh niên(흰 띠에 남색 글자).'],
-    ['뒤표지', '문구 “Đôi tay từng đếm trái ngọt / nay chờ đón ngôi sao”. QR은 한국어판 주소 그대로.', '확인 필요'],
-    ['책등', '한국어판과 같은 배치. 기관명 “HEM - 건강한교육사역”은 한국어 그대로 둠.', '확인 필요'],
-  ],
+// ───────── 화면 말(베트남어 기본 · 한국어) ─────────
+// 화면에 나오는 글은 모두 여기에. t('키', {변수})로 꺼내 쓴다. 데이터(원고 제목·용어표 메모 등)는 번역하지 않는다.
+const LANG_NAMES = { vi: 'Tiếng Việt', ko: '한국어' };
+const I18N = {
+  vi: {
+    pageTitle: 'Bible Tree 11–12/2026 · Duyệt bản in tiếng Việt',
+    metaDesc: 'Trang duyệt bản in Bible Tree tháng 11–12/2026 bản tiếng Việt: xem bìa và 128 trang theo từng trang đôi, ghi nhận xét, góp ý bảng thuật ngữ.',
+    langAria: 'Ngôn ngữ',
+    // cổng nhập tên
+    gateH: 'Duyệt bản in tiếng Việt',
+    gateP: 'Xin anh/chị nhập tên để ghi kèm nhận xét. Tên được lưu trên thiết bị này, lần sau sẽ vào thẳng.',
+    gateLabel: 'Tên',
+    gatePh: 'Ví dụ: Mục sư Nguyễn Văn An',
+    gateStart: 'Bắt đầu duyệt',
+    gateErr: 'Xin nhập tên.',
+    cancel: 'Hủy',
+    // thanh trên
+    brandSub: 'Duyệt bản in tiếng Việt',
+    tabsAria: 'Chế độ xem', tabPrint: 'Duyệt bản in', tabTerms: 'Bảng thuật ngữ',
+    booksAria: 'Chọn sách',
+    reviewer: 'Người duyệt:', changeName: 'Đổi tên',
+    secAria: 'Mục', navCover: 'Bìa', navContents: 'Nội dung', navRead: 'Xem trang', navReview: 'Nhận xét',
+    // tên sách
+    book: '{vage}',
+    // tổng quan
+    ovEye: 'Bốn cuốn trong một trang · Tiếng Việt',
+    ovH: 'Bản dàn trang tiếng Việt · 14/10',
+    ovP: 'Cùng khổ, cùng 128 trang và cấu trúc trang đôi như bản tiếng Hàn · Tràn lề 2mm mỗi cạnh · Gáy 6,17mm · CMYK',
+    dtBody: 'Ruột sách', ddBody: '{size} · 128 trang', dtWork: 'Khổ làm việc', dtCover: 'Bìa trải',
+    ovMeter: 'Đã duyệt/đã sửa {ok} · Cần sửa {fix} · Còn lại {left} / {days} trang đôi',
+    ovDone: ' · Đã sửa {n} ý kiến',
+    // bìa
+    cvEye: 'Bìa · {name}',
+    cvH: 'Thiết kế bìa',
+    cvP: 'Bìa sau · gáy · bìa trước trải ra (theo đường cắt, không gồm tràn lề) · Phụ đề “Tạ ơn và Chờ đợi”',
+    cvAlt: 'Bìa trải của cuốn {name}: bìa sau, gáy, bìa trước',
+    capBack: '← Bìa sau', capSpine: 'Gáy 6,17mm (đường chấm)', capFront: 'Bìa trước →',
+    tagDraft: 'Bản nháp · cần xác nhận',
+    specTrim: 'Cắt thành phẩm (trải)', specWork: 'Khổ làm việc (gồm tràn lề)', specSpine: 'Gáy', specBleed: 'Tràn lề', specBleedV: '2mm mỗi cạnh',
+    specColor: 'Màu', specColorV: 'CMYK · QR một màu đen', specImg: 'Hình ảnh',
+    coverNotes: {
+      kids: [
+        ['Hình bìa trước', 'Cùng hình với bản tiếng Hàn: các em nhỏ hái trái bỏ vào giỏ dưới cây mùa thu trĩu quả, và những ngôi sao trên bầu trời chiều. Nhi đồng và Thiếu nhi dùng chung một hình.'],
+        ['Chữ', 'Giữ hệ thống BIBLE TREE / 2026 / 1112. Thay phông Black Han Sans bằng Be Vietnam Pro Black (có đủ dấu tiếng Việt). Phụ đề “Tạ ơn và Chờ đợi” và dải tên lứa tuổi.'],
+        ['Bìa sau', 'Câu “Cảm ơn Chúa, / và chờ đợi Ngài”. Dưới mã QR: “Cùng suy ngẫm trên web Bible Tree”. Mã QR hiện vẫn dẫn đến địa chỉ của bản tiếng Hàn.', true],
+        ['Gáy sách', 'Bố cục giống bản tiếng Hàn. Tên tổ chức “HEM - 건강한교육사역” vẫn để nguyên tiếng Hàn.', true],
+      ],
+      teen: [
+        ['Hình bìa trước', 'Cùng hình với bản tiếng Hàn: cành cây cắt giấy trên nền tối, lá phong, trái đỏ và ngôi sao nhỏ.'],
+        ['Chữ', 'BIBLE TREE / 2026 / 1112, Be Vietnam Pro Black. Phụ đề “Tạ ơn và Chờ đợi”, dải lứa tuổi màu xanh ngọc Thanh thiếu niên.'],
+        ['Bìa sau', 'Câu “Đôi tay từng đếm trái ngọt / nay chờ đón ngôi sao”. Mã QR vẫn dẫn đến địa chỉ của bản tiếng Hàn.', true],
+        ['Gáy sách', 'Bố cục giống bản tiếng Hàn. Tên tổ chức “HEM - 건강한교육사역” vẫn để nguyên tiếng Hàn.', true],
+      ],
+      young: [
+        ['Hình bìa trước', 'Cùng hình với bản tiếng Hàn: nền xanh đậm, một trái hồng trên đầu cành khô và ngôi sao.'],
+        ['Chữ', 'BIBLE TREE / 2026 / 1112, Be Vietnam Pro Black. Dải lứa tuổi Thanh niên (dải trắng, chữ xanh đậm).'],
+        ['Bìa sau', 'Câu “Đôi tay từng đếm trái ngọt / nay chờ đón ngôi sao”. Mã QR vẫn dẫn đến địa chỉ của bản tiếng Hàn.', true],
+        ['Gáy sách', 'Bố cục giống bản tiếng Hàn. Tên tổ chức “HEM - 건강한교육사역” vẫn để nguyên tiếng Hàn.', true],
+      ],
+    },
+    // nội dung
+    ctEye: 'Nội dung', ctH: '128 trang được sắp xếp như sau',
+    ctSub: '{name} · {size}mm · mỗi ngày 2 trang',
+    pbFront: '3 trang đầu', pbDays: '61 ngày × 2 trang = 122 trang (1/11 – 31/12)', pbBack: '3 trang cuối',
+    anatomy: {
+      kids: [
+        ['Trang 1 · trang chẵn bên trái', [
+          ['Dải đầu trang', 'Ô ngày (Tháng 11 / 04 / Thứ Tư), địa chỉ Kinh Thánh, tựa đề, chủ đề tuần (Chủ đề tuần này), hình minh họa của ngày'],
+          ['Giải thích từ ngữ + Kinh Thánh', 'Giải thích từ ngữ. Kinh Thánh bản Truyền Thống 1934; từ được giải thích tô vàng trong đoạn Kinh Thánh'],
+          ['Câu chuyện Lời Chúa', 'Phần giải thích của ngày'],
+        ]],
+        ['Trang 2 · trang lẻ bên phải', [
+          ['Tiêu đề ngày', 'Góc trên bên phải ‘4/11 Thứ Tư’ (Chúa nhật màu đỏ)'],
+          ['Đọc và khám phá', '3 câu hỏi. Ký hiệu nhóm của bản tiếng Hàn đổi thành A/B và ⓐ'],
+          ['Cầu nguyện và thực hành', 'Lời cầu nguyện của ngày'],
+        ]],
+      ],
+      a5: [
+        ['Trang 1 · trang chẵn bên trái', [
+          ['Đầu trang', 'Số ngày lớn, hai dòng dọc THÁNG 11 / THỨ TƯ, địa chỉ Kinh Thánh, tựa đề, chủ đề tuần'],
+          ['Lời Chúa hôm nay + Giải thích từ ngữ', 'Đoạn Kinh Thánh của ngày và phần giải thích từ ngữ'],
+          ['Giải thích phân đoạn', 'Phía dưới là đáp án của ngày hôm trước (Đáp án Quan sát d/m)'],
+        ]],
+        ['Trang 2 · trang lẻ bên phải', [
+          ['Đọc kỹ Lời Chúa (Quan sát)', 'Câu hỏi quan sát'],
+          ['Hiểu Lời Chúa (Giải nghĩa)', 'Câu hỏi giải nghĩa'],
+          ['Khắc ghi và sống theo Lời Chúa', 'Tiếp theo là Cầu nguyện bằng Lời Chúa. Vì câu tiếng Việt dài nên nhiều ngày ô để viết khá hẹp'],
+        ]],
+      ],
+    },
+    extras: [
+      ['Trang 1', 'Trang tựa'], ['Trang 2', 'Cách đọc sách'], ['Trang 3', 'Lời mở đầu (dịch cho 4 lứa tuổi)'],
+      ['Trang 126', 'Hành trình Lời Chúa (ngày d/m)'], ['Trang 127', 'Nhìn lại hai tháng'], ['Trang 128', 'Sổ cầu nguyện · bản quyền (Ngày phát hành 20/10/2026)'],
+    ],
+    // nhãn các trang không có ngày (dữ liệu tiếng Hàn → tên hiển thị)
+    labels: { '속표지': 'Trang tựa', '이렇게 읽어요 · 여는 글': 'Cách đọc sách · Lời mở đầu', '말씀 여행 길 · 두 달 돌아보기': 'Hành trình Lời Chúa · Nhìn lại hai tháng', '기도 노트 · 판권': 'Sổ cầu nguyện · Bản quyền' },
+    wd: { '일': 'CN', '월': 'T2', '화': 'T3', '수': 'T4', '목': 'T5', '금': 'T6', '토': 'T7' },
+    pages: 'tr. {p}',
+    pagesLabel: 'tr. {p} · {label}',
+    // xem trang
+    rdEye: 'Xem trang', rdH: 'Xem trang đôi', rdP: 'Trang chẵn bên trái + trang lẻ bên phải. Mỗi ngày nằm gọn trong một trang đôi.',
+    prev: '‹ Trước', next: 'Sau ›', prevSpread: 'Trang đôi trước', nextSpread: 'Trang đôi sau', prevDay: 'Ngày trước', nextDay: 'Ngày sau',
+    jumpAria: 'Đi đến ngày',
+    cmpBtn: 'Xem cả 4 cuốn',
+    koBtn: 'Xem bản tiếng Hàn', koBtnTitle: 'Hiện bản tiếng Hàn của cùng cuốn, cùng trang đôi ngay bên dưới',
+    koLab: '<b>Bản tiếng Hàn</b> · cùng trang đôi', koLink: 'Trang duyệt bản tiếng Hàn ↗', koMiss: 'Không tải được hình bản tiếng Hàn.',
+    koAlt: 'Bản tiếng Hàn, {name}, trang đôi {p}',
+    spreadAlt: '{name}, trang đôi {p}',
+    qhelp: 'Bấm vào hình để phóng to gấp đôi<span class="kbd-hint"> · <span class="kbd">←</span> <span class="kbd">→</span> lật trang</span>',
+    pH: 'Duyệt trang đôi này · Cần sửa / Ghi chú',
+    pPages: '{name} · tr. {p}',
+    stAria: 'Trạng thái',
+    st: { ok: 'Đã duyệt', fix: 'Cần sửa', memo: 'Ghi chú' },
+    textPh: 'Ví dụ: Trang 2, câu hỏi 2, lựa chọn ③ xuống dòng chưa hợp lý',
+    textAria: 'Nội dung nhận xét',
+    hintFix: 'Xin ghi rõ chỗ cần sửa', hintMemo: 'Xin ghi nội dung ghi chú',
+    hintEmpty: 'Xin ghi chỗ cần sửa hoặc nội dung ghi chú.',
+    send: 'Gửi', sending: 'Đang gửi…', sent: 'Đã gửi.',
+    sendFail: 'Chưa gửi được. Xin kiểm tra kết nối mạng rồi bấm lại.',
+    loadFail: 'Không tải được dữ liệu duyệt. Xin tải lại trang sau ít phút.',
+    loadingNotes: 'Đang tải dữ liệu duyệt.',
+    loadingToast: 'Đang tải dữ liệu duyệt. Xin bấm lại sau giây lát.',
+    loadingBtn: 'Đang tải…', loadingShort: 'Đang tải',
+    threadEmpty: 'Trang đôi này chưa có nhận xét. Xem xong thì bấm “Duyệt xong” ở trên; nếu cần sửa, xin ghi ở ô bên dưới.',
+    noName: 'Không tên', del: 'Xóa', undo: 'Hoàn tác',
+    okBtn: '✓ Duyệt xong',
+    confirmed: '✓ Đã duyệt ({name})',
+    enterNext: ' sang trang đôi sau',
+    okHint: 'Bấm là ghi ngay với tên ‘{name}’',
+    okHintKbd: ' duyệt rồi sang trang sau',
+    others: 'Người đã duyệt: {names}',
+    confirmOk: 'Đã ghi “Duyệt xong”.',
+    undone: 'Đã hoàn tác.', undoFail: 'Chưa hoàn tác được. Xin bấm lại.', delFail: 'Chưa xóa được. Xin bấm lại.',
+    // lọc hình thu nhỏ
+    tfAria: 'Lọc hình thu nhỏ', fAll: 'Tất cả {n}', fTodo: 'Chưa xem', fDone: 'Đã sửa',
+    mFix: 'Sửa {n}', mDone: 'Đã sửa {n}', mMemo: 'Ghi chú {n}',
+    thumbAria: '{title}, tr. {p}',
+    okBy: 'Đã duyệt: {names}',
+    tokMine: '✓ Đã duyệt', tokBtn: 'Duyệt',
+    tokUndoAria: 'Hoàn tác duyệt: {title}', tokOkAria: 'Duyệt xong: {title}',
+    tokOther: 'Đã duyệt trên thiết bị khác nên không hoàn tác ở đây được',
+    thumbsEmpty: 'Không có trang đôi nào phù hợp.',
+    doneDate: 'Đã sửa {date}',
+    // xem cả 4 cuốn
+    cmpHint: 'Trang đôi cùng ngày của bốn cuốn · Bấm vào hình để mở cuốn đó<span class="kbd-hint"> · <span class="kbd">Enter</span> duyệt cả bốn cuốn rồi sang ngày sau</span>',
+    cmpTitle: '{date} ({wd}) · Xem cả bốn cuốn',
+    close: 'Đóng',
+    cmpAll: '✓ Duyệt cả 4 cuốn', cmpLeft: '✓ Duyệt {n} cuốn còn lại', cmpAllDone: '✓ Đã duyệt cả 4 cuốn',
+    pillFix: 'Cần sửa {n}', pillDone: '✓ Đã sửa {n}', pillTodo: 'Chưa duyệt',
+    cardOpenAria: 'Mở {name} · {title}',
+    undoAria: 'Hoàn tác duyệt: {name}', okAria: 'Duyệt xong: {name}',
+    moreBtn: 'Cần sửa / Ghi chú',
+    openThis: 'Mở cuốn này →',
+    moreEmpty: 'Chưa có yêu cầu sửa hay ghi chú nào.',
+    cmpTaAria: '{name} · nội dung cần sửa / ghi chú',
+    cmpSentTo: 'Đã gửi cho cuốn {name}.',
+    cmpWhere: 'Ghi vào {name} · {where}',
+    manyOk: 'Đã ghi “Duyệt xong” cho {n} cuốn.', manyFail: 'Chưa ghi được {n} cuốn. Xin bấm lại.',
+    // nhận xét
+    rvEye: 'Nhận xét', rvH: 'Tất cả nhận xét',
+    rvP: 'Của cả bốn cuốn (ý kiến về thuật ngữ nằm ở thẻ ‘Bảng thuật ngữ’). Bấm vào ngày để mở trang đôi đó.',
+    rfAria: 'Lọc nhận xét', all: 'Tất cả', rBook: 'Chỉ cuốn đang chọn',
+    noNotes: 'Chưa có nhận xét nào. Khi xem trang đôi và ghi vào ô bên cạnh, nhận xét sẽ được gom về đây.',
+    th: ['Trang đôi', 'Trạng thái', 'Nội dung', 'Người gửi', 'Thời gian'],
+    offline: 'Có thể ghi nhận xét tại trang duyệt công khai, chỉ cần nhập tên: ', offlineLink: 'Mở trang duyệt',
+    // bảng thuật ngữ
+    tmEye: 'Bảng thuật ngữ',
+    tmH: 'Thống nhất thuật ngữ tiếng Việt như thế này được không?',
+    tmP: 'Cách dịch đề xuất và các cách dịch khác của những thuật ngữ chính trong bốn cuốn. Nếu đồng ý, xin bấm ‘✓ Đồng ý’; nếu thấy cách khác hay hơn, xin chọn hoặc ghi lại.',
+    tmfAria: 'Lọc thuật ngữ',
+    tf: { all: 'Tất cả', review: 'Cần xem lại', unify: 'Cần thống nhất', opinion: 'Có ý kiến' },
+    sum: ['Thuật ngữ', 'Cần thống nhất', 'Cần xem lại', 'Đồng ý', 'Ý kiến khác', 'Thuật ngữ có ý kiến'],
+    tst: { unify: 'Cần thống nhất', review: 'Cần xem lại', fixed: 'Đã chốt' },
+    groups: { '신앙 용어': 'Thuật ngữ đức tin', '책 고정 문구': 'Câu chữ cố định trong sách', '성경 인명·지명': 'Tên người, địa danh Kinh Thánh', '하나님·예수님·성령 호칭': 'Danh xưng Đức Chúa Trời, Chúa Jêsus, Đức Thánh Linh', '말투·인칭': 'Giọng văn, ngôi xưng hô' },
+    groupOther: 'Khác',
+    termsMissing: 'Bảng thuật ngữ (terms.json) chưa được tải lên. Khi sẵn sàng sẽ hiện ngay ở thẻ này.',
+    termsFail: 'Không tải được bảng thuật ngữ ({err}). Xin tải lại trang sau ít phút.',
+    termsLoading: 'Đang tải bảng thuật ngữ.',
+    termsNone: 'Không có thuật ngữ nào phù hợp.',
+    cols: ['Cách dịch đề xuất', 'Cách dịch khác (số lần)', 'Trạng thái', 'Câu ví dụ', 'Ghi chú (tiếng Hàn)'],
+    koGloss: 'Tiếng Hàn',
+    noteShow: 'Xem ghi chú',
+    likeBtn: '✓ Đồng ý', liked: '✓ Đã đồng ý', likeAria: 'Đồng ý với “{vi}”',
+    orPick: 'Hoặc chọn:', pickAria: 'Chọn cách dịch khác: {vi}',
+    writeOther: 'Ghi cách dịch khác',
+    tvPh: 'Cách dịch tiếng Việt anh/chị chọn hoặc đề xuất', tvAria: 'Cách dịch tiếng Việt',
+    tcPh: 'Lý do hoặc ghi chú (không bắt buộc)', tcAria: 'Ý kiến',
+    sendOp: 'Gửi ý kiến', savesAs: 'Sẽ lưu: chọn “{vi}”',
+    likesLine: '✓ Đồng ý {n} · {names}', opFix: 'Ý kiến khác', opMemo: 'Ghi chú',
+    noOp: 'Chưa có ý kiến.', opLoading: 'Đang tải ý kiến.',
+    likedToast: 'Đã ghi “Đồng ý”.', likeUndone: 'Đã hoàn tác “Đồng ý”.',
+    needVi: 'Xin chọn hoặc ghi cách dịch tiếng Việt đề xuất.', opSent: 'Đã gửi ý kiến.',
+    choice: 'Chọn: ',
+  },
+  ko: {
+    pageTitle: '바이블트리 11–12월 베트남어판 인쇄 검수',
+    metaDesc: '바이블트리 2026 11–12월 베트남어판 네 권의 표지·128면 펼침 열람, 검수 메모, 용어 검수표.',
+    langAria: '언어',
+    gateH: '베트남어판 인쇄 검수',
+    gateP: '검수 기록에 남길 이름을 적어 주세요. 이 기기에 기억해 두어 다음부터는 바로 들어가요.',
+    gateLabel: '이름',
+    gatePh: '예: 김바울 목사',
+    gateStart: '검수 시작',
+    gateErr: '이름을 적어 주세요.',
+    cancel: '취소',
+    brandSub: '베트남어판 인쇄 검수',
+    tabsAria: '보기', tabPrint: '인쇄 검수', tabTerms: '용어 검수표',
+    booksAria: '책 고르기',
+    reviewer: '검수자', changeName: '이름 바꾸기',
+    secAria: '섹션', navCover: '표지', navContents: '내용', navRead: '열람', navReview: '검수 메모',
+    book: '{vage} ({age})',
+    ovEye: '네 권 한눈에 · Tiếng Việt',
+    ovH: '베트남어판 조판본 · 10월 14일',
+    ovP: '한국어판과 같은 판형·128면·펼침 구조 · 도련 사방 2mm · 책등 6.17mm · CMYK',
+    dtBody: '본문', ddBody: '{size} · 128면', dtWork: '작업 크기', dtCover: '표지 펼침',
+    ovMeter: '확인·반영 {ok} · 수정 필요 {fix} · 남은 곳 {left} / {days}펼침',
+    ovDone: ' · 의견 {n}건 반영함',
+    cvEye: '표지 · {name}',
+    cvH: '표지 디자인',
+    cvP: '뒤표지 · 책등 · 앞표지 펼침 (재단선 기준, 도련 제외) · 부제 “Tạ ơn và Chờ đợi”(감사와 기다림)',
+    cvAlt: '{name} 펼침 표지: 뒤표지, 책등, 앞표지',
+    capBack: '← 뒤표지', capSpine: '책등 6.17mm (점선)', capFront: '앞표지 →',
+    tagDraft: '시안 · 확인 필요',
+    specTrim: '재단 (펼침)', specWork: '작업 (도련 포함)', specSpine: '책등', specBleed: '도련', specBleedV: '사방 2mm',
+    specColor: '색', specColorV: 'CMYK · QR 검정 한 색', specImg: '그림',
+    coverNotes: {
+      kids: [
+        ['앞표지 그림', '한국어판과 같은 그림: 열매가 가득 달린 가을 나무 아래에서 바구니에 열매를 담는 아이들과 저녁 하늘의 별. 저학년(Nhi đồng)·고학년(Thiếu nhi)이 같은 그림을 씁니다.'],
+        ['글자', 'BIBLE TREE / 2026 / 1112 체계 그대로. 블랙한산스 대신 Be Vietnam Pro Black(베트남어 성조 부호 지원). 부제 “Tạ ơn và Chờ đợi”(감사와 기다림)와 연령 띠.'],
+        ['뒤표지', '문구 “Cảm ơn Chúa, / và chờ đợi Ngài”(고마워요, 그리고 기다려요). QR 아래 “Cùng suy ngẫm trên web Bible Tree”. QR은 아직 한국어판 주소 그대로.', true],
+        ['책등', '한국어판과 같은 배치. 기관명 “HEM - 건강한교육사역”은 한국어 그대로 둠.', true],
+      ],
+      teen: [
+        ['앞표지 그림', '한국어판과 같은 그림: 짙은 바탕 위 종이 오림 가지, 단풍잎, 붉은 열매와 작은 별.'],
+        ['글자', 'BIBLE TREE / 2026 / 1112, Be Vietnam Pro Black. 부제 “Tạ ơn và Chờ đợi”, 청록 연령 띠 Thanh thiếu niên.'],
+        ['뒤표지', '문구 “Đôi tay từng đếm trái ngọt / nay chờ đón ngôi sao”(열매를 세던 손으로 별을 기다립니다). QR은 한국어판 주소 그대로.', true],
+        ['책등', '한국어판과 같은 배치. 기관명 “HEM - 건강한교육사역”은 한국어 그대로 둠.', true],
+      ],
+      young: [
+        ['앞표지 그림', '한국어판과 같은 그림: 남색 바탕, 마른 가지 끝의 감 하나와 별.'],
+        ['글자', 'BIBLE TREE / 2026 / 1112, Be Vietnam Pro Black. 연령 띠 Thanh niên(흰 띠에 남색 글자).'],
+        ['뒤표지', '문구 “Đôi tay từng đếm trái ngọt / nay chờ đón ngôi sao”. QR은 한국어판 주소 그대로.', true],
+        ['책등', '한국어판과 같은 배치. 기관명 “HEM - 건강한교육사역”은 한국어 그대로 둠.', true],
+      ],
+    },
+    ctEye: '내용', ctH: '128면은 이렇게 짜여 있어요',
+    ctSub: '{name} · {size}mm · 하루 2면',
+    pbFront: '앞 3면', pbDays: '61일 × 2면 = 122면 (11/1 – 12/31)', pbBack: '뒤 3면',
+    anatomy: {
+      kids: [
+        ['1면 · 왼쪽 짝수 면', [
+          ['머리 띠', '날짜 배지(Tháng 11 / 04 / Thứ Tư), 성경 주소, 제목, 이번 주 주제(Chủ đề tuần này), 그날 삽화'],
+          ['낱말 풀이 + 성경 본문', 'Giải thích từ ngữ. 본문은 1934 전통역(Truyền Thống 1934), 표제어를 본문에서 노란색으로 표시'],
+          ['말씀을 이해해요', 'Câu chuyện Lời Chúa. 그날 해설'],
+        ]],
+        ['2면 · 오른쪽 홀수 면', [
+          ['날짜 머리글', '오른쪽 위 ‘4/11 Thứ Tư’ (주일 = Chúa nhật, 빨강)'],
+          ['읽고 발견해요', 'Đọc và khám phá. 질문 3개. 묶음 기호 가/나 → A/B, ㉠ → ⓐ'],
+          ['기도하고 실천해요', 'Cầu nguyện và thực hành. 그날 기도문'],
+        ]],
+      ],
+      a5: [
+        ['1면 · 왼쪽 짝수 면', [
+          ['머리', '큰 날짜 숫자, 세로 두 줄 THÁNG 11 / THỨ TƯ, 성경 주소, 제목, 이번 주 주제'],
+          ['오늘의 말씀 + 도움말', 'Lời Chúa hôm nay + Giải thích từ ngữ'],
+          ['본문 해설', 'Giải thích phân đoạn. 아래쪽에 전날 답(Đáp án Quan sát d/m)'],
+        ]],
+        ['2면 · 오른쪽 홀수 면', [
+          ['말씀 보기 (관찰하기)', 'Đọc kỹ Lời Chúa (Quan sát)'],
+          ['말씀 깨닫기 (해석하기)', 'Hiểu Lời Chúa (Giải nghĩa)'],
+          ['말씀 새기고 살아가기', 'Khắc ghi và sống theo Lời Chúa, 이어서 Cầu nguyện bằng Lời Chúa. 베트남어가 길어 쓰는 칸이 좁은 날이 많음'],
+        ]],
+      ],
+    },
+    extras: [
+      ['1쪽', '속표지'], ['2쪽', '이렇게 읽어요'], ['3쪽', '여는 글(4연령 번역)'],
+      ['126쪽', '말씀 여행 길(날짜 d/m)'], ['127쪽', '두 달 돌아보기'], ['128쪽', '기도 노트 · 판권(Ngày phát hành 20/10/2026)'],
+    ],
+    labels: {},
+    wd: {},
+    pages: '{p}쪽',
+    pagesLabel: '{p}쪽 · {label}',
+    rdEye: '열람', rdH: '펼침면 보기', rdP: '왼쪽 짝수 면 + 오른쪽 홀수 면. 하루치가 한 펼침에 들어갑니다.',
+    prev: '‹ 이전', next: '다음 ›', prevSpread: '이전 펼침', nextSpread: '다음 펼침', prevDay: '이전 날', nextDay: '다음 날',
+    jumpAria: '날짜로 가기',
+    cmpBtn: '4권 같이 보기',
+    koBtn: '한국어판 나란히', koBtnTitle: '같은 책·같은 펼침의 한국어판을 바로 아래에 보여 줘요',
+    koLab: '<b>한국어판</b> · 같은 펼침', koLink: '한국어판 검수 페이지 ↗', koMiss: '한국어판 그림을 불러오지 못했어요.',
+    koAlt: '한국어판 {name} {p}쪽 펼침면',
+    spreadAlt: '{name} {p}쪽 펼침면',
+    qhelp: '그림을 누르면 2배로 커져요<span class="kbd-hint"> · <span class="kbd">←</span> <span class="kbd">→</span> 넘기기</span>',
+    pH: '이 펼침 검수 · 수정 필요 / 메모',
+    pPages: '{name} {p}쪽',
+    stAria: '상태',
+    st: { ok: '확인 완료', fix: '수정 필요', memo: '메모' },
+    textPh: '예: 2면 질문 2 보기 ③ 줄바꿈 어색함',
+    textAria: '메모 내용',
+    hintFix: '무엇을 고칠지 적어 주세요', hintMemo: '남길 메모를 적어 주세요',
+    hintEmpty: '수정할 점이나 메모 내용을 적어 주세요.',
+    send: '남기기', sending: '남기는 중…', sent: '남겼어요.',
+    sendFail: '남기지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.',
+    loadFail: '검수 기록을 불러오지 못했어요. 잠시 뒤 새로고침해 주세요.',
+    loadingNotes: '검수 기록을 불러오는 중이에요.',
+    loadingToast: '검수 기록을 불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.',
+    loadingBtn: '불러오는 중…', loadingShort: '불러오는 중',
+    threadEmpty: '아직 남긴 검수가 없어요. 다 봤으면 위의 확인 완료를, 고칠 점이 있으면 아래에 남겨 주세요.',
+    noName: '이름 없음', del: '지우기', undo: '되돌리기',
+    okBtn: '✓ 확인 완료',
+    confirmed: '✓ 확인함 ({name})',
+    enterNext: ' 다음 펼침으로',
+    okHint: '누르면 ‘{name}’ 이름으로 바로 남아요',
+    okHintKbd: ' 확인하고 다음',
+    others: '확인한 사람: {names}',
+    confirmOk: '확인 완료를 남겼어요.',
+    undone: '확인을 되돌렸어요.', undoFail: '되돌리지 못했어요. 다시 눌러 주세요.', delFail: '지우지 못했어요. 다시 눌러 주세요.',
+    tfAria: '썸네일 거르기', fAll: '전체 {n}', fTodo: '아직 안 본 곳', fDone: '반영함',
+    mFix: '수정 {n}', mDone: '반영 {n}', mMemo: '메모 {n}',
+    thumbAria: '{title}, {p}쪽',
+    okBy: '확인: {names}',
+    tokMine: '✓ 확인함', tokBtn: '확인',
+    tokUndoAria: '{title} 확인 되돌리기', tokOkAria: '{title} 확인 완료',
+    tokOther: '다른 기기에서 남긴 확인이라 여기서는 되돌릴 수 없어요',
+    thumbsEmpty: '이 조건에 맞는 펼침이 없어요.',
+    doneDate: '{date} 반영함',
+    cmpHint: '네 권의 같은 날 펼침 · 그림을 누르면 그 책 열람으로 가요<span class="kbd-hint"> · <span class="kbd">Enter</span> 네 권 확인하고 다음 날</span>',
+    cmpTitle: '{date} ({wd}) 네 권 같이 보기',
+    close: '닫기',
+    cmpAll: '✓ 4권 모두 확인', cmpLeft: '✓ 남은 {n}권 확인', cmpAllDone: '✓ 4권 모두 확인함',
+    pillFix: '수정 필요 {n}', pillDone: '✓ 반영함 {n}', pillTodo: '아직 확인 전',
+    cardOpenAria: '{name} {title} 열람으로 열기',
+    undoAria: '{name} 확인 되돌리기', okAria: '{name} 확인 완료',
+    moreBtn: '수정 필요 / 메모',
+    openThis: '이 책으로 열기 →',
+    moreEmpty: '아직 남긴 수정·메모가 없어요.',
+    cmpTaAria: '{name} 수정·메모 내용',
+    cmpSentTo: '{name}에 남겼어요.',
+    cmpWhere: '{name} {where}에 남겨요',
+    manyOk: '{n}권 확인 완료를 남겼어요.', manyFail: '{n}권은 남기지 못했어요. 다시 눌러 주세요.',
+    rvEye: '검수 메모', rvH: '모든 메모',
+    rvP: '네 권 전체(용어 의견은 ‘용어 검수표’ 탭에). 날짜를 누르면 그 펼침으로 갑니다.',
+    rfAria: '메모 거르기', all: '전체', rBook: '지금 고른 책만',
+    noNotes: '아직 남긴 메모가 없어요. 열람에서 펼침을 보고 오른쪽 칸에 남기면 여기에 모여요.',
+    th: ['펼침', '상태', '내용', '남긴 사람', '시각'],
+    offline: '검수 기록은 공개 검수 페이지에서 이름만 적고 남길 수 있어요: ', offlineLink: '검수 페이지 열기',
+    tmEye: '용어 검수표 · Thuật ngữ',
+    tmH: '베트남어 용어, 이렇게 통일할까요?',
+    tmP: '네 권에 나온 주요 용어의 추천 표현과 다른 표현. 좋으면 ‘✓ 좋아요’, 다른 표현이 낫다면 고르거나 적어 주세요.',
+    tmfAria: '용어 거르기',
+    tf: { all: '전체', review: '검토', unify: '통일 필요', opinion: '의견 있음' },
+    sum: ['용어', '통일 필요', '검토', '좋아요', '다른 의견', '의견 있는 용어'],
+    tst: {},
+    groups: {},
+    groupOther: '기타',
+    termsMissing: '용어 검수표(terms.json)가 아직 올라오지 않았어요. 준비되면 이 탭에 바로 나타나요.',
+    termsFail: '용어 검수표를 불러오지 못했어요({err}). 잠시 뒤 새로고침해 주세요.',
+    termsLoading: '용어 검수표를 불러오는 중이에요.',
+    termsNone: '이 조건에 맞는 용어가 없어요.',
+    cols: ['한국어', '추천 베트남어', '다른 표현(횟수)', '상태', '메모', '예문'],
+    koGloss: '한국어',
+    noteShow: '메모 보기',
+    likeBtn: '✓ 좋아요', liked: '✓ 좋아요 함', likeAria: '{ko} → {vi} 좋아요',
+    orPick: '또는 고르기:', pickAria: '다른 표현 {vi} 고르기',
+    writeOther: '다른 표현 적기',
+    tvPh: '고른/제안하는 베트남어 표현', tvAria: '베트남어 표현',
+    tcPh: '이유나 메모(선택)', tcAria: '의견',
+    sendOp: '의견 남기기', savesAs: '‘선택: {vi}’로 남아요',
+    likesLine: '✓ 좋아요 {n} · {names}', opFix: '다른 의견', opMemo: '메모',
+    noOp: '아직 의견이 없어요.', opLoading: '의견을 불러오는 중이에요.',
+    likedToast: '좋아요를 남겼어요.', likeUndone: '좋아요를 되돌렸어요.',
+    needVi: '고르거나 제안할 베트남어 표현을 적어 주세요.', opSent: '의견을 남겼어요.',
+    choice: '',
+    koTag: '한',
+  },
 };
-const ANATOMY = {
-  kids: [
-    ['1면 · 왼쪽 짝수 면', [
-      ['머리 띠', '날짜 배지(Tháng 11 / 04 / Thứ Tư), 성경 주소, 제목, 이번 주 주제(Chủ đề tuần này), 그날 삽화'],
-      ['낱말 풀이 + 성경 본문', 'Giải thích từ ngữ. 본문은 1934 전통역(Truyền Thống 1934), 표제어를 본문에서 노란색으로 표시'],
-      ['말씀을 이해해요', 'Câu chuyện Lời Chúa. 그날 해설'],
-    ]],
-    ['2면 · 오른쪽 홀수 면', [
-      ['날짜 머리글', '오른쪽 위 ‘4/11 Thứ Tư’ (주일 = Chúa nhật, 빨강)'],
-      ['읽고 발견해요', 'Đọc và khám phá. 질문 3개. 묶음 기호 가/나 → A/B, ㉠ → ⓐ'],
-      ['기도하고 실천해요', 'Cầu nguyện và thực hành. 그날 기도문'],
-    ]],
-  ],
-  a5: [
-    ['1면 · 왼쪽 짝수 면', [
-      ['머리', '큰 날짜 숫자, 세로 두 줄 THÁNG 11 / THỨ TƯ, 성경 주소, 제목, 이번 주 주제'],
-      ['오늘의 말씀 + 도움말', 'Lời Chúa hôm nay + Giải thích từ ngữ'],
-      ['본문 해설', 'Giải thích phân đoạn. 아래쪽에 전날 답(Đáp án Quan sát d/m)'],
-    ]],
-    ['2면 · 오른쪽 홀수 면', [
-      ['말씀 보기 (관찰하기)', 'Đọc kỹ Lời Chúa (Quan sát)'],
-      ['말씀 깨닫기 (해석하기)', 'Hiểu Lời Chúa (Giải nghĩa)'],
-      ['말씀 새기고 살아가기', 'Khắc ghi và sống theo Lời Chúa, 이어서 Cầu nguyện bằng Lời Chúa. 베트남어가 길어 쓰는 칸이 좁은 날이 많음'],
-    ]],
-  ],
-};
-const EXTRAS = [
-  ['1쪽', '속표지'], ['2쪽', '이렇게 읽어요'], ['3쪽', '여는 글(4연령 번역)'],
-  ['126쪽', '말씀 여행 길(날짜 d/m)'], ['127쪽', '두 달 돌아보기'], ['128쪽', '기도 노트 · 판권(Ngày phát hành 20/10/2026)'],
-];
-const ST = { ok: '확인 완료', fix: '수정 필요', memo: '메모' };
+// 언어: ?lang= > localStorage 'bt-lang' > 베트남어
+const LANGS = ['vi', 'ko'];
+let LANG = 'vi';
+try { const s = localStorage.getItem('bt-lang'); if (LANGS.includes(s)) LANG = s; } catch (e) {}
+try { const q = new URLSearchParams(location.search).get('lang'); if (LANGS.includes(q)) { LANG = q; try { localStorage.setItem('bt-lang', q); } catch (e) {} } } catch (e) {}
+function t(key, vars) {
+  const get = d => key.split('.').reduce((o, k) => (o == null ? o : o[k]), d);
+  let v = get(I18N[LANG]); if (v == null) v = get(I18N.ko); if (v == null) v = key;
+  return typeof v === 'string' && vars ? v.replace(/\{(\w+)\}/g, (m, k) => (vars[k] != null ? String(vars[k]) : m)) : v;
+}
+// 데이터 → 표시 (번역이 아니라 형식만 바꿈)
+const VI = () => LANG === 'vi';
+const bookName = b => t('book', { vage: b.vage, age: b.age });
+const D = d => (d && VI() ? d.replace(/^(\d+)\/(\d+)$/, '$2/$1') : d);          // 11/1 → 1/11
+const WD = w => t('wd')[w] || w;
+const LABEL = l => t('labels')[l] || l;
+const PG = s => t('pages', { p: s.pages.join('–') });
+const stName = st => t('st')[st];
+const ST_KEYS = ['ok', 'fix', 'memo'];
+// 데이터 속 연령 표기(저학년·고·청소년…)를 베트남어 이름으로
+const AGE_KO = [['저학년', 'vlow'], ['고학년', 'vhigh'], ['청소년', 'vteen'], ['청년', 'vyoung'], ['저', 'vlow'], ['고', 'vhigh']];
+const ageVi = s => { if (!VI() || !s) return s; return String(s).split('·').map(tok => { const m = /^(저학년|고학년|청소년|청년|저|고)(\d*)$/.exec(tok.trim()); if (!m) return tok; const b = BOOKS.find(x => x.code === AGE_KO.find(([k]) => k === m[1])[1]); return b ? b.vage + (m[2] ? ' ' + m[2] : '') : tok; }).join(' · '); };
+const refVi = r => { if (!VI() || !r) return r; const m = /^(\d+\/\d+)\s+(\S+)$/.exec(r); return m ? `${D(m[1])} ${ageVi(m[2])}` : r; };
+const choiceText = s => (VI() && /^선택: /.test(s) ? t('choice') + s.slice(4) : s);
+const fmt = ts => { const d = new Date(ts), hm = `${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`; return VI() ? `${d.getDate()}/${d.getMonth() + 1} ${hm}` : `${d.getMonth() + 1}/${d.getDate()} ${hm}`; };
+
 // 원고·조판에 반영한 수정 의견(id → 표시 글). '반영함'으로 끝나면 끝난 것, 아니면 아직 남은 일이 있음
 const DONE = {};
 const isDone = n => n.st === 'fix' && /반영함$/.test(DONE[n.id] || '');
-const doneTag = n => DONE[n.id] ? el('span', { class: isDone(n) ? 'dtag' : 'dtag part', text: (isDone(n) ? '✓ ' : '') + DONE[n.id] }) : null;
+const doneText = n => { const v = DONE[n.id] || '', m = /^(\d+\/\d+)\s*반영함$/.exec(v); return m ? t('doneDate', { date: D(m[1]) }) : v; };
+const doneTag = n => DONE[n.id] ? el('span', { class: isDone(n) ? 'dtag' : 'dtag part', text: (isDone(n) ? '✓ ' : '') + doneText(n) }) : null;
 
 // 검수 기록은 구글 시트(Apps Script 웹 앱)에 모은다. claude.ai 안에서는 외부 주소에 쓸 수 없어 GitHub 주소로 안내한다.
 const SHEET_URL = '/*SHEET_URL*/';
 const PUBLIC_URL = 'https://fastkorea12-png.github.io/bibletree-print-review-1112-vi/';
-let OFFLINE = null, loaded = false;
+let OFFLINE = null, loaded = false, loadErr = false;
 let book = BOOKS[0], idx = 2, notes = [], termNotes = [], thumbFilter = 'all', revFilter = 'all';
 let koSide = false;
 const store = {
@@ -572,8 +935,8 @@ const el = (tag, attrs = {}, ...kids) => {
   return n;
 };
 const kind = b => b.code === 'vteen' ? 'teen' : b.code === 'vyoung' ? 'young' : 'kids';
-const spreadTitle = s => s.date ? `${s.date} (${s.wd}) ${s.title}` : s.label;
-const spreadSub = s => (s.date ? `${s.ref} · ${s.theme} · ` : '') + s.pages.join('–') + '쪽';
+const spreadTitle = s => s.date ? `${D(s.date)} (${WD(s.wd)}) ${s.title}` : LABEL(s.label);
+const spreadSub = s => (s.date ? `${s.ref} · ${s.theme} · ` : '') + PG(s);
 const notesFor = (code, i) => notes.filter(n => n.book === code && n.spread === i);
 const okNotes = (code, i) => notesFor(code, i).filter(n => n.st === 'ok');
 const isMe = n => mine.has(n.id) || (!!myName && n.name.trim() === myName);
@@ -588,50 +951,50 @@ function renderBooks() {
   const ov = $('ov'); ov.replaceChildren();
   for (const b of BOOKS) {
     const info = BOOK_INFO[b.code];
-    box.append(el('button', { 'aria-pressed': String(b === book), style: `--c:${info.color}`, onclick: () => setBook(b) }, el('i'), b.age, el('small', { class: 'vi', text: b.vage }), el('small', { text: b.paper })));
+    box.append(el('button', { 'aria-pressed': String(b === book), style: `--c:${info.color}`, onclick: () => setBook(b) }, el('i'), el('span', { class: 'vi', text: b.vage }), VI() ? null : el('small', { text: b.age }), el('small', { text: b.paper })));
     const days = b.spreads.length;
     let ok = 0, fix = 0, done = 0;
     b.spreads.forEach((s, i) => { const st = statusOf(b.code, i); if (st.fix) fix++; else if (st.ok || st.done) ok++; done += st.done; });
     const meter = el('div', { class: 'meter', 'aria-hidden': 'true' }, el('b', { style: `width:${ok / days * 100}%` }), el('s', { style: `width:${fix / days * 100}%` }));
     ov.append(el('button', { 'aria-pressed': String(b === book), style: `--c:${info.color}`, onclick: () => setBook(b) },
-      el('span', { class: 't' }, el('i'), `${b.age} `, el('span', { class: 'vi', style: 'font-weight:500;color:var(--muted);font-size:13px', text: b.vage })),
-      el('dl', {}, el('dt', { text: '본문' }), el('dd', { text: `${info.size} · 128면` }), el('dt', { text: '작업 크기' }), el('dd', { text: `${info.work}mm` }), el('dt', { text: '표지 펼침' }), el('dd', { text: `${info.coverWork}mm` })),
+      el('span', { class: 't' }, el('i'), el('span', { class: 'vi', text: b.vage }), VI() ? null : el('span', { style: 'font-weight:500;color:var(--muted);font-size:13px', text: b.age })),
+      el('dl', {}, el('dt', { text: t('dtBody') }), el('dd', { text: t('ddBody', { size: info.size }) }), el('dt', { text: t('dtWork') }), el('dd', { text: `${info.work}mm` }), el('dt', { text: t('dtCover') }), el('dd', { text: `${info.coverWork}mm` })),
       meter,
-      el('span', { class: 'm', text: `확인·반영 ${ok} · 수정 필요 ${fix} · 남은 곳 ${days - ok - fix} / ${days}펼침${done ? ` · 의견 ${done}건 반영함` : ''}` })));
+      el('span', { class: 'm', text: t('ovMeter', { ok, fix, left: days - ok - fix, days }) + (done ? t('ovDone', { n: done }) : '') })));
   }
 }
 
 function renderCover() {
   const info = BOOK_INFO[book.code];
-  $('cv-eye').textContent = `표지 · ${book.age} · ${book.vage}`;
-  const pic = $('cv-pic'); pic.src = `img/${book.code}/cover.jpg`; pic.alt = `${book.age} 펼침 표지: 뒤표지, 책등, 앞표지`;
+  $('cv-eye').textContent = t('cvEye', { name: bookName(book) });
+  const pic = $('cv-pic'); pic.src = `img/${book.code}/cover.jpg`; pic.alt = t('cvAlt', { name: bookName(book) });
   pic.width = book.cw; pic.height = book.ch;
   const w = book.paper === 'A4' ? 210 : 148, total = 2 * w + 6.17;
   const sp = $('cv-spine'); sp.style.left = (w / total * 100) + '%'; sp.style.width = (6.17 / total * 100) + '%';
   const list = $('cv-notes'); list.replaceChildren();
-  for (const [h, p, tag] of COVER_NOTES[kind(book)]) {
-    list.append(el('div', {}, el('h3', {}, h, tag ? el('span', { class: 'tag', text: '시안 · 확인 필요' }) : null), el('p', { text: p })));
+  for (const [h, p, tag] of t('coverNotes')[kind(book)]) {
+    list.append(el('div', {}, el('h3', {}, h, tag ? el('span', { class: 'tag', text: t('tagDraft') }) : null), el('p', { text: p })));
   }
   const specs = $('cv-specs'); specs.replaceChildren();
-  for (const [k, v] of [['재단 (펼침)', `${info.cover}mm`], ['작업 (도련 포함)', `${info.coverWork}mm`], ['책등', '6.17mm'], ['도련', '사방 2mm'], ['색', 'CMYK · QR 검정 한 색'], ['그림', '300ppi CMYK']]) {
+  for (const [k, v] of [[t('specTrim'), `${info.cover}mm`], [t('specWork'), `${info.coverWork}mm`], [t('specSpine'), VI() ? '6,17mm' : '6.17mm'], [t('specBleed'), t('specBleedV')], [t('specColor'), t('specColorV')], [t('specImg'), '300ppi CMYK']]) {
     specs.append(el('div', {}, el('span', { text: k }), el('b', { text: v })));
   }
 }
 
 function renderContents() {
   const k = book.paper === 'A4' ? 'kids' : 'a5';
-  $('ct-sub').textContent = `${book.age}(${book.vage}) · ${BOOK_INFO[book.code].size}mm · 하루 2면`;
+  $('ct-sub').textContent = t('ctSub', { name: bookName(book), size: BOOK_INFO[book.code].size });
   const an = $('ct-anatomy'); an.replaceChildren();
-  for (const [h, items] of ANATOMY[k]) {
+  for (const [h, items] of t('anatomy')[k]) {
     an.append(el('article', {}, el('h3', {}, h.split(' · ')[0], el('small', { text: h.split(' · ')[1] })), el('ol', {}, ...items.map(([b, s]) => el('li', {}, el('div', {}, el('b', { text: b }), el('span', { text: s })))))));
   }
   const ex = $('ct-extras'); ex.replaceChildren();
-  for (const [p, t] of EXTRAS) ex.append(el('div', {}, el('b', { text: p }), el('span', { text: t })));
+  for (const [p, x] of t('extras')) ex.append(el('div', {}, el('b', { text: p }), el('span', { text: x })));
 }
 
 function renderJump() {
   const sel = $('v-jump'); sel.replaceChildren();
-  book.spreads.forEach((s, i) => sel.append(el('option', { value: String(i), text: s.date ? `${s.date} ${s.wd} · ${s.title}${s.ko ? ` (${s.ko})` : ''}` : `${s.pages.join('–')}쪽 · ${s.label}` })));
+  book.spreads.forEach((s, i) => sel.append(el('option', { value: String(i), text: s.date ? `${D(s.date)} ${WD(s.wd)} · ${s.title}${s.ko && !VI() ? ` (${s.ko})` : ''}` : t('pagesLabel', { p: s.pages.join('–'), label: LABEL(s.label) }) })));
 }
 
 function renderKo() {
@@ -646,7 +1009,7 @@ function renderKo() {
     ki.src = src;
   }
   ki.width = book.pw * 2; ki.height = book.ph;
-  ki.alt = `한국어판 ${book.age} ${s.pages.join('–')}쪽 펼침면`;
+  ki.alt = t('koAlt', { name: bookName(book), p: s.pages.join('–') });
   $('v-kolink').href = KO_SITE + '#read';
 }
 function show(i, scroll) {
@@ -655,31 +1018,30 @@ function show(i, scroll) {
   const img = $('v-img');
   img.src = `img/${book.code}/s${String(idx).padStart(2, '0')}.jpg`;
   img.width = book.pw * 2; img.height = book.ph;
-  img.alt = `${book.age} ${s.pages.join('–')}쪽 펼침면`;
-  $('v-title').replaceChildren(el('span', { class: 'vi', text: spreadTitle(s) }), s.ko ? el('span', { class: 'ko-sub', text: s.ko }) : null);
+  img.alt = t('spreadAlt', { name: bookName(book), p: s.pages.join('–') });
+  $('v-title').replaceChildren(...[el('span', { class: 'vi', text: spreadTitle(s) }), s.ko && !VI() ? el('span', { class: 'ko-sub', 'data-tag': t('koTag'), text: s.ko }) : null].filter(Boolean));
   $('v-sub').textContent = spreadSub(s);
   $('v-jump').value = String(idx);
   $('v-prev').disabled = idx === 0; $('v-next').disabled = idx === book.spreads.length - 1;
-  $('p-pages').textContent = `${book.age} ${s.pages.join('–')}쪽`;
+  $('p-pages').textContent = t('pPages', { name: bookName(book), p: s.pages.join('–') });
   const nx = book.spreads[idx + 1]; if (nx) { const p = new Image(); p.src = `img/${book.code}/s${String(idx + 1).padStart(2, '0')}.jpg`; }
   renderKo();
   renderThread(); renderConfirm(); markThumbs(); if (!$('cmp').hidden) renderCmp();
   if (scroll) document.querySelector('#read .stage').scrollIntoView({ behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 }
 
-const nameOf = n => (n.name || '').trim() || '이름 없음';
-const fmt = t => { const d = new Date(t); return `${d.getMonth() + 1}/${d.getDate()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`; };
+const nameOf = n => (n.name || '').trim() || t('noName');
 
 function renderThread() {
   const box = $('p-thread'); box.replaceChildren();
   if (OFFLINE) { box.append(OFFLINE()); return; }
   const ns = notesFor(book.code, idx).sort((a, b) => a.at - b.at);
-  if (!ns.length) box.append(el('p', { class: 'empty', text: loaded ? '아직 남긴 검수가 없어요. 다 봤으면 위의 확인 완료를, 고칠 점이 있으면 아래에 남겨 주세요.' : '검수 기록을 불러오는 중이에요.' }));
+  if (!ns.length) box.append(el('p', { class: 'empty', text: loaded ? t('threadEmpty') : t('loadingNotes') }));
   for (const n of ns) {
-    const who = el('b', { text: ST[n.st] });
+    const who = el('b', { text: stName(n.st) });
     const name = el('span', { text: `· ${nameOf(n)} · ${fmt(n.at)}` });
     const row = el('div', { class: 'who' }, el('span', {}, who, ' ', name, doneTag(n)));
-    if (mine.has(n.id)) row.append(el('button', { type: 'button', text: '지우기', onclick: () => removeNote(n) }));
+    if (mine.has(n.id)) row.append(el('button', { type: 'button', text: t('del'), onclick: () => removeNote(n) }));
     box.append(el('div', { class: `note st-${n.st}` }, row, n.text ? el('p', { text: n.text }) : null));
   }
 }
@@ -689,25 +1051,25 @@ function renderConfirm() {
   box.hidden = !!OFFLINE; if (OFFLINE) return;
   const code = book.code, i = idx, oks = okNotes(code, i);
   const my = oks.filter(isMe), others = uniq(oks.filter(n => !isMe(n)).map(nameOf));
-  if (busy.has(`${code}:${i}`)) box.append(el('button', { type: 'button', class: 'btn ok', disabled: '', text: '남기는 중…' }));
+  if (busy.has(`${code}:${i}`)) box.append(el('button', { type: 'button', class: 'btn ok', disabled: '', text: t('sending') }));
   else if (my.length) {
-    const done = el('div', { class: 'done' }, el('span', { text: `✓ 확인함 (${nameOf(my[0])})` }));
-    if (my.some(n => mine.has(n.id))) done.append(el('button', { type: 'button', class: 'linkbtn', text: '되돌리기', onclick: () => undoConfirm(code, i) }));
-    box.append(done, el('span', { class: 'hint kbd-hint' }, el('span', { class: 'kbd', text: 'Enter' }), ' 다음 펼침으로'));
+    const done = el('div', { class: 'done' }, el('span', { text: t('confirmed', { name: nameOf(my[0]) }) }));
+    if (my.some(n => mine.has(n.id))) done.append(el('button', { type: 'button', class: 'linkbtn', text: t('undo'), onclick: () => undoConfirm(code, i) }));
+    box.append(done, el('span', { class: 'hint kbd-hint' }, el('span', { class: 'kbd', text: 'Enter' }), t('enterNext')));
   } else {
-    const b = el('button', { type: 'button', class: 'btn ok', text: loaded ? '✓ 확인 완료' : '불러오는 중…', onclick: () => confirmSpread(code, i) });
+    const b = el('button', { type: 'button', class: 'btn ok', text: loaded ? t('okBtn') : t('loadingBtn'), onclick: () => confirmSpread(code, i) });
     if (!loaded) b.disabled = true;
     box.append(b);
-    if (myName) box.append(el('span', { class: 'hint' }, `누르면 ‘${myName}’ 이름으로 바로 남아요`, el('span', { class: 'kbd-hint' }, ' · ', el('span', { class: 'kbd', text: 'Enter' }), ' 확인하고 다음')));
+    if (myName) box.append(el('span', { class: 'hint' }, t('okHint', { name: myName }), el('span', { class: 'kbd-hint' }, ' · ', el('span', { class: 'kbd', text: 'Enter' }), t('okHintKbd'))));
   }
-  if (others.length) box.append(el('span', { class: 'others', text: `확인한 사람: ${others.join(', ')}` }));
+  if (others.length) box.append(el('span', { class: 'others', text: t('others', { names: others.join(', ') }) }));
 }
 
 // Enter: 지금 펼침 확인 완료 + 다음 펼침으로 (이미 내가 확인했으면 넘기기만)
 function confirmAndNext() {
   if (!OFFLINE) {
     if (!myName) { openGate(); return; }
-    if (!loaded) { toast('검수 기록을 불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
+    if (!loaded) { toast(t('loadingToast')); return; }
     if (!okNotes(book.code, idx).some(isMe)) confirmSpread(book.code, idx);
   }
   if (idx < book.spreads.length - 1) show(idx + 1);
@@ -724,82 +1086,82 @@ const cmpDraft = {};               // 쓰다 만 글: { 'low:2': { st, text } }
 const cmpTargets = () => BOOKS.map(b => [b.code, matchIdx(b)]).filter(([, j]) => j >= 0);
 function renderCmp() {
   const s = book.spreads[idx];
-  $('cmp-h').textContent = s.date ? `${s.date} (${s.wd}) 네 권 같이 보기` : `${s.pages.join('–')}쪽 · ${s.label}`;
+  $('cmp-h').textContent = s.date ? t('cmpTitle', { date: D(s.date), wd: WD(s.wd) }) : t('pagesLabel', { p: s.pages.join('–'), label: LABEL(s.label) });
   $('cmp-prev').disabled = idx === 0; $('cmp-next').disabled = idx === book.spreads.length - 1;
   const targets = cmpTargets();
   const left = targets.filter(([c, j]) => !okNotes(c, j).some(isMe)).length;
   const all = $('cmp-all');
   all.hidden = !!OFFLINE;
   all.disabled = !loaded || !left || targets.some(([c, j]) => busy.has(`${c}:${j}`));
-  all.textContent = !loaded ? '불러오는 중…' : left ? `✓ ${left === targets.length ? '4권 모두' : `남은 ${left}권`} 확인` : '✓ 4권 모두 확인함';
+  all.textContent = !loaded ? t('loadingBtn') : left ? (left === targets.length ? t('cmpAll') : t('cmpLeft', { n: left })) : t('cmpAllDone');
   // 다시 그려도 쓰던 칸의 포커스와 커서를 지킨다
   const act = document.activeElement, keepId = act && act.closest && act.closest('#cmp') && act.id ? act.id : null;
   const caret = keepId && act.tagName === 'TEXTAREA' ? [act.selectionStart, act.selectionEnd] : null;
   const grid = $('cmp-grid'); grid.replaceChildren();
   for (const b of BOOKS) {
     const j = matchIdx(b); if (j < 0) continue;
-    const t = b.spreads[j], key = `${b.code}:${j}`, st = statusOf(b.code, j), oks = okNotes(b.code, j), names = uniq(oks.map(nameOf));
+    const sp = b.spreads[j], key = `${b.code}:${j}`, st = statusOf(b.code, j), oks = okNotes(b.code, j), names = uniq(oks.map(nameOf));
     let pill;
     if (OFFLINE) pill = null;
-    else if (st.fix) pill = el('span', { class: 'cmp-st st-fix', text: `수정 필요 ${st.fix}` });
-    else if (st.done && !names.length) pill = el('span', { class: 'cmp-st st-done', text: `✓ 반영함 ${st.done}` });
-    else if (names.length) pill = el('span', { class: 'cmp-st st-ok', text: `✓ ${names.join(', ')}`, title: `확인: ${names.join(', ')}` });
-    else pill = el('span', { class: 'cmp-st todo', text: loaded ? '아직 확인 전' : '불러오는 중' });
+    else if (st.fix) pill = el('span', { class: 'cmp-st st-fix', text: t('pillFix', { n: st.fix }) });
+    else if (st.done && !names.length) pill = el('span', { class: 'cmp-st st-done', text: t('pillDone', { n: st.done }) });
+    else if (names.length) pill = el('span', { class: 'cmp-st st-ok', text: `✓ ${names.join(', ')}`, title: t('okBy', { names: names.join(', ') }) });
+    else pill = el('span', { class: 'cmp-st todo', text: loaded ? t('pillTodo') : t('loadingShort') });
     const open = () => { closeCmp(false); setBook(b, j); };
-    const img = el('img', { src: `img/${b.code}/s${String(j).padStart(2, '0')}.jpg`, alt: `${b.age} ${t.pages.join('–')}쪽 펼침면`, width: String(b.pw * 2), height: String(b.ph), loading: 'lazy' });
-    const card = el('article', { class: 'cmp-card', style: `--c:${BOOK_INFO[b.code].color}`, 'aria-current': String(b === book), 'aria-label': b.age },
-      el('div', { class: 'cmp-head' }, el('span', { class: 'bk' }, el('i'), b.age), el('span', { class: 'tt vi', title: t.ko || '', text: t.date ? `${t.title}${t.ko ? ` · ${t.ko}` : ''}` : `${t.pages.join('–')}쪽 · ${t.label}` }), pill),
-      el('button', { type: 'button', class: 'cmp-open', 'aria-label': `${b.age} ${spreadTitle(t)} 열람으로 열기`, onclick: open }, img));
+    const img = el('img', { src: `img/${b.code}/s${String(j).padStart(2, '0')}.jpg`, alt: t('spreadAlt', { name: bookName(b), p: sp.pages.join('–') }), width: String(b.pw * 2), height: String(b.ph), loading: 'lazy' });
+    const card = el('article', { class: 'cmp-card', style: `--c:${BOOK_INFO[b.code].color}`, 'aria-current': String(b === book), 'aria-label': bookName(b) },
+      el('div', { class: 'cmp-head' }, el('span', { class: 'bk' }, el('i'), bookName(b)), el('span', { class: 'tt vi', title: VI() ? '' : sp.ko || '', text: sp.date ? `${sp.title}${sp.ko && !VI() ? ` · ${sp.ko}` : ''}` : t('pagesLabel', { p: sp.pages.join('–'), label: LABEL(sp.label) }) }), pill),
+      el('button', { type: 'button', class: 'cmp-open', 'aria-label': t('cardOpenAria', { name: bookName(b), title: spreadTitle(sp) }), onclick: open }, img));
     if (!OFFLINE) {
       const bar = el('div', { class: 'cmp-bar' });
       const my = oks.filter(isMe);
-      if (busy.has(key)) bar.append(el('button', { type: 'button', class: 'btn ok', disabled: '', text: '남기는 중…' }));
+      if (busy.has(key)) bar.append(el('button', { type: 'button', class: 'btn ok', disabled: '', text: t('sending') }));
       else if (my.length) {
-        const done = el('div', { class: 'done' }, el('span', { text: `✓ 확인함 (${nameOf(my[0])})` }));
-        if (my.some(n => mine.has(n.id))) done.append(el('button', { type: 'button', class: 'linkbtn', text: '되돌리기', 'aria-label': `${b.age} 확인 되돌리기`, onclick: () => undoConfirm(b.code, j) }));
+        const done = el('div', { class: 'done' }, el('span', { text: t('confirmed', { name: nameOf(my[0]) }) }));
+        if (my.some(n => mine.has(n.id))) done.append(el('button', { type: 'button', class: 'linkbtn', text: t('undo'), 'aria-label': t('undoAria', { name: bookName(b) }), onclick: () => undoConfirm(b.code, j) }));
         bar.append(done);
       } else {
-        const ok = el('button', { type: 'button', class: 'btn ok', text: '✓ 확인 완료', 'aria-label': `${b.age} 확인 완료`, onclick: () => confirmSpread(b.code, j) });
+        const ok = el('button', { type: 'button', class: 'btn ok', text: t('okBtn'), 'aria-label': t('okAria', { name: bookName(b) }), onclick: () => confirmSpread(b.code, j) });
         if (!loaded) ok.disabled = true;
         bar.append(ok);
       }
       const others = notesFor(b.code, j).filter(n => n.st !== 'ok').sort((x, y) => x.at - y.at);
       const isOpen = cmpOpenNotes.has(key);
       bar.append(el('button', { type: 'button', class: 'btn', 'aria-expanded': String(isOpen), 'aria-controls': `cmp-more-${b.code}`,
-        text: `수정 필요 / 메모${others.length ? ` ${others.length}` : ''} ${isOpen ? '▴' : '▾'}`,
+        text: `${t('moreBtn')}${others.length ? ` ${others.length}` : ''} ${isOpen ? '▴' : '▾'}`,
         onclick: () => { if (isOpen) cmpOpenNotes.delete(key); else cmpOpenNotes.add(key); renderCmp(); if (!isOpen) setTimeout(() => { const ta = $(`cmp-t-${b.code}`); if (ta) ta.focus(); }, 0); } }));
-      bar.append(el('button', { type: 'button', class: 'linkbtn open', text: '이 책으로 열기 →', onclick: open }));
+      bar.append(el('button', { type: 'button', class: 'linkbtn open', text: t('openThis'), onclick: open }));
       card.append(bar);
       if (isOpen) {
         const more = el('div', { class: 'cmp-more', id: `cmp-more-${b.code}` });
-        if (!others.length) more.append(el('p', { class: 'empty', text: '아직 남긴 수정·메모가 없어요.' }));
+        if (!others.length) more.append(el('p', { class: 'empty', text: t('moreEmpty') }));
         for (const n of others) {
-          const row = el('div', { class: 'who' }, el('span', {}, el('b', { text: ST[n.st] }), ' ', el('span', { text: `· ${nameOf(n)} · ${fmt(n.at)}` }), doneTag(n)));
-          if (mine.has(n.id)) row.append(el('button', { type: 'button', text: '지우기', onclick: () => removeNote(n) }));
+          const row = el('div', { class: 'who' }, el('span', {}, el('b', { text: stName(n.st) }), ' ', el('span', { text: `· ${nameOf(n)} · ${fmt(n.at)}` }), doneTag(n)));
+          if (mine.has(n.id)) row.append(el('button', { type: 'button', text: t('del'), onclick: () => removeNote(n) }));
           more.append(el('div', { class: `note st-${n.st}` }, row, n.text ? el('p', { text: n.text }) : null));
         }
         const d = cmpDraft[key] || (cmpDraft[key] = { st: 'fix', text: '' });
-        const ta = el('textarea', { id: `cmp-t-${b.code}`, maxlength: '2000', 'aria-label': `${b.age} 수정·메모 내용`, placeholder: '예: 2면 질문 2 보기 ③ 줄바꿈 어색함', oninput: e => { d.text = e.target.value; } });
+        const ta = el('textarea', { id: `cmp-t-${b.code}`, maxlength: '2000', 'aria-label': t('cmpTaAria', { name: bookName(b) }), placeholder: t('textPh'), oninput: e => { d.text = e.target.value; } });
         ta.value = d.text;
-        const seg = el('div', { class: 'seg', role: 'radiogroup', 'aria-label': '상태' },
-          ...[['fix', '수정 필요'], ['memo', '메모']].map(([v, label]) => {
+        const seg = el('div', { class: 'seg', role: 'radiogroup', 'aria-label': t('stAria') },
+          ...['fix', 'memo'].map(v => [v, stName(v)]).map(([v, label]) => {
             const r = el('input', { type: 'radio', name: `cst-${b.code}`, value: v, onchange: () => { d.st = v; } });
             r.checked = d.st === v;
             return el('label', { class: `st-${v}` }, r, label);
           }));
         const sending = busy.has(key + ':n');
-        const send = el('button', { class: 'btn primary', type: 'submit', text: sending ? '남기는 중…' : '남기기' });
+        const send = el('button', { class: 'btn primary', type: 'submit', text: sending ? t('sending') : t('send') });
         if (sending) send.disabled = true;
         more.append(el('form', { onsubmit: async e => {
           e.preventDefault();
           if (!myName) { openGate(); return; }
           const text = d.text.trim();
-          if (!text) { toast('수정할 점이나 메모 내용을 적어 주세요.'); $(`cmp-t-${b.code}`).focus(); return; }
+          if (!text) { toast(t('hintEmpty')); $(`cmp-t-${b.code}`).focus(); return; }
           busy.add(key + ':n'); renderCmp();
-          try { await addNote(b.code, j, d.st, text); d.text = ''; toast(`${b.age}에 남겼어요.`); }
-          catch (err) { toast('남기지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.'); }
+          try { await addNote(b.code, j, d.st, text); d.text = ''; toast(t('cmpSentTo', { name: bookName(b) })); }
+          catch (err) { toast(t('sendFail')); }
           finally { busy.delete(key + ':n'); refreshMarks(); }
-        } }, seg, ta, el('div', { class: 'row' }, el('span', { class: 'hint', text: `${b.age} ${t.date || t.pages.join('–') + '쪽'}에 남겨요` }), send)));
+        } }, seg, ta, el('div', { class: 'row' }, el('span', { class: 'hint', text: t('cmpWhere', { name: bookName(b), where: sp.date ? D(sp.date) : PG(sp) }) }), send)));
         card.append(more);
       }
     }
@@ -811,7 +1173,7 @@ function renderCmp() {
 function confirmAllAndNext() {
   if (!OFFLINE) {
     if (!myName) { openGate(); return; }
-    if (!loaded) { toast('검수 기록을 불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
+    if (!loaded) { toast(t('loadingToast')); return; }
     confirmMany(cmpTargets());
   }
   if (idx < book.spreads.length - 1) show(idx + 1);
@@ -820,7 +1182,7 @@ function openCmp() { $('cmp').hidden = false; renderCmp(); $('cmp').scrollTop = 
 function closeCmp(refocus = true) { $('cmp').hidden = true; document.body.classList.remove('locked'); if (refocus) $('v-cmp').focus(); }
 
 let toastT = 0;
-function toast(msg) { const t = $('toast'); t.textContent = msg; t.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { t.hidden = true; }, 3000); }
+function toast(msg) { const tn = $('toast'); tn.textContent = msg; tn.hidden = false; clearTimeout(toastT); toastT = setTimeout(() => { tn.hidden = true; }, 3000); }
 function refreshMarks() { renderBooks(); renderConfirm(); renderThread(); renderThumbs(); renderReview(); if (!$('cmp').hidden) renderCmp(); }
 function rerenderBusy() { renderConfirm(); renderThumbs(); if (!$('cmp').hidden) renderCmp(); }
 async function postOk(code, i) {
@@ -835,7 +1197,7 @@ async function addNote(code, i, st, text) {
 async function confirmMany(list) {
   if (OFFLINE) return;
   if (!myName) { openGate(); return; }
-  if (!loaded) { toast('검수 기록을 불러오는 중이에요. 잠시 뒤 다시 눌러 주세요.'); return; }
+  if (!loaded) { toast(t('loadingToast')); return; }
   const todo = list.filter(([code, i]) => !busy.has(`${code}:${i}`) && !okNotes(code, i).some(isMe));
   if (!todo.length) return 0;
   todo.forEach(([code, i]) => busy.add(`${code}:${i}`)); rerenderBusy();
@@ -844,7 +1206,7 @@ async function confirmMany(list) {
     try { await postOk(code, i); ok++; } catch (e) {}
     busy.delete(`${code}:${i}`); refreshMarks();
   }
-  toast(ok === todo.length ? `${ok}권 확인 완료를 남겼어요.` : `${todo.length - ok}권은 남기지 못했어요. 다시 눌러 주세요.`);
+  toast(ok === todo.length ? t('manyOk', { n: ok }) : t('manyFail', { n: todo.length - ok }));
   return ok;
 }
 async function confirmSpread(code, i) {
@@ -855,8 +1217,8 @@ async function confirmSpread(code, i) {
   busy.add(key); rerenderBusy();
   try {
     await postOk(code, i);
-    toast('확인 완료를 남겼어요.');
-  } catch (e) { toast('남기지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.'); }
+    toast(t('confirmOk'));
+  } catch (e) { toast(t('sendFail')); }
   finally { busy.delete(key); refreshMarks(); }
 }
 async function undoConfirm(code, i) {
@@ -867,8 +1229,8 @@ async function undoConfirm(code, i) {
   try {
     for (const n of mineOk) { await call({ action: 'delete', id: n.id, token }); mine.delete(n.id); }
     store.set('bt-mine', [...mine]);
-    toast('확인을 되돌렸어요.');
-  } catch (e) { toast('되돌리지 못했어요. 다시 눌러 주세요.'); }
+    toast(t('undone'));
+  } catch (e) { toast(t('undoFail')); }
   finally { busy.delete(key); refreshMarks(); }
 }
 
@@ -884,54 +1246,54 @@ function renderThumbs() {
     const col = i % book.cols, row = Math.floor(i / book.cols);
     const pic = el('span', { class: 'pic', style: `--ar:${book.tw}/${book.th};background-image:url(img/${book.code}/thumbs.jpg);background-size:${book.cols * 100}% ${rows * 100}%;background-position:${col / (book.cols - 1) * 100}% ${rows > 1 ? row / (rows - 1) * 100 : 0}%` });
     const marks = el('span', { class: 'marks' });
-    if (st.fix) marks.append(el('i', { class: 'f', text: `수정 ${st.fix}` }));
-    else if (st.done) marks.append(el('i', { class: 'r', text: `반영 ${st.done}` }));
+    if (st.fix) marks.append(el('i', { class: 'f', text: t('mFix', { n: st.fix }) }));
+    else if (st.done) marks.append(el('i', { class: 'r', text: t('mDone', { n: st.done }) }));
     if (!st.fix && st.ok) marks.append(el('i', { class: 'o', text: '✓' }));
-    if (st.memo) marks.append(el('i', { class: 'n', text: `메모 ${st.memo}` }));
-    const thumb = el('button', { class: 'thumb', 'data-i': String(i), 'aria-current': String(i === idx), 'aria-label': `${spreadTitle(s)}, ${s.pages.join('–')}쪽`, onclick: () => show(i, true) },
-      pic, marks, el('span', { class: 'cap' }, el('b', { text: s.date || s.pages.join('–') }), el('span', { class: 'vi', title: s.ko || '', text: s.date ? s.title : s.label })),
-      s.ko ? el('span', { class: 'cap kot' }, el('span', { text: s.ko })) : null);
+    if (st.memo) marks.append(el('i', { class: 'n', text: t('mMemo', { n: st.memo }) }));
+    const thumb = el('button', { class: 'thumb', 'data-i': String(i), 'aria-current': String(i === idx), 'aria-label': t('thumbAria', { title: spreadTitle(s), p: s.pages.join('–') }), onclick: () => show(i, true) },
+      pic, marks, el('span', { class: 'cap' }, el('b', { text: D(s.date) || s.pages.join('–') }), el('span', { class: 'vi', title: VI() ? '' : s.ko || '', text: s.date ? s.title : LABEL(s.label) })),
+      s.ko && !VI() ? el('span', { class: 'cap kot' }, el('span', { text: s.ko })) : null);
     const oks = okNotes(book.code, i), names = uniq(oks.map(nameOf));
     const tok = el('div', { class: 'tok' });
-    if (names.length) tok.append(el('span', { text: `✓ ${names.join(', ')}`, title: `확인: ${names.join(', ')}` }));
+    if (names.length) tok.append(el('span', { text: `✓ ${names.join(', ')}`, title: t('okBy', { names: names.join(', ') }) }));
     if (!OFFLINE && loaded) {
       const my = oks.filter(isMe), canUndo = my.some(n => mine.has(n.id)), wait = busy.has(`${book.code}:${i}`);
-      const b = el('button', { type: 'button', 'aria-pressed': String(my.length > 0), text: wait ? '…' : my.length ? '✓ 확인함' : '확인',
-        'aria-label': my.length ? `${spreadTitle(s)} 확인 되돌리기` : `${spreadTitle(s)} 확인 완료`,
+      const b = el('button', { type: 'button', 'aria-pressed': String(my.length > 0), text: wait ? '…' : my.length ? t('tokMine') : t('tokBtn'),
+        'aria-label': my.length ? t('tokUndoAria', { title: spreadTitle(s) }) : t('tokOkAria', { title: spreadTitle(s) }),
         onclick: () => my.length ? undoConfirm(book.code, i) : confirmSpread(book.code, i) });
       if (wait || (my.length && !canUndo)) b.disabled = true;
-      if (my.length && !canUndo) b.title = '다른 기기에서 남긴 확인이라 여기서는 되돌릴 수 없어요';
+      if (my.length && !canUndo) b.title = t('tokOther');
       tok.append(b);
     }
     box.append(el('div', { class: 'tcell' }, thumb, tok));
   });
-  if (!box.children.length) box.append(el('p', { class: 'empty', text: '이 조건에 맞는 펼침이 없어요.' }));
+  if (!box.children.length) box.append(el('p', { class: 'empty', text: t('thumbsEmpty') }));
   const all = book.spreads.length;
-  document.querySelector('#t-filters [data-f="all"]').textContent = `전체 ${all}`;
+  document.querySelector('#t-filters [data-f="all"]').textContent = t('fAll', { n: all });
 }
 function markThumbs() { document.querySelectorAll('#thumbs .thumb').forEach(t => t.setAttribute('aria-current', String(Number(t.dataset.i) === idx))); }
 
 function renderReview() {
   const out = $('r-out'); out.replaceChildren();
   if (OFFLINE) { out.append(OFFLINE()); return; }
-  if (!loaded) { out.append(el('p', { class: 'signin', text: '검수 기록을 불러오는 중이에요.' })); return; }
+  if (!loaded) { out.append(el('p', { class: 'signin', text: t('loadingNotes') })); return; }
   let ns = notes.slice().sort((a, b) => b.at - a.at);
   if (revFilter === 'book') ns = ns.filter(n => n.book === book.code);
   else if (revFilter !== 'all') ns = ns.filter(n => n.st === revFilter);
-  if (!ns.length) { out.append(el('p', { class: 'signin', text: '아직 남긴 메모가 없어요. 열람에서 펼침을 보고 오른쪽 칸에 남기면 여기에 모여요.' })); return; }
+  if (!ns.length) { out.append(el('p', { class: 'signin', text: t('noNotes') })); return; }
   const tb = el('tbody');
   for (const n of ns) {
     const b = BOOKS.find(x => x.code === n.book); if (!b) continue;
     const s = b.spreads[n.spread]; if (!s) continue;
     const who = el('td', { text: nameOf(n) });
     tb.append(el('tr', {},
-      el('td', { class: 'go' }, el('button', { type: 'button', text: `${b.age} ${s.date || s.pages.join('–') + '쪽'}`, onclick: () => { setBook(b, n.spread); } })),
-      el('td', {}, el('span', { class: `pill st-${n.st}`, text: ST[n.st] }), doneTag(n)),
+      el('td', { class: 'go' }, el('button', { type: 'button', text: `${bookName(b)} ${s.date ? D(s.date) : PG(s)}`, onclick: () => { setBook(b, n.spread); } })),
+      el('td', {}, el('span', { class: `pill st-${n.st}`, text: stName(n.st) }), doneTag(n)),
       el('td', { class: 'txt', text: n.text || '—' }),
       who,
       el('td', { class: 'num', text: fmt(n.at) })));
   }
-  out.append(el('div', { class: 'table-wrap' }, el('table', {}, el('thead', {}, el('tr', {}, ...['펼침', '상태', '내용', '남긴 사람', '시각'].map(t => el('th', { text: t })))), tb)));
+  out.append(el('div', { class: 'table-wrap' }, el('table', {}, el('thead', {}, el('tr', {}, ...t('th').map(x => el('th', { text: x })))), tb)));
 }
 
 function setBook(b, i) {
@@ -944,7 +1306,7 @@ function setBook(b, i) {
 
 function takeNotes(list) {
   const all = (Array.isArray(list) ? list : []).map(n => ({ id: String(n.id), at: Number(n.at), name: String(n.name || ''), book: String(n.book), spread: Number(n.spread), st: String(n.st), text: String(n.text || '') }))
-    .filter(n => Number.isInteger(n.spread) && ST[n.st]);
+    .filter(n => Number.isInteger(n.spread) && ST_KEYS.includes(n.st));
   notes = all.filter(n => BOOKS.some(b => b.code === n.book));
   termNotes = all.filter(n => n.book === TERM_BOOK);
   loaded = true;
@@ -963,11 +1325,11 @@ async function send(body) {
 }
 async function load() {
   try { const r = await fetch(SHEET_URL + '?t=' + Date.now()); const j = await r.json(); if (j.ok) takeNotes(j.notes); }
-  catch (e) { if (!loaded) { $('p-hint').textContent = '검수 기록을 불러오지 못했어요. 잠시 뒤 새로고침해 주세요.'; } }
+  catch (e) { if (!loaded) { loadErr = true; $('p-hint').textContent = t('loadFail'); } }
 }
 async function removeNote(n) {
   try { await call({ action: 'delete', id: n.id, token }); mine.delete(n.id); store.set('bt-mine', [...mine]); }
-  catch (e) { toast('지우지 못했어요. 다시 눌러 주세요.'); }
+  catch (e) { toast(t('delFail')); }
 }
 
 $('p-form').addEventListener('submit', async e => {
@@ -977,17 +1339,18 @@ $('p-form').addEventListener('submit', async e => {
   if (!nm) { openGate(); return; }
   const st = document.querySelector('input[name="st"]:checked').value;
   const text = $('p-text').value.trim();
-  if (!text) { $('p-hint').textContent = '수정할 점이나 메모 내용을 적어 주세요.'; $('p-text').focus(); return; }
+  if (!text) { $('p-hint').textContent = t('hintEmpty'); $('p-text').focus(); return; }
   $('p-send').disabled = true;
   try {
     const j = await call({ action: 'add', name: nm.slice(0, 40), book: book.code, spread: idx, st, text: text.slice(0, 2000), token });
     if (j.id) { mine.add(String(j.id)); store.set('bt-mine', [...mine]); renderThread(); }
-    $('p-text').value = ''; $('p-hint').textContent = '남겼어요.';
+    $('p-text').value = ''; $('p-hint').textContent = t('sent');
   } catch (err) {
-    $('p-hint').textContent = '남기지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.';
+    $('p-hint').textContent = t('sendFail');
   } finally { $('p-send').disabled = false; }
 });
-document.querySelectorAll('input[name="st"]').forEach(r => r.addEventListener('change', () => { $('p-hint').textContent = r.value === 'fix' ? '무엇을 고칠지 적어 주세요' : '남길 메모를 적어 주세요'; }));
+const stHint = () => { const c = document.querySelector('input[name="st"]:checked'); return t(c && c.value === 'memo' ? 'hintMemo' : 'hintFix'); };
+document.querySelectorAll('input[name="st"]').forEach(r => r.addEventListener('change', () => { $('p-hint').textContent = stHint(); }));
 
 $('v-prev').onclick = () => show(idx - 1);
 $('v-next').onclick = () => show(idx + 1);
@@ -1040,7 +1403,7 @@ function closeGate() { $('gate').hidden = true; document.body.classList.remove('
 $('g-form').addEventListener('submit', e => {
   e.preventDefault();
   const nm = $('g-name').value.trim().replace(/\s+/g, ' ').slice(0, 40);
-  if (!nm) { $('g-err').textContent = '이름을 적어 주세요.'; $('g-name').focus(); return; }
+  if (!nm) { $('g-err').textContent = t('gateErr'); $('g-name').focus(); return; }
   myName = nm; store.set('bt-name', nm);
   closeGate(); renderMe(); renderConfirm(); renderThumbs();
 });
@@ -1054,11 +1417,9 @@ const TERM_BOOK = 'vterm';
 let TERMS = null, termsErr = '', termFilter = 'all';
 const termOpen = {};   // 순번 → { vi, comment } (열린 의견 칸)
 const termStatus = st => {
-  const t = String(st || '').trim(), l = t.toLowerCase();
-  if (/통일|unify|inconsist/.test(l)) return ['unify', t || '통일 필요'];
-  if (/검토|review|check|todo|pending/.test(l)) return ['review', t || '검토'];
-  if (/확정|ok|fixed|done|final|confirm/.test(l)) return ['fixed', t];
-  return ['', t || '—'];
+  const raw = String(st || '').trim(), l = raw.toLowerCase();
+  const k = /통일|unify|inconsist/.test(l) ? 'unify' : /검토|review|check|todo|pending/.test(l) ? 'review' : /확정|ok|fixed|done|final|confirm/.test(l) ? 'fixed' : '';
+  return [k, (k && t('tst')[k]) || raw || (k ? t('tf')[k] || '' : '—')];
 };
 const tNotes = i => termNotes.filter(n => n.spread === i).sort((a, b) => a.at - b.at);
 async function loadTerms() {
@@ -1077,81 +1438,93 @@ function renderTerms() {
   out.replaceChildren(); sum.replaceChildren();
   if (!TERMS) {
     sum.hidden = true;
-    out.append(el('p', { class: 'signin', text: termsErr === 'missing' ? '용어 검수표(terms.json)가 아직 올라오지 않았어요. 준비되면 이 탭에 바로 나타나요.' : termsErr ? `용어 검수표를 불러오지 못했어요(${termsErr}). 잠시 뒤 새로고침해 주세요.` : '용어 검수표를 불러오는 중이에요.' }));
+    out.append(el('p', { class: 'signin', text: termsErr === 'missing' ? t('termsMissing') : termsErr ? t('termsFail', { err: termsErr }) : t('termsLoading') }));
     return;
   }
   sum.hidden = false;
-  const withOp = TERMS.filter((t, i) => tNotes(i).some(n => n.st === 'fix')).length;
+  const withOp = TERMS.filter((tm, i) => tNotes(i).some(n => n.st === 'fix')).length;
   const likes = termNotes.filter(n => n.st === 'ok' && TERMS[n.spread]).length, fixes = termNotes.filter(n => n.st === 'fix' && TERMS[n.spread]).length;
-  const unify = TERMS.filter(t => termStatus(t.status)[0] === 'unify').length, review = TERMS.filter(t => termStatus(t.status)[0] === 'review').length;
-  for (const [k, v] of [['용어', TERMS.length], ['통일 필요', unify], ['검토', review], ['좋아요', likes], ['다른 의견', fixes], ['의견 있는 용어', withOp]]) sum.append(el('div', {}, el('span', { text: k }), el('b', { text: String(v) })));
+  const unify = TERMS.filter(tm => termStatus(tm.status)[0] === 'unify').length, review = TERMS.filter(tm => termStatus(tm.status)[0] === 'review').length;
+  [TERMS.length, unify, review, likes, fixes, withOp].forEach((v, k) => sum.append(el('div', {}, el('span', { text: t('sum')[k] }), el('b', { text: String(v) }))));
   for (const c of document.querySelectorAll('#tm-filters .chip')) {
     const f = c.dataset.t, n = f === 'all' ? TERMS.length : f === 'unify' ? unify : f === 'review' ? review : withOp;
-    c.textContent = `${{ all: '전체', review: '검토', unify: '통일 필요', opinion: '의견 있음' }[f]} ${n}`;
+    c.textContent = `${t('tf')[f]} ${n}`;
   }
   const act = document.activeElement, keepId = act && act.id && act.closest && act.closest('#tm-out') ? act.id : null;
   const caret = keepId && /TEXTAREA|INPUT/.test(act.tagName) ? [act.selectionStart, act.selectionEnd] : null;
   const tb = el('tbody'); let lastGroup = null, shown = 0;
-  TERMS.forEach((t, i) => {
-    const [sk, sl] = termStatus(t.status), ns = tNotes(i);
+  const ncol = VI() ? 5 : 6;
+  TERMS.forEach((tm, i) => {
+    const [sk, sl] = termStatus(tm.status), ns = tNotes(i);
     if (termFilter === 'review' && sk !== 'review') return;
     if (termFilter === 'unify' && sk !== 'unify') return;
     if (termFilter === 'opinion' && !ns.some(n => n.st === 'fix')) return;
     shown++;
-    const g = String(t.group || '기타');
-    if (g !== lastGroup) { tb.append(el('tr', {}, el('th', { class: 'grp', colspan: '6', scope: 'colgroup', text: g }))); lastGroup = g; }
-    const alts = (Array.isArray(t.alts) ? t.alts : []).filter(a => a && a.vi);
-    tb.append(el('tr', { class: 'trow', id: `term-${i}` },
-      el('td', { class: 'ko', 'data-l': '한국어', text: t.ko || '—' }),
-      el('td', { class: 'rec vi', 'data-l': '추천 베트남어', text: t.vi || '—' }),
-      el('td', { 'data-l': '다른 표현(횟수)' }, alts.length ? el('div', { class: 'alts' }, ...alts.map(a => el('span', { class: 'vi', title: Array.isArray(a.ages) ? a.ages.join(', ') : String(a.ages || '') }, a.vi, ' ', el('i', { text: a.count != null ? `${a.count}` : '' })))) : el('span', { class: 'hint', text: '—' })),
-      el('td', { 'data-l': '상태' }, el('span', { class: `tst ${sk}`, text: sl })),
-      el('td', { class: 'memo', 'data-l': '메모', text: t.note || '—' }),
-      el('td', { class: 'ex', 'data-l': '예문' }, t.example_vi ? el('span', { class: 'vi', text: t.example_vi }) : '—', t.example_ref ? el('small', { text: t.example_ref }) : null)));
-    tb.append(el('tr', { class: 'tact' }, el('td', { colspan: '6' }, termBox(t, i, alts, ns))));
+    const g = String(tm.group || t('groupOther'));
+    if (g !== lastGroup) { tb.append(el('tr', {}, el('th', { class: 'grp', colspan: String(ncol), scope: 'colgroup', text: t('groups')[g] || g }))); lastGroup = g; }
+    const alts = (Array.isArray(tm.alts) ? tm.alts : []).filter(a => a && a.vi);
+    const cols = t('cols');
+    const altCell = el('td', { 'data-l': VI() ? cols[1] : cols[2] }, alts.length ? el('div', { class: 'alts' }, ...alts.map(a => el('span', { class: 'vi', title: ageVi(Array.isArray(a.ages) ? a.ages.join(', ') : String(a.ages || '')) }, a.vi, ' ', el('i', { text: a.count != null ? `${a.count}` : '' })))) : el('span', { class: 'hint', text: '—' }));
+    const stCell = el('td', { 'data-l': VI() ? cols[2] : cols[3] }, el('span', { class: `tst ${sk}`, text: sl }));
+    const exCell = el('td', { class: 'ex', 'data-l': VI() ? cols[3] : cols[5] }, tm.example_vi ? el('span', { class: 'vi', text: tm.example_vi }) : '—', tm.example_ref ? el('small', { text: refVi(tm.example_ref) }) : null);
+    if (VI()) {
+      // 베트남어 화면: 추천 표현을 앞에, 한국어는 작은 풀이로. 메모(한국어)는 접어 둠
+      tb.append(el('tr', { class: 'trow', id: `term-${i}` },
+        el('td', { class: 'rec vi', 'data-l': cols[0] }, tm.vi || '—', tm.ko ? el('span', { class: 'ko-gloss', lang: 'ko', text: `${t('koGloss')}: ${tm.ko}` }) : null),
+        altCell, stCell, exCell,
+        el('td', { class: 'memo', 'data-l': cols[4] }, tm.note ? el('details', {}, el('summary', { text: t('noteShow') }), el('p', { lang: 'ko', text: tm.note })) : '—')));
+    } else {
+      tb.append(el('tr', { class: 'trow', id: `term-${i}` },
+        el('td', { class: 'ko', 'data-l': cols[0], text: tm.ko || '—' }),
+        el('td', { class: 'rec vi', 'data-l': cols[1], text: tm.vi || '—' }),
+        altCell, stCell,
+        el('td', { class: 'memo', 'data-l': cols[4], text: tm.note || '—' }),
+        exCell));
+    }
+    tb.append(el('tr', { class: 'tact' }, el('td', { colspan: String(ncol) }, termBox(tm, i, alts, ns))));
   });
-  if (!shown) { out.append(el('p', { class: 'signin', text: '이 조건에 맞는 용어가 없어요.' })); return; }
-  out.append(el('div', { class: 'table-wrap' }, el('table', { class: 'terms' }, el('thead', {}, el('tr', {}, ...['한국어', '추천 베트남어', '다른 표현(횟수)', '상태', '메모', '예문'].map(x => el('th', { scope: 'col', text: x })))), tb)));
+  if (!shown) { out.append(el('p', { class: 'signin', text: t('termsNone') })); return; }
+  out.append(el('div', { class: 'table-wrap' }, el('table', { class: 'terms' }, el('thead', {}, el('tr', {}, ...t('cols').map(x => el('th', { scope: 'col', text: x })))), tb)));
   if (keepId && $(keepId)) { const n = $(keepId); n.focus({ preventScroll: true }); if (caret) try { n.setSelectionRange(caret[0], caret[1]); } catch (e) {} }
 }
-function termBox(t, i, alts, ns) {
+function termBox(tm, i, alts, ns) {
   const box = el('div', { class: 'tbox' });
   const likes = ns.filter(n => n.st === 'ok'), ops = ns.filter(n => n.st === 'fix' || n.st === 'memo');
   const key = `${TERM_BOOK}:${i}`;
   if (!OFFLINE) {
     const btns = el('div', { class: 'tbtns' });
     const myLike = likes.filter(isMe);
-    if (busy.has(key)) btns.append(el('button', { type: 'button', class: 'btn ok', disabled: '', text: '남기는 중…' }));
+    if (busy.has(key)) btns.append(el('button', { type: 'button', class: 'btn ok', disabled: '', text: t('sending') }));
     else if (myLike.length) {
-      const d = el('span', { class: 'done', style: 'min-height:32px;padding:2px 10px;font-size:13px' }, el('span', { text: '✓ 좋아요 함' }));
-      if (myLike.some(n => mine.has(n.id))) d.append(el('button', { type: 'button', class: 'linkbtn', text: '되돌리기', onclick: () => termUndo(i) }));
+      const d = el('span', { class: 'done', style: 'min-height:32px;padding:2px 10px;font-size:13px' }, el('span', { text: t('liked') }));
+      if (myLike.some(n => mine.has(n.id))) d.append(el('button', { type: 'button', class: 'linkbtn', text: t('undo'), onclick: () => termUndo(i) }));
       btns.append(d);
     } else {
-      const b = el('button', { type: 'button', class: 'btn ok', text: loaded ? `✓ 좋아요` : '불러오는 중…', 'aria-label': `${t.ko} → ${t.vi} 좋아요`, onclick: () => termLike(i) });
+      const b = el('button', { type: 'button', class: 'btn ok', text: loaded ? t('likeBtn') : t('loadingBtn'), 'aria-label': t('likeAria', { ko: tm.ko, vi: tm.vi }), onclick: () => termLike(i) });
       if (!loaded) b.disabled = true;
       btns.append(b);
     }
-    if (alts.length) btns.append(el('span', { class: 'lab', text: '또는 고르기:' }));
-    for (const a of alts) btns.append(el('button', { type: 'button', class: 'btn vi', text: a.vi, 'aria-label': `다른 표현 ${a.vi} 고르기`, onclick: () => { termOpen[i] = { vi: a.vi, comment: (termOpen[i] || {}).comment || '' }; renderTerms(); setTimeout(() => $(`tc-${i}`) && $(`tc-${i}`).focus(), 0); } }));
-    btns.append(el('button', { type: 'button', class: 'btn', 'aria-expanded': String(!!termOpen[i]), text: '다른 표현 적기', onclick: () => { if (termOpen[i]) delete termOpen[i]; else termOpen[i] = { vi: '', comment: '' }; renderTerms(); setTimeout(() => $(`tv-${i}`) && $(`tv-${i}`).focus(), 0); } }));
+    if (alts.length) btns.append(el('span', { class: 'lab', text: t('orPick') }));
+    for (const a of alts) btns.append(el('button', { type: 'button', class: 'btn vi', text: a.vi, 'aria-label': t('pickAria', { vi: a.vi }), onclick: () => { termOpen[i] = { vi: a.vi, comment: (termOpen[i] || {}).comment || '' }; renderTerms(); setTimeout(() => $(`tc-${i}`) && $(`tc-${i}`).focus(), 0); } }));
+    btns.append(el('button', { type: 'button', class: 'btn', 'aria-expanded': String(!!termOpen[i]), text: t('writeOther'), onclick: () => { if (termOpen[i]) delete termOpen[i]; else termOpen[i] = { vi: '', comment: '' }; renderTerms(); setTimeout(() => $(`tv-${i}`) && $(`tv-${i}`).focus(), 0); } }));
     box.append(btns);
     if (termOpen[i]) {
       const d = termOpen[i], sending = busy.has(key + ':n');
-      const vi = el('input', { type: 'text', id: `tv-${i}`, class: 'vi', maxlength: '200', placeholder: '고른/제안하는 베트남어 표현', 'aria-label': '베트남어 표현', oninput: e => { d.vi = e.target.value; } }); vi.value = d.vi;
-      const cm = el('textarea', { id: `tc-${i}`, maxlength: '1500', placeholder: '이유나 메모(선택)', 'aria-label': '의견', oninput: e => { d.comment = e.target.value; } }); cm.value = d.comment;
-      const send = el('button', { class: 'btn primary', type: 'submit', text: sending ? '남기는 중…' : '의견 남기기' }); if (sending) send.disabled = true;
+      const vi = el('input', { type: 'text', id: `tv-${i}`, class: 'vi', maxlength: '200', placeholder: t('tvPh'), 'aria-label': t('tvAria'), oninput: e => { d.vi = e.target.value; } }); vi.value = d.vi;
+      const cm = el('textarea', { id: `tc-${i}`, maxlength: '1500', placeholder: t('tcPh'), 'aria-label': t('tcAria'), oninput: e => { d.comment = e.target.value; } }); cm.value = d.comment;
+      const send = el('button', { class: 'btn primary', type: 'submit', text: sending ? t('sending') : t('sendOp') }); if (sending) send.disabled = true;
       box.append(el('form', { class: 'tform', onsubmit: e => { e.preventDefault(); termSuggest(i); } }, vi, cm,
-        el('div', { class: 'row' }, el('span', { class: 'hint', text: `‘선택: ${d.vi || '…'}’로 남아요` }), el('span', {}, el('button', { type: 'button', class: 'linkbtn', text: '취소', onclick: () => { delete termOpen[i]; renderTerms(); } }), ' ', send))));
+        el('div', { class: 'row' }, el('span', { class: 'hint', text: t('savesAs', { vi: d.vi || '…' }) }), el('span', {}, el('button', { type: 'button', class: 'linkbtn', text: t('cancel'), onclick: () => { delete termOpen[i]; renderTerms(); } }), ' ', send))));
     }
   }
   const votes = el('div', { class: 'tvotes' });
-  if (likes.length) votes.append(el('span', { class: 'likes', text: `✓ 좋아요 ${likes.length} · ${uniq(likes.map(nameOf)).join(', ')}` }));
+  if (likes.length) votes.append(el('span', { class: 'likes', text: t('likesLine', { n: likes.length, names: uniq(likes.map(nameOf)).join(', ') }) }));
   for (const n of ops) {
-    const row = el('div', { class: 'who' }, el('span', {}, el('b', { text: n.st === 'fix' ? '다른 의견' : '메모' }), ' ', el('span', { text: `· ${nameOf(n)} · ${fmt(n.at)}` })));
-    if (mine.has(n.id)) row.append(el('button', { type: 'button', text: '지우기', onclick: () => removeNote(n) }));
-    votes.append(el('div', { class: `note st-${n.st}` }, row, n.text ? el('p', { class: 'vi', text: n.text }) : null));
+    const row = el('div', { class: 'who' }, el('span', {}, el('b', { text: n.st === 'fix' ? t('opFix') : t('opMemo') }), ' ', el('span', { text: `· ${nameOf(n)} · ${fmt(n.at)}` })));
+    if (mine.has(n.id)) row.append(el('button', { type: 'button', text: t('del'), onclick: () => removeNote(n) }));
+    votes.append(el('div', { class: `note st-${n.st}` }, row, n.text ? el('p', { class: 'vi', text: choiceText(n.text) }) : null));
   }
-  if (!likes.length && !ops.length) votes.append(el('span', { class: 'hint', text: OFFLINE ? '' : loaded ? '아직 의견이 없어요.' : '의견을 불러오는 중이에요.' }));
+  if (!likes.length && !ops.length) votes.append(el('span', { class: 'hint', text: OFFLINE ? '' : loaded ? t('noOp') : t('opLoading') }));
   box.append(votes);
   if (OFFLINE && !likes.length && !ops.length) box.hidden = true;
   return box;
@@ -1162,16 +1535,16 @@ async function termLike(i) {
   if (!myName) { openGate(); return; }
   if (tNotes(i).some(n => n.st === 'ok' && isMe(n))) return;
   busy.add(key); renderTerms();
-  try { await postOk(TERM_BOOK, i); toast('좋아요를 남겼어요.'); }
-  catch (e) { toast('남기지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.'); }
+  try { await postOk(TERM_BOOK, i); toast(t('likedToast')); }
+  catch (e) { toast(t('sendFail')); }
   finally { busy.delete(key); renderTerms(); }
 }
 async function termUndo(i) {
   const key = `${TERM_BOOK}:${i}`, my = tNotes(i).filter(n => n.st === 'ok' && mine.has(n.id));
   if (OFFLINE || busy.has(key) || !my.length) return;
   busy.add(key); renderTerms();
-  try { for (const n of my) { await call({ action: 'delete', id: n.id, token }); mine.delete(n.id); } store.set('bt-mine', [...mine]); toast('좋아요를 되돌렸어요.'); }
-  catch (e) { toast('되돌리지 못했어요. 다시 눌러 주세요.'); }
+  try { for (const n of my) { await call({ action: 'delete', id: n.id, token }); mine.delete(n.id); } store.set('bt-mine', [...mine]); toast(t('likeUndone')); }
+  catch (e) { toast(t('undoFail')); }
   finally { busy.delete(key); renderTerms(); }
 }
 async function termSuggest(i) {
@@ -1179,13 +1552,35 @@ async function termSuggest(i) {
   if (OFFLINE || busy.has(key) || !d) return;
   if (!myName) { openGate(); return; }
   const vi = d.vi.trim().replace(/\s+/g, ' '), cm = d.comment.trim();
-  if (!vi) { toast('고르거나 제안할 베트남어 표현을 적어 주세요.'); $(`tv-${i}`) && $(`tv-${i}`).focus(); return; }
+  if (!vi) { toast(t('needVi')); $(`tv-${i}`) && $(`tv-${i}`).focus(); return; }
   busy.add(key); renderTerms();
-  try { await addNote(TERM_BOOK, i, 'fix', `선택: ${vi}${cm ? ` — ${cm}` : ''}`); delete termOpen[i]; toast('의견을 남겼어요.'); }
-  catch (e) { toast('남기지 못했어요. 인터넷 연결을 확인하고 다시 눌러 주세요.'); }
+  try { await addNote(TERM_BOOK, i, 'fix', `선택: ${vi}${cm ? ` — ${cm}` : ''}`); delete termOpen[i]; toast(t('opSent')); }
+  catch (e) { toast(t('sendFail')); }
   finally { busy.delete(key); renderTerms(); }
 }
 $('tm-filters').addEventListener('click', e => { const b = e.target.closest('[data-t]'); if (!b) return; termFilter = b.dataset.t; document.querySelectorAll('#tm-filters .chip').forEach(c => c.setAttribute('aria-pressed', String(c === b))); renderTerms(); });
+
+// 언어 바꾸기: 고정 글(data-i / data-ih / data-ia) 채우고, 그린 것을 모두 다시 그림
+function applyLang() {
+  document.documentElement.lang = LANG;
+  document.title = t('pageTitle');
+  const md = document.querySelector('meta[name="description"]'); if (md) md.setAttribute('content', t('metaDesc'));
+  document.querySelectorAll('[data-i]').forEach(n => { n.textContent = t(n.dataset.i); });
+  document.querySelectorAll('[data-ih]').forEach(n => { n.innerHTML = t(n.dataset.ih); });
+  document.querySelectorAll('[data-ia]').forEach(n => n.dataset.ia.split(';').forEach(pair => { const [a, k] = pair.split(':'); n.setAttribute(a, t(k)); }));
+  document.querySelectorAll('.lang').forEach(box => box.replaceChildren(...LANGS.map(l => el('button', { type: 'button', lang: l, 'aria-pressed': String(l === LANG), text: LANG_NAMES[l], onclick: () => setLang(l) }))));
+  $('p-hint').textContent = loadErr ? t('loadFail') : stHint();
+}
+function setLang(l) {
+  if (!LANGS.includes(l) || l === LANG) return;
+  LANG = l;
+  try { localStorage.setItem('bt-lang', l); } catch (e) {}
+  try { const u = new URL(location.href); if (u.searchParams.has('lang')) { u.searchParams.set('lang', l); history.replaceState(history.state, '', u); } } catch (e) {}
+  applyLang();
+  renderBooks(); renderCover(); renderContents(); renderJump(); show(idx); renderThumbs(); renderReview(); renderTerms(); renderMe();
+  if ($('g-err').textContent) $('g-err').textContent = t('gateErr');
+  syncBar();
+}
 
 // 탭: #terms(용어 검수표) / 나머지(인쇄 검수)
 function route() {
@@ -1198,6 +1593,7 @@ function route() {
 }
 addEventListener('hashchange', route);
 
+applyLang();
 setBook(book);
 route();
 loadTerms();
@@ -1205,7 +1601,7 @@ loadTerms();
 if (VIEW_ONLY) {
   // claude.ai 안이거나 시트 주소가 아직 없으면: 열람만, 기록은 공개 주소에서
   $('p-form').hidden = true;
-  OFFLINE = () => el('p', { class: 'signin' }, '검수 기록은 공개 검수 페이지에서 이름만 적고 남길 수 있어요: ', el('a', { href: PUBLIC_URL, target: '_blank', rel: 'noopener', text: '검수 페이지 열기' }));
+  OFFLINE = () => el('p', { class: 'signin' }, t('offline'), el('a', { href: PUBLIC_URL, target: '_blank', rel: 'noopener', text: t('offlineLink') }));
   renderThread(); renderConfirm(); renderThumbs(); renderReview(); renderTerms();
 } else {
   renderMe();
